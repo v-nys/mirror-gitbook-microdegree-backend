@@ -96,7 +96,7 @@ HMACSHA256(
 
 De handtekening wordt gebruikt om te verifiëren dat het bericht onderweg niet is gewijzigd, en in het geval van tokens die zijn ondertekend met een geheim (`secret`), kan het ook verifiëren dat de afzender van de JWT is wie het zegt te zijn.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Encoded header, payload en secret</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Encoded header, payload en secret</p></figcaption></figure>
 
 ### Alles bij elkaar zetten
 
