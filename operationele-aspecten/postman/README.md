@@ -43,7 +43,7 @@ https://swapi.dev/api/
 
 **Stel je HTTP-verzoek in op GET**. Voer in het veld URL van de request de link in. Klik vervolgens op "**Send**". Je zal vanonder, in de body, een antwoord krijgen en een statuscode van **200 OK**. Er zouden 5 resultaten in de body moeten staan die aangeven dat je request succesvol is uitgevoerd.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Opmerking** :eyes:: het kan voorkomen dat de request in Postman niet succesvol is. Dit kan te wijten zijn aan een ongeldige request URL.
@@ -66,7 +66,7 @@ Parameters worden gemaakt door het gebruik van dubbele accolades: `{{sample}}`. 
 
 **Er zou geen reactie moeten zijn omdat we de bron van onze parameter niet hebben ingesteld.**
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Stap 2)** Om de parameter te gebruiken, moet je een **globale** **environment variabele** instellen:
 
@@ -99,19 +99,19 @@ Laten we beginnen met het maken van een collectie:
 
 **Stap 1)** Klik op de knop "**New**" in de linkerbovenhoek van de zijbalk en selecteer **Collection**.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **Stap 2)** Je hebt een nieuwe collectie aangemaakt met de naam "**New Collection**". Klik in de zijbalk op je nieuwe collectie en verander de naam van de collectie door op het pen icoontje te klikken in het middelste scherm zoals hieronder weergegeven. Geef je collectie de naam "**Postman Test Collection**".
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Stap 3)** Ga terug naar je vorige GET request, `{{url}}/people`. Klik op "**Save**", klik vervolgens op de naam van je nieuwe collectie en nogmaals op de knop "**Save**" in de rechter **** onderhoek van de pop-up.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Stap 4)** Je Postman collectie zou nu één request moeten bevatten.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 **Stap 5)** Maak een nieuwe request aan voor `{{url}}/planets` en herhaal stap 3 , zodat de collectie nu twee verzoeken bevat.
 
