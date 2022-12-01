@@ -112,11 +112,11 @@ Als je met JWT wilt spelen en deze concepten in de praktijk wilt brengen, kan je
 
 ### Hoe werken JSON-webtokens?
 
-Wanneer een gebruiker zich succesvol aanmeldt met zijn inloggegevens, wordt er een JSON-web token geretourneerd. Aangezien tokens referenties zijn, moet grote zorg worden besteed aan het voorkomen van beveiligingsproblemen. Over het algemeen mag je tokens niet langer bewaren dan nodig is.
+Wanneer een gebruiker zich succesvol aanmeldt met zijn inloggegevens, wordt er een JSON-web token geretourneerd. Aangezien een JWT wordt gebruikt voor authenticatie, moet grote zorg worden besteed aan het voorkomen van beveiligingsproblemen. Over het algemeen mag je tokens niet langer bewaren dan nodig is.
 
 Houd er ook mee rekening dat voor ondertekende tokens informatie, hoewel beschermd tegen manipulatie, voor iedereen leesbaar is. Plaats geen geheime informatie in de payload of header-elementen van een JWT, tenzij deze versleuteld zijn.
 
-Telkens wanneer de gebruiker toegang wil tot een beschermde route of bron, moet de gebruiker in kwestie de JWT mee verzenden. De beveiligde routes van de server controleren op een geldige JWT in de Authorization-header en als deze aanwezig is, krijgt de gebruiker toegang tot beveiligde bronnen.
+Telkens wanneer de gebruiker toegang wil tot een beschermde route of bron, moet de gebruiker in kwestie de JWT mee verzenden in de header van de request. De beveiligde routes van de server controleren op een geldige JWT in de Authorization-header en als deze aanwezig is, krijgt de gebruiker toegang tot beveiligde bronnen.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Bron: <a href="https://www.simplilearn.com/tutorials/nodejs-tutorial/jwt-in-express-js">https://www.simplilearn.com/tutorials/nodejs-tutorial/jwt-in-express-js</a></p></figcaption></figure>
 
