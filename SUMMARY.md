@@ -18,7 +18,7 @@
 * [MySQL Connector](express.js/mysql-connector.md)
 * [Authenticatie](express.js/authenticatie/README.md)
   * [JSON Web Token (JWT)](express.js/authenticatie/json-web-token-jwt.md)
-  * [Environment Variables](express.js/authenticatie/environment-variables.md)
+  * [Environment Variables](express.js/authenticatie/.env.md)
   * [Autorisatie (0Auth)](express.js/authenticatie/autorisatie-0auth.md)
 
 ## Operationele aspecten
