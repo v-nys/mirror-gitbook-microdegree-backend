@@ -9,13 +9,13 @@ JWT's of JSON Web Tokens worden voornamelijk gebruikt om een geverifieerde gebru
 **Hier zijn enkele scenario's waarin JSON Web Tokens nuttig zijn:**
 
 * **Autorisatie**: dit is het meest voorkomende scenario voor het gebruik van JWT. Zodra de gebruiker is ingelogd, bevat elk volgend verzoek de JWT, waardoor de gebruiker toegang krijgt tot routes, services en bronnen die alleen toegankelijk zijn tot ingelogde gebruikers.&#x20;
-* **Informatie-uitwisseling**: JSON Web Tokens zijn een goede manier om veilig informatie tussen partijen te verzenden. Omdat JWT's kunnen worden ondertekend, bijvoorbeeld met behulp van public/private sleutelparen, kan je er zeker van zijn dat de afzenders zijn wie ze zeggen dat ze zijn. Aangezien de handtekening wordt berekend met behulp van de header en de payload, kan je bovendien controleren of er niet met de inhoud is geknoeid.
+* **Informatie-uitwisseling**: JSON Web Tokens zijn een goede manier om veilig informatie tussen partijen te verzenden. Omdat JWT's kunnen worden ondertekend, bijvoorbeeld met behulp van public/private keypairs, kan je er zeker van zijn dat de afzenders zijn wie ze zeggen dat ze zijn. Aangezien de handtekening wordt berekend met behulp van de header en de payload, kan je bovendien controleren of er niet met de inhoud is geknoeid.
 
-Je vraagt je misschien af waarom de authenticatieserver de informatie niet gewoon als een gewoon `JSON`-object kan verzenden en waarom deze moet worden omgezet in een "**token**".
+Je vraagt je misschien af waarom de authenticatieserver de informatie niet gewoon als een `JSON`-object kan verzenden en waarom deze moet worden omgezet in een ondertekende "**token**".
 
-Als de auth-server het als een gewone JSON verzendt, kan de client niet controleren of de inhoud die ze ontvangen correct is. Een kwaadwillende aanvaller zou bijvoorbeeld de gebruikers-ID kunnen wijzigen en de client zou op geen enkele manier kunnen weten dat dat is gebeurd.
+Als de authenticatieserver het als een gewoon `JSON`-object verzendt, kan de client niet controleren of de inhoud dat ze ontvangt correct is. Een kwaadwillende aanvaller zou bijvoorbeeld de gebruikers-ID kunnen wijzigen vooralleer het bij de client terechtkomt. De client zou dat op geen enkele manier te weten kunnen komen.
 
-Vanwege dit beveiligingsprobleem moet de authenticatieserver deze informatie verzenden op een manier die kan worden geverifieerd door de client, en hier komt het concept van een "token" in beeld.
+Vanwege dit beveiligingsprobleem moet de authenticatieserver deze informatie verzenden op een manier die kan worden geverifieerd door de client, en hier komt het concept van een ondertekende "**token**" in beeld.
 
 Simpel gezegd, een token is een string die bepaalde informatie bevat die veilig kan worden geverifieerd. Het kan een willekeurige set alfanumerieke tekens zijn die naar een ID in de database verwijzen, of het kan een gecodeerde JSON zijn die door de client zelf kan worden geverifieerd.
 
@@ -110,15 +110,24 @@ Het volgende toont een JWT met de vorige header en payload gecodeerd en is onder
 Als je met JWT wilt spelen en deze concepten in de praktijk wilt brengen, kan je [jwt.io Debugger](https://jwt.io/#debugger-io) gebruiken om JWT's te decoderen, verifiëren en genereren.
 {% endhint %}
 
-### Hoe werken JSON-webtokens?
+### Hoe werkt het in de praktijk?
 
-Wanneer een gebruiker zich succesvol aanmeldt met zijn inloggegevens, wordt er een JSON-web token geretourneerd. Aangezien een JWT wordt gebruikt voor authenticatie, moet grote zorg worden besteed aan het voorkomen van beveiligingsproblemen. Over het algemeen mag je tokens niet langer bewaren dan nodig is.
+Wanneer een gebruiker zich succesvol aanmeldt met zijn inloggegevens, genereert de authenticatie-server een JWT die de identiteit van de gebruiker certificeert. De auth-server retourneert de JWT naar de USER die het vervolgens kan gebruiken om de beveiligde routes van de resource server aan te roepen. De resource server verifieert de JWT en stuurt de gewenste gegevens naar de USER.
 
-Houd er ook mee rekening dat voor ondertekende tokens informatie, hoewel beschermd tegen manipulatie, voor iedereen leesbaar is. Plaats geen geheime informatie in de payload of header-elementen van een JWT, tenzij deze versleuteld zijn.
+1. Gebruiker meldt zich aan met gebruikersnaam en wachtwoord of google/facebook;
+2. Authenticatie server verifieert de inloggegevens en geeft een jwt uit die is ondertekend met een "secret" of een private key;
+3. De gebruiker gebruikt de JWT om toegang te krijgen tot beveiligde bronnen. De JWT wordt door geven in de HTTP-authorization header;
+4. De resource server verifieert vervolgens de authenticiteit van de token met behulp van de "secret" of een public key;
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><a href="https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7">https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7</a></p></figcaption></figure>
+
+{% hint style="info" %}
+Houd er ook mee rekening dat voor ondertekende tokens informatie, hoewel beschermd tegen manipulatie, voor iedereen leesbaar is. **Plaats geen geheime informatie in de payload of header-elementen van een JWT, tenzij deze versleuteld zijn.**
+{% endhint %}
 
 Telkens wanneer de gebruiker toegang wil tot een beschermde route of bron, moet de gebruiker in kwestie de JWT mee verzenden in de header van de request. De beveiligde routes van de server controleren op een geldige JWT in de Authorization-header en als deze aanwezig is, krijgt de gebruiker toegang tot beveiligde bronnen.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Bron: <a href="https://www.simplilearn.com/tutorials/nodejs-tutorial/jwt-in-express-js">https://www.simplilearn.com/tutorials/nodejs-tutorial/jwt-in-express-js</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Bron: <a href="https://www.simplilearn.com/tutorials/nodejs-tutorial/jwt-in-express-js">https://www.simplilearn.com/tutorials/nodejs-tutorial/jwt-in-express-js</a></p></figcaption></figure>
 
 #### Resources
 

@@ -103,7 +103,7 @@ Laten we beginnen met het maken van een collectie:
 
 **Stap 2)** Je hebt een nieuwe collectie aangemaakt met de naam "**New Collection**". Klik in de zijbalk op je nieuwe collectie en verander de naam van de collectie door op het pen icoontje te klikken in het middelste scherm zoals hieronder weergegeven. Geef je collectie de naam "**Postman Test Collection**".
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Stap 3)** Ga terug naar je vorige GET request, `{{url}}/people`. Klik op "**Save**", klik vervolgens op de naam van je nieuwe collectie en nogmaals op de knop "**Save**" in de rechter **** onderhoek van de pop-up.
 
