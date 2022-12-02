@@ -16,10 +16,10 @@
 * [Requests](express.js/requests.md)
 * [Static files](express.js/static-files.md)
 * [MySQL Connector](express.js/mysql-connector.md)
-* [Authenticatie](express.js/authenticatie/README.md)
-  * [JSON Web Token (JWT)](express.js/authenticatie/json-web-token-jwt.md)
-  * [Environment Variables](express.js/authenticatie/.env.md)
-  * [Autorisatie (0Auth)](express.js/authenticatie/autorisatie-0auth.md)
+* [Authenticatie en Autorisatie](express.js/authenticatie-en-autorisatie/README.md)
+  * [JSON Web Token (JWT)](express.js/authenticatie-en-autorisatie/json-web-token-jwt.md)
+  * [Environment Variables](express.js/authenticatie-en-autorisatie/environment-variables.md)
+  * [Autorisatie (0Auth)](express.js/authenticatie-en-autorisatie/autorisatie-0auth.md)
 
 ## Operationele aspecten
 
