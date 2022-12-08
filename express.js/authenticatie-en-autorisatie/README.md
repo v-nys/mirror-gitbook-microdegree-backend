@@ -6,11 +6,15 @@ Authenticatie en autorisatie worden gebruikt bij beveiliging, met name als het g
 
 ### Authenticatie&#x20;
 
-Authenticatie is een term die verwijst naar het proces om te bewijzen dat een feit of een document echt is. In de informatica wordt deze term meestal geassocieerd met het bewijzen van de identiteit van een gebruiker. Gewoonlijk bewijst een gebruiker zijn identiteit door zijn inloggegevens op te geven, dat wil zeggen een overeengekomen stuk informatie dat tussen de gebruiker en het systeem wordt gedeeld.
+Authenticatie is een term die verwijst naar het proces om te bewijzen dat een feit of een document echt is. In de informatica wordt deze term meestal geassocieerd met het bewijzen van de identiteit van een gebruiker. Gewoonlijk bewijst een gebruiker zijn identiteit door zijn inloggegevens op te geven en te versturen naar een authenticatie-server waar ze worden afgehandeld en vergeleken met de gegevens in een databank. Indien de ingevulde inloggegevens overeenkomen met de gegevens in de databank, krijgt de gebruiker toegang tot het systeem.
 
 ### Autorisatie&#x20;
 
-autorisatie is het proces waarbij wordt geverifieerd tot welke specifieke toepassingen, bestanden en gegevens een gebruiker toegang heeft. De situatie is als die van een luchtvaartmaatschappij die moet bepalen welke mensen aan boord mogen. De eerste stap is het bevestigen van de identiteit van een passagier om er zeker van te zijn dat ze zijn wie ze zeggen dat ze zijn (**authenticatie**). Zodra de identiteit van een passagier is vastgesteld, is de tweede stap het verifiëren van eventuele speciale services waartoe de passagier toegang heeft, of het nu gaat om eersteklas vliegen of om een bezoek aan de VIP-lounge (**autorisatie**).
+Autorisatie is het proces waarbij de rechten van een gebruiker worden bepaald en dus tot welke specifieke toepassingen, bestanden en gegevens hij/zij toegang krijgt.&#x20;
+
+De situatie is als die van een luchtvaartmaatschappij die moet bepalen welke mensen aan boord mogen. De eerste stap is het bevestigen van de identiteit van een passagier om er zeker van te zijn dat ze zijn wie ze zeggen dat ze zijn (**authenticatie**).&#x20;
+
+Zodra de identiteit van een passagier is vastgesteld, is de tweede stap het verifiëren van eventuele speciale services waartoe de passagier toegang heeft, of het nu gaat om eersteklas vliegen of om een bezoek aan de VIP-lounge (**autorisatie**).
 
 ## Overzicht
 
