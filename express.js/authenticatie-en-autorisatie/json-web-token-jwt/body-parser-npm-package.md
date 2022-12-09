@@ -1,6 +1,6 @@
 # body-parser NPM package
 
-De body-parser package is een middleware voor express-apps die wordt gebruikt om het request-lichaam te parsen en om te zetten in een gebruiksvriendelijker formaat. Dit maakt het mogelijk om gemakkelijk te werken met de gegevens die in het request-lichaam zijn opgeslagen, zoals bijvoorbeeld formuliergegevens of JSON-data.
+De body-parser package is een middleware voor `express`-apps die wordt gebruikt om het request-lichaam te parsen en om te zetten in een gebruiksvriendelijker formaat. Dit maakt het mogelijk om gemakkelijk te werken met de gegevens die in het request-lichaam zijn opgeslagen, zoals bijvoorbeeld formuliergegevens of JSON-data.
 
 De body-parser package ondersteunt verschillende types request-lichamen, zoals `JSON`, `urlencoded` en `multi-part` formulieren. Deze formaten kunnen worden gespecificeerd wanneer de body-parser wordt geïnitialiseerd in de express-applicatie.
 
