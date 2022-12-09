@@ -17,7 +17,9 @@
 * [Static files](express.js/static-files.md)
 * [MySQL Connector](express.js/mysql-connector.md)
 * [Authenticatie en Autorisatie](express.js/authenticatie-en-autorisatie/README.md)
-  * [JSON Web Token (JWT)](express.js/authenticatie-en-autorisatie/json-web-token-jwt.md)
+  * [JSON Web Token (JWT)](express.js/authenticatie-en-autorisatie/json-web-token-jwt/README.md)
+    * [jsonwebtokens node package](express.js/authenticatie-en-autorisatie/json-web-token-jwt/jsonwebtokens-node-package.md)
+    * [Voorbeeld oefening JWT in NodeJS](express.js/authenticatie-en-autorisatie/json-web-token-jwt/voorbeeld-oefening-jwt-in-nodejs.md)
   * [Environment Variables](express.js/authenticatie-en-autorisatie/environment-variables.md)
   * [Autorisatie (0Auth)](express.js/authenticatie-en-autorisatie/autorisatie-0auth.md)
 
