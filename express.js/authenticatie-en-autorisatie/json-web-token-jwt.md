@@ -2,20 +2,22 @@
 
 ## Wat zijn JSON Web Tokens?
 
-JWT's of JSON Web Tokens worden voornamelijk gebruikt om een geverifieerde gebruiker te identificeren. Ze worden uitgegeven door een authenticatieserver en worden gebruikt door de client-server (om de API's te beveiligen).
+JSON web tokens (JWT) zijn een manier om informatie op een veilige en standaardiserende manier op te slaan en te verzenden tussen verschillende partijen. Deze tokens bestaan uit drie delen: een header, een payload en een signature. De header bevat informatie over hoe het token is opgebouwd, zoals het type en de hashing algoritme. De payload bevat de informatie die opgeslagen en verzonden moet worden, zoals gebruikersgegevens en toegangsrechten. De signature is een cryptografische hash die gebruikt wordt om de integriteit en authenticiteit van het token te verifiëren. JWT's zijn vaak gebruikt in authenticatie- en autorisatieprocessen in webapplicaties.
 
 ### Waarvoor worden JWT's gebruikt en waarom is het nodig?&#x20;
 
+JWT's zijn een handige manier om informatie op te slaan en te verzenden tussen verschillende partijen zonder deze informatie op te slaan in een database. Dit betekent dat JWT's een efficiëntere manier zijn om gebruikers te authenticaten en autoriseren, omdat het verificatieproces op de client-side kan plaatsvinden. JWT's zijn ook veilig, omdat de informatie die opgeslagen is in het token niet makkelijk te lezen is zonder de juiste decoderingstechnieken. Bovendien kan de signature gebruikt worden om te verifiëren dat het token niet is gemanipuleerd tijdens het verzenden. Dit maakt JWT's een veelgebruikt mechanisme in het ontwikkelen van webapplicaties.
+
 **Hier zijn enkele scenario's waarin JSON Web Tokens nuttig zijn:**
 
-* **Autorisatie**: dit is het meest voorkomende scenario voor het gebruik van JWT. Zodra de gebruiker is ingelogd, bevat elk volgend verzoek de JWT, waardoor de gebruiker toegang krijgt tot routes, services en bronnen die alleen toegankelijk zijn tot ingelogde gebruikers.&#x20;
-* **Informatie-uitwisseling**: JSON Web Tokens zijn een goede manier om veilig informatie tussen partijen te verzenden. Omdat JWT's kunnen worden ondertekend, bijvoorbeeld met behulp van public/private keypairs, kan je er zeker van zijn dat de afzenders zijn wie ze zeggen dat ze zijn. Aangezien de handtekening wordt berekend met behulp van de header en de payload, kan je bovendien controleren of er niet met de inhoud is geknoeid.
+* **Autorisatie**: Autorisatie met JWT's gebeurt door het opstellen van een token dat de toegangsrechten van een gebruiker bevat. De token in kwestie wordt dan verzonden naar de server, die de token kan verifiëren en decoderen om te bepalen of de gebruiker toegang heeft tot bepaalde functionaliteiten of gegevens. Dit kan bijvoorbeeld gebruikt worden om te bepalen of een gebruiker toegang heeft tot een bepaalde pagina of API-endpoint. De toegangsrechten die opgeslagen kunnen worden in een JWT variëren en kunnen bijvoorbeeld het recht geven op lezen, schrijven of verwijderen van gegevens.
+* **Informatie-uitwisseling**: Informatie-uitwisseling met JWT's gebeurt door het opstellen van een token dat de benodigde informatie bevat. De token wordt dan verzonden naar de ontvanger, die de token kan verifiëren en decoderen om de bijbehorende informatie te gebruiken. De informatie die opgeslagen kan worden in een JWT varieert en kan bijvoorbeeld gebruikersgegevens, toegangsrechten of andere relevante informatie bevatten.
 
-Je vraagt je misschien af waarom de authenticatieserver de informatie niet gewoon als een `JSON`-object kan verzenden en waarom deze moet worden omgezet in een ondertekende "**token**".
+Je vraagt je misschien af waarom de authenticatie server de informatie niet gewoon als een `JSON`-object kan verzenden en waarom deze moet worden omgezet in een ondertekende "**token**".
 
-Als de authenticatieserver het als een gewoon `JSON`-object verzendt, kan de client niet controleren of de inhoud dat ze ontvangt correct is. Een kwaadwillende aanvaller zou bijvoorbeeld de gebruikers-ID kunnen wijzigen vooralleer het bij de client terechtkomt. De client zou dat op geen enkele manier te weten kunnen komen.
+Als de authenticatie server het als een gewoon `JSON`-object verzendt, kan de client niet controleren of de inhoud dat ze ontvangt correct is. Een kwaadwillende aanvaller zou bijvoorbeeld de gebruikers-ID kunnen wijzigen vooraleer het bij de client terechtkomt. De client zou dat op geen enkele manier te weten kunnen komen.
 
-Vanwege dit beveiligingsprobleem moet de authenticatieserver deze informatie verzenden op een manier die kan worden geverifieerd door de client, en hier komt het concept van een ondertekende "**token**" in beeld.
+Vanwege dit beveiligingsprobleem moet de authenticatie server deze informatie verzenden op een manier die kan worden geverifieerd door de client, en hier komt het concept van een ondertekende "**token**" in beeld.
 
 Simpel gezegd, een token is een string die bepaalde informatie bevat die veilig kan worden geverifieerd. Het kan een willekeurige set alfanumerieke tekens zijn die naar een ID in de database verwijzen, of het kan een gecodeerde JSON zijn die door de client zelf kan worden geverifieerd.
 
@@ -31,7 +33,7 @@ In zijn compacte vorm bestaan JSON Web Tokens uit drie delen gescheiden door pun
 3. **Signature**:
    1. Een tekenreeks die wordt gegenereerd via een cryptografisch algoritme dat kan worden gebruikt om de integriteit van de JSON-payload te verifiëren;
 
-Daarom ziet een JWT er meestal als volgt uit.
+Een JWT er meestal als volgt uit.
 
 ```json
 header.payload.signature
@@ -44,6 +46,8 @@ header.payload.signature
 Laten we de verschillende onderdelen opsplitsen.
 
 #### Header&#x20;
+
+De header van een JWT bevat informatie over hoe de token is opgebouwd, zoals het type en de hashing algoritme. Dit is belangrijk om te weten om de token te kunnen decoderen en verifiëren.
 
 De header bestaat doorgaans uit twee delen:&#x20;
 
@@ -65,7 +69,9 @@ Vervolgens is deze JSON Base64Url-gecodeerd om het eerste deel van de JWT te vor
 
 #### Payload&#x20;
 
-Het tweede deel van het token is de payload, die de claims bevat. Claims zijn uitspraken over een entiteit (meestal de gebruiker) en aanvullende gegevens.&#x20;
+Het tweede deel van de token is de payload, die de claims bevat. Claims zijn uitspraken over een entiteit (meestal de gebruiker) en aanvullende gegevens.&#x20;
+
+De payload bevat de informatie die opgeslagen en verzonden moet worden in de token, zoals gebruikersgegevens en toegangsrechten. Deze informatie wordt gecodeerd in de token zodat het niet makkelijk te lezen is zonder de juiste decoderingstechniëken.
 
 Een JWT kan bijvoorbeeld een claim met de naam `name` bevatten die beweert dat de naam van de gebruiker "AP user" is. In een JWT wordt een claim weergegeven als een **key/value-pair** waarbij de key altijd een tekenreeks is en de value een JSON-waarde kan zijn. Het volgende JSON-object bevat bijvoorbeeld drie claims (`sub`, `name`, `iat`):
 
@@ -83,7 +89,7 @@ Vervolgens de payload ook JSON Base64Url-gecodeerd om het tweede deel van de JWT
 
 #### Signature
 
-Om het handtekeninggedeelte te maken, moet je de gecodeerde header, de gecodeerde payload, een geheim, het algoritme gespecificeerd in de header nemen en dat ondertekenen.
+De signature wordt gebruikt om de integriteit en authenticiteit van de token te verifiëren, om te controleren of het token niet is gemanipuleerd tijdens het verzenden. Op deze manier wordt de informatie op een veilige en betrouwbare manier gewaarborgd in de JWT token.
 
 Als je bijvoorbeeld het HMAC SHA256-algoritme wilt gebruiken, wordt de handtekening op de volgende manier gemaakt:
 
@@ -116,13 +122,13 @@ Wanneer een gebruiker zich succesvol aanmeldt met zijn inloggegevens, genereert 
 
 1. Gebruiker meldt zich aan met gebruikersnaam en wachtwoord of google/facebook;
 2. Authenticatie server verifieert de inloggegevens en geeft een jwt uit die is ondertekend met een "secret" of een private key;
-3. De gebruiker gebruikt de JWT om toegang te krijgen tot beveiligde bronnen. De JWT wordt door geven in de HTTP-authorization header;
+3. De gebruiker gebruikt de JWT om toegang te krijgen tot beveiligde bronnen. De JWT wordt meegestuurd in de HTTP-authorization header;
 4. De resource server verifieert vervolgens de authenticiteit van de token met behulp van de "secret" of een public key;
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><a href="https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7">https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7</a></p></figcaption></figure>
 
 {% hint style="info" %}
-Houd er ook mee rekening dat voor ondertekende tokens informatie, hoewel beschermd tegen manipulatie, voor iedereen leesbaar is. **Plaats geen geheime informatie in de payload of header-elementen van een JWT, tenzij deze versleuteld zijn.**
+Houd er ook mee rekening dat de informatie opgeslagen in JSON Web Tokens, hoewel beschermd tegen manipulatie, voor iedereen leesbaar is. **Plaats geen geheime informatie in de payload of header-elementen van een JWT, tenzij deze versleuteld zijn.**
 {% endhint %}
 
 Telkens wanneer de gebruiker toegang wil tot een beschermde route of bron, moet de gebruiker in kwestie de JWT mee verzenden in de header van de request. De beveiligde routes van de server controleren op een geldige JWT in de Authorization-header en als deze aanwezig is, krijgt de gebruiker toegang tot beveiligde bronnen.
