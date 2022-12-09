@@ -23,19 +23,19 @@ Hier is een voorbeeld van hoe je de `jwt.sign` functie zou kunnen gebruiken in T
 ```typescript
 import * as jwt from 'jsonwebtoken';
 
-// Dit is de informatie die we willen opslaan in het JWT
+// Dit is de informatie die we willen opslaan in de JWT
 const payload = {
   userId: 123,
   username: 'johndoe',
 };
 
-// Dit is het geheim dat we gebruiken om het JWT te ondertekenen en te beveiligen
+// Dit is het geheim dat we gebruiken om de JWT te ondertekenen en te beveiligen
 const secret = 'my_secret_key';
 
-// We gebruiken de jwt.sign functie om het JWT te genereren
+// We gebruiken de jwt.sign functie om de JWT te genereren
 const token = jwt.sign(payload, secret);
 
-// Nu kunnen we het JWT gebruiken om de opgeslagen informatie te versturen of op te halen
+// Nu kunnen we de JWT gebruiken om de opgeslagen informatie te versturen of op te halen
 console.log(token);
 ```
 
@@ -77,7 +77,7 @@ import * as jwt from 'jsonwebtoken';
 // Genereer een JWT token met behulp van gebruikersgegevens en een geheime sleutel
 const token = jwt.sign({ username: 'john', email: 'john@gmail.com' }, 'my_secret_key');
 
-// Decodeer het JWT token om de gebruikersgegevens te krijgen
+// Decodeer de JWT token om de gebruikersgegevens te krijgen
 const decodedToken = jwt.decode(token);
 
 // Log de gebruikersgegevens

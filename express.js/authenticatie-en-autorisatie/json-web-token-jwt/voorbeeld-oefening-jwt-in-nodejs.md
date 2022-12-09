@@ -34,16 +34,16 @@ app.post("/signup", (req, res) => {
 
 // Maak een route om de JWT token te verifiëren en de gebruikersgegevens terug te sturen
 app.get("/login", (req, res) => {
-  // Haal het JWT token op uit de request headers
+  // Haal de JWT token op uit de request headers
   const token = req.headers["authorization"];
 
   // Controleer of het token geldig is met behulp van de geheime sleutel
   jwt.verify(token, JWT_SECRET, (err, user) => {
     if (err) {
-      // Stuur een foutbericht als het token ongeldig is
+      // Stuur een foutbericht als de token ongeldig is
       res.sendStatus(403);
     } else {
-      // Stuur de gebruikersgegevens terug als het token geldig is
+      // Stuur de gebruikersgegevens terug als de token geldig is
       res.json(user);
     }
   });
