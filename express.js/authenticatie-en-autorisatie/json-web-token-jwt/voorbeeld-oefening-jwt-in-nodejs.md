@@ -1,5 +1,7 @@
 # Voorbeeld oefening JWT in NodeJS
 
+Stappenplan volgt nog.
+
 {% code title="server.ts" %}
 ```typescript
 // Importeer de nodige packages
