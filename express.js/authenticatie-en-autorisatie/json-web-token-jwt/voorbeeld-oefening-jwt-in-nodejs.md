@@ -1,6 +1,7 @@
 # Voorbeeld oefening JWT in NodeJS
 
-```javascript
+{% code title="server.ts" %}
+```typescript
 // Importeer de nodige packages
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -17,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const JWT_SECRET = "secretkey";
 
 // Maak een route om JWT tokens te genereren
-app.post("/login", (req, res) => {
+app.post("/signup", (req, res) => {
   // Haal de gebruikersgegevens op uit het request-lichaam
   const user = {
     username: req.body.username,
@@ -32,7 +33,7 @@ app.post("/login", (req, res) => {
 });
 
 // Maak een route om de JWT token te verifiëren en de gebruikersgegevens terug te sturen
-app.get("/profile", (req, res) => {
+app.get("/login", (req, res) => {
   // Haal het JWT token op uit de request headers
   const token = req.headers["authorization"];
 
@@ -51,3 +52,14 @@ app.get("/profile", (req, res) => {
 // Start de server op poort 3000
 app.listen(3000, () => console.log("Server gestart op poort 3000"));
 ```
+{% endcode %}
+
+In dit voorbeeld wordt er een express-app aangemaakt en worden de nodige packages geïmporteerd, waaronder `express`, `body-parser` en `jsonwebtoken`. De `body-parser` package wordt gebruikt om het request-lichaam te parsen en de `jsonwebtoken` package wordt gebruikt om JWT tokens te genereren, valideren en decoderen.
+
+Er wordt een JWT geheim gemaakt en opgeslagen in de constante `JWT_SECRET`. Dit geheim wordt later gebruikt bij het genereren en valideren van JWT tokens.
+
+Er wordt een route gemaakt op `/signup` voor het posten van signup-gegevens en het genereren van een JWT token. De gebruikersgegevens worden uit het request-lichaam opgehaald en gebruikt om een JWT token te genereren met behulp van het JWT geheim. De gegenereerde token wordt teruggestuurd naar de gebruiker waarmee hij vervolgens kan inloggen.
+
+Er wordt ook een route aangemaakt voor het verifiëren van een JWT token en het terugsturen van de gebruikersgegevens op `/login`. De JWT token wordt uit de request headers gehaald en gevalideerd met behulp van het JWT geheim. Als de token geldig is, worden de gebruikersgegevens teruggestuurd naar de gebruiker. Als het token ongeldig is, wordt een foutbericht gestuurd.
+
+###
