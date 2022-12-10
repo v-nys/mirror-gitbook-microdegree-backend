@@ -16,7 +16,7 @@ Omdat het een Open Source-tool is, kan Postman eenvoudig worden gedownload. Dit 
 
 <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Opmerking** :eyes:: Er zijn twee manieren om je aan te melden voor een Postman-account. Een daarvan is om een eigen Postman-account aan te maken en de andere is om een Google-account te gebruiken. Hoewel Postman gebruikers in staat stelt de tool te gebruiken zonder in te loggen, zorgt het aanmelden ervoor dat je collecties worden opgeslagen en dusdanig toegankelijk zijn voor later gebruik.
@@ -24,6 +24,6 @@ Omdat het een Open Source-tool is, kan Postman eenvoudig worden gedownload. Dit 
 
 **Stap 4)** Eenmaal als je een account hebt aangemaakt, navigeer je terug naar de desktop applicatie van Postman. Log in met je account. Je zal het startscherm hieronder te zien krijgen.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 Proficiat je hebt Postman correct geïnstalleerd! :tada:
