@@ -92,7 +92,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dv
 
 Je kan een payload meesturen bij het verzenden van een verzoek. Om de payload toe te voegen, selecteer je het tabblad **Body** en zie je verschillende gegevensindelingen die door de extensie worden ondersteund.
 
-In het onderstaande voorbeeld wordt er een JSON object verstuurd naar de server met behulp van een POST verzoek:
+In het onderstaande voorbeeld wordt er een JSON object verstuurd naar de server met behulp van een `POST` verzoek:
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
