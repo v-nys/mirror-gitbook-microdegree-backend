@@ -1,4 +1,4 @@
-# Voorbeeld oefening JWT in NodeJS
+# Voorbeeld oefening JWT authenticatie
 
 Stappenplan volgt nog.
 
@@ -30,22 +30,24 @@ app.post("/signup", (req, res) => {
   // Genereer een JWT token met behulp van de gebruikersgegevens en een geheime sleutel
   const token = jwt.sign(user, JWT_SECRET);
 
-  // Stuur het JWT token terug naar de gebruiker
+  // Stuur de JWT token terug naar de gebruiker
   res.json({ token });
 });
 
 // Maak een route om de JWT token te verifiëren en de gebruikersgegevens terug te sturen
 app.get("/login", (req, res) => {
   // Haal de JWT token op uit de request headers
-  const token = req.headers["authorization"];
-
+  // De waarde van de header ziet er als volgt uit: 'Bearer JWT_TOKEN'
+  // We halen de JWT_TOKEN eruit met behulp van de Array.split() methode
+  const token = req.headers["authorization"].split(' ')[1];
+console.log(token)
   // Controleer of het token geldig is met behulp van de geheime sleutel
   jwt.verify(token, JWT_SECRET, (err, user) => {
     if (err) {
       // Stuur een foutbericht als de token ongeldig is
       res.sendStatus(403);
     } else {
-      // Stuur de gebruikersgegevens terug als de token geldig is
+      // Stuur de gebruikersgegevens terug als het token geldig is
       res.json(user);
     }
   });
@@ -56,7 +58,9 @@ app.listen(3000, () => console.log("Server gestart op poort 3000"));
 ```
 {% endcode %}
 
-In dit voorbeeld wordt er een express-app aangemaakt en worden de nodige packages geïmporteerd, waaronder `express`, `body-parser` en `jsonwebtoken`. De `body-parser` package wordt gebruikt om het request-lichaam te parsen en de `jsonwebtoken` package wordt gebruikt om JWT tokens te genereren, valideren en decoderen.
+### Conclusie
+
+In dit voorbeeld wordt er een express-app aangemaakt en worden de nodige packages geïmporteerd, waaronder `express`, [`body-parser`](../body-parser-npm-package.md) en [`jsonwebtoken`](jsonwebtokens-npm-package.md). De `body-parser` package wordt gebruikt om het request-lichaam te parsen en de `jsonwebtoken` package wordt gebruikt om JWT tokens te genereren, valideren en decoderen.
 
 Er wordt een JWT geheim gemaakt en opgeslagen in de constante `JWT_SECRET`. Dit geheim wordt later gebruikt bij het genereren en valideren van JWT tokens.
 
