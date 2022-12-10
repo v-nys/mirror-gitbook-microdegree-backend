@@ -16,7 +16,7 @@ Om de VScode extensie thunder client te gebruiken, moet deze eerst worden geïns
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Na de installatie van de extensie, kan deze worden geopend door naar de commando-palet te gaan (CTRL + SHIFT + P) en "Thunder Client: Open" te selecteren. Dit opent het Thunder Client-venster in VScode.
+Na de installatie van de extensie, kan deze worden geopend door naar de commando-palet te gaan (`CTRL + SHIFT + P`) en "Thunder Client: Open" te selecteren. Dit opent het Thunder Client-venster in VScode.
 
 <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
