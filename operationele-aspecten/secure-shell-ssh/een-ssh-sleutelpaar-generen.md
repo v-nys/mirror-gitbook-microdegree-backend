@@ -60,3 +60,7 @@ ssh-keygen -p
 ```
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Je public SSH-key handmatig naar een server kopiëren
+
+Content volgt nog... AP webhosting...
