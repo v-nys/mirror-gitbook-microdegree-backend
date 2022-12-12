@@ -56,7 +56,7 @@ Je kan omgevingsvariabelen toevoegen door op het tabblad "**Env**" te klikken en
 
 Afhankelijk van het type verzoek biedt Thunder Client een lijst met HTTP-VERBS voor verzoeken zoals `GET`, `POST`, `PUT`, `DELETE` en `PATCH`. Je kan het type verzoek aanpassen in de linkerbovenhoek van het aanvraagvenster.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 #### Query Parameters
 
@@ -86,7 +86,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dv
 ```
 {% endcode %}
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Body (payload)
 

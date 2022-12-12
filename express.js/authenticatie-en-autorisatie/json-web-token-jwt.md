@@ -110,7 +110,7 @@ De uitvoer bestaat uit drie Base64-URL-tekenreeksen gescheiden door punten die g
 
 Het volgende toont een JWT met de vorige header en payload gecodeerd en is ondertekend met een geheim.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Een JWT met de vorige header en payload gecodeerd en ondertekend met een geheim</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Een JWT met de vorige header en payload gecodeerd en ondertekend met een geheim</p></figcaption></figure>
 
 {% hint style="info" %}
 Als je met JWT wilt spelen en deze concepten in de praktijk wilt brengen, kan je [jwt.io Debugger](https://jwt.io/#debugger-io) gebruiken om JWT's te decoderen, verifiëren en genereren.

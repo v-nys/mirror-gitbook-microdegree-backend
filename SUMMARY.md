@@ -26,7 +26,8 @@
 
 ## Operationele aspecten
 
-* [Secure Shell (SSH)](operationele-aspecten/secure-shell-ssh.md)
+* [Secure Shell (SSH)](operationele-aspecten/secure-shell-ssh/README.md)
+  * [een SSH-sleutelpaar generen](operationele-aspecten/secure-shell-ssh/een-ssh-sleutelpaar-generen.md)
 * [Relatieve vs absolute paden](operationele-aspecten/relatieve-vs-absolute-paden.md)
 * [REST API](operationele-aspecten/rest-api.md)
 * [Thunder Client](operationele-aspecten/thunder-client.md)
