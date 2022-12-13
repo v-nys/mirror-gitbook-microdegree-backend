@@ -1,4 +1,4 @@
-# een SSH-sleutelpaar generen
+# een SSH-sleutelpaar genereren
 
 Het genereren van een nieuw SSH-sleutelpaar met public en private keys op je lokale computer is de eerste stap naar authenticatie met een externe server zonder wachtwoord. Tenzij er een goede reden is om dit niet te doen, moet je altijd authenticeren met behulp van SSH-sleutels.
 
@@ -26,8 +26,8 @@ Deze procedure heeft een `RSA` SSH-sleutelpaar gegenereerd, dat zich bevindt in 
 
 Deze bestanden zijn:
 
-1. `~/.ssh/id_rsa`: De persoonlijke sleutel. DEEL DIT BESTAND NIET!&#x20;
-2. `~/.ssh/id_rsa.pub`: De bijbehorende public key. Dit kan vrij worden gedeeld zonder gevolgen.
+1. `~/.ssh/id_rsa`: De persoonlijke sleutel. **DEEL DIT BESTAND NIET!**&#x20;
+2. `~/.ssh/id_rsa.pub`: De bijbehorende public key. Dit kan vrij worden gedeeld zonder gevolgen. Je mag hem bijvoorbeeld uploaden op diensten die login via SSH aanbieden.
 
 ### Genereer van een SSH-sleutelpaar met een groter aantal bits&#x20;
 
