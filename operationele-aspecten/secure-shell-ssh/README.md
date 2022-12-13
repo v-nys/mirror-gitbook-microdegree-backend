@@ -8,25 +8,25 @@ Het biedt een op tekst gebaseerde interface met behulp van een externe shell. Na
 
 Wanneer je verbinding maakt via SSH, word je in een shell-sessie gedropt, een op tekst gebaseerde interface waar je met je server kan communiceren. Voor de duur van je SSH-sessie worden alle opdrachten die je in je lokale terminal typt, door een gecodeerde SSH-tunnel verzonden en uitgevoerd op de server.
 
-De SSH-verbinding wordt geïmplementeerd met behulp van een client-servermodel. Dit betekent dat om een SSH-verbinding tot stand te brengen, de externe machine een stukje software moet draaien dat een `SSH-daemon` wordt genoemd. Deze software luistert naar verbindingen op een specifieke netwerkpoort, verifieert verbindingsverzoeken en brengt de juiste omgeving tot stand als de gebruiker de juiste inloggegevens verstrekt.
+De SSH-verbinding wordt geïmplementeerd met behulp van een client-servermodel. Dit betekent dat om een SSH-verbinding tot stand te brengen, de externe machine een stukje software moet draaien dat een **SSH-daemon** wordt genoemd. Deze software luistert naar verbindingen op een specifieke netwerkpoort, verifieert verbindingsverzoeken en brengt de juiste omgeving tot stand als de gebruiker de juiste inloggegevens verstrekt.
 
-De computer van de gebruiker moet een SSH-client hebben. Dit is een stuk software dat weet hoe te communiceren met behulp van het SSH-protocol en dat informatie kan krijgen over de externe host om verbinding mee te maken, de gebruikersnaam die moet worden gebruikt en de inloggegevens die moeten worden doorgegeven om te authenticeren. De klant kan ook bepaalde details specificeren over het verbindingstype dat hij tot stand wil brengen.
+De computer van de gebruiker moet een **SSH-client** hebben.
 
 ### Authenticatie met SSH
 
-Gebruikers authenticeren zich over het algemeen met wachtwoorden (minder veilig en niet aanbevolen) of SSH-sleutels.
+Gebruikers authenticeren zich over het algemeen met wachtwoorden (minder veilig en niet aanbevolen) of **SSH-sleutels**.
 
-Wachtwoordaanmeldingen zijn gecodeerd en zijn gemakkelijk te begrijpen voor nieuwe gebruikers. Geautomatiseerde bots en kwaadwillende gebruikers zullen echter vaak herhaaldelijk proberen zich te authenticeren bij accounts die op wachtwoorden gebaseerde logins toestaan, wat kan leiden tot beveiligingscompromissen. Om deze reden wordt er aangeraden om voor de meeste configuraties altijd op SSH-sleutel gebaseerde authenticatie in te stellen.
+Wachtwoordaanmeldingen zijn gecodeerd en zijn gemakkelijk te begrijpen voor nieuwe gebruikers. Geautomatiseerde bots en kwaadwillende gebruikers kunnen echter herhaaldelijk proberen zich te authenticeren bij accounts die op wachtwoorden gebaseerde logins toestaan. Om deze reden wordt er aangeraden om voor de meeste configuraties altijd op SSH-sleutel gebaseerde authenticatie in te stellen.
 
-SSH-sleutels zijn een overeenkomende set cryptografische sleutels die kunnen worden gebruikt voor authenticatie. Elke set bevat een **public key** en een **private** **key**. De public key kan vrij en zonder zorgen worden gedeeld, terwijl de private key waakzaam moet worden bewaakt en aan niemand mag worden blootgesteld.
+SSH-sleutels zijn een overeenkomende set cryptografische sleutels die kunnen worden gebruikt voor authenticatie. Elke set bevat een **public key** en een **private** **key**. De public key kan vrij en zonder zorgen worden gedeeld. De private key moet worden bewaakt en mag aan niemand worden blootgesteld.
 
-Om te authenticeren met behulp van SSH-sleutels, moet een gebruiker een SSH-sleutelpaar op zijn lokale computer hebben. Op de externe server moet de openbare sleutel worden gekopieerd naar een bestand in de thuismap van de gebruiker op `~/.ssh/authorized_keys`. Dit bestand bevat een lijst met openbare sleutels, één per regel, die zijn geautoriseerd om in te loggen op dit account.
+{% hint style="info" %}
+De publieke sleutel is vergelijkbaar met je brievenbus. Iedereen ziet dat ze van jou is en je kan er normaal alleen documenten in deponeren. De private sleutel is vergelijkbaar met de sleutel van je brievenbus. Enkel jij hebt er een en deze staat je toe informatie terug uit de brievenbus te halen.
+{% endhint %}
 
-Wanneer een client verbinding maakt met de host en SSH-sleutelauthenticatie wil gebruiken, zal deze de server op de hoogte stellen van zijn intentie en de server vertellen welke public key moet worden gebruikt. De server controleert vervolgens het bestand `authorized_keys` op de public key, genereert een willekeurige reeks en versleutelt deze met behulp van de public key. Dit versleutelde bericht kan alleen worden ontsleuteld met de bijbehorende private key. De server stuurt dit versleutelde bericht naar de klant om te testen of deze daadwerkelijk over de bijbehorende pirvate key beschikt.
+Om te authenticeren met behulp van SSH-sleutels, moet een gebruiker een SSH-sleutelpaar op zijn lokale computer hebben. Op de **externe** server moet de **openbare** sleutel worden gekopieerd naar een bestand in de thuismap van de gebruiker op `~/.ssh/authorized_keys`. Dit bestand bevat een lijst met openbare sleutels, één per regel, die zijn geautoriseerd om in te loggen op dit account.
 
-Na ontvangst van dit bericht zal de client het decoderen met behulp van de private key en de willekeurige tekenreeks die wordt onthuld, combineren met een eerder onderhandelde `sessie-ID`. Het genereert vervolgens een `MD5-hash` van deze waarde en stuurt deze terug naar de server. De server had al het originele bericht en de `sessie-ID`, dus hij kan een `MD5-hash` die door die waarden is gegenereerd, vergelijken en bepalen dat de client de private key moet hebben.
-
-Nu je weet hoe SSH werkt, kunnen we beginnen met het bespreken van enkele voorbeelden om verschillende manieren van werken met SSH te demonstreren.
+Wanneer een client SSH-sleutelauthenticatie wil gebruiken, zal deze de server op de hoogte stellen van zijn intentie en de server vertellen welke public key moet worden gebruikt. De server controleert vervolgens het bestand `authorized_keys` op de public key, genereert een willekeurige reeks en versleutelt deze met behulp van de public key. Dit versleutelde bericht kan alleen worden ontsleuteld met de bijbehorende private key. De server stuurt dit versleutelde bericht naar de klant om te testen of deze daadwerkelijk over de bijbehorende pirvate key beschikt.
 
 #### Resources
 
