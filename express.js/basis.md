@@ -4,21 +4,21 @@
 
 #### Frontend
 
-De frontend is wat de gebruiker ziet: met HTML, CSS en TypeScript (of JavaScript) zorg je voor een structuur waarin de gebruiker kan navigeren. CSS helpt je met layout en opmaak, en TypeScript zorgt voor interactie. Het proces bevindt zich volledig in de browser. Scripts gebruik je om interactie toe te laten door de gebruiker. Deze interactie kan lokale aanpassingen veroorzaken in de client, bv het veranderen van een kleur van een knop, het sorteren van een lijst etc. Maar scripts kunnen ook communiceren buiten het proces in de browser. Adhv API calls kan de client data ophalen van de backend, of data versturen naar de backend.
+De frontend is wat de gebruiker ziet: met HTML, CSS en TypeScript (of JavaScript) zorg je voor een structuur waarin de gebruiker kan navigeren. CSS helpt je met layout en opmaak, en TypeScript zorgt voor interactie. Het proces speelt zich volledig in de browser af. Scripts gebruik je om interactie toe te laten door de gebruiker. Deze interactie kan lokale aanpassingen veroorzaken in de client, bv het veranderen van een kleur van een knop, het sorteren van een lijst etc. Maar scripts kunnen ook communiceren buiten het proces in de browser. Aan de hand van API calls kan de client data ophalen van de backend, of data versturen naar de backend.
 
 #### Backend
 
-De backend zorgt voor de connectie met databases, het verwerken van data en het beschikbaar stellen van deze data via een API. Dit proces bevind zich op de server. Client applicaties kunnen deze server applicatie raadplegen om data op te halen of te verwerken.
+De backend zorgt voor de connectie met databases, het verwerken van data en het beschikbaar stellen van deze data via een API. Dit proces speelt zich op de server af. Client applicaties kunnen deze server applicatie raadplegen om data op te halen of te verwerken.
 
 ### Express
 
-Express is een populair Web Application Framework gemaakt op Node.js waarmee we web applicaties en APIs kunnen bouwen.
+Express is een populair Web Application Framework gebaseerd op Node.js waarmee we web applicaties en APIs kunnen bouwen.
 
 Aan de hand van Express kunnen we onze applicaties als een full TypeScript (of JavaScript) stack schrijven, m.a.w. onze code op de backend en de code in de client is allemaal TypeScript.
 
-Dit type frameworks laat ons ook toe de client paginas dynamisch te genereren. Dit wil zeggen dat de finale HTML/CSS/TS pagina niet bestaat tot een gebruiker de server raadpleegt. Express zal deze pagina aanmaken met alle nodige data (bv. data uit de database).
+Dit type frameworks laat ons ook toe de client pagina's dynamisch te genereren. Dit wil zeggen dat de finale HTML/CSS/TS pagina niet bestaat tot een gebruiker de server raadpleegt. Express zal deze pagina aanmaken met alle nodige data (bv. data uit de database).
 
-Fictief voorbeeld: De gebruiker gaat naar http://webontwikkeling.ap/. Express herkent dat de gebruiker de root pagina wil. De ontwikkelaar heeft gezorgd dat Express hier een mooie hoofdpagina toont met de laatste 3 nieuwtjes (die uit een database komen) over Webontwikkeling. Onderdelen van deze pagina bestonden (bv. de CSS, wat HTML en een stukje client script) maar Express vult de ontbrekende data in en stuurt mooie volledige HTML/CSS/TS naar de client.
+Fictief voorbeeld: De gebruiker gaat naar http://webontwikkeling.ap/. Express herkent dat de gebruiker de homepagina wil (omdat er na de laatste slash niets volgt). De ontwikkelaar heeft gezorgd dat Express hier een mooie hoofdpagina toont met de laatste 3 nieuwtjes (die uit een database komen) over Webontwikkeling. Onderdelen van deze pagina bestonden (bv. de CSS, wat HTML en een stukje client script) maar Express vult de ontbrekende data in en stuurt mooie volledige HTML/CSS/TS naar de client.
 
 #### Express hello world
 
@@ -31,10 +31,10 @@ npm install express
 In deze module gebruiken we TypeScript dus we moeten ook de types installeren
 
 ```
-npm install --save-dev express
+npm install --save-dev @types/express
 ```
 
-De Hello World applicatie:
+De Hello World applicatie. We lichten hieronder toe hoe deze werkt:
 
 ```typescript
 import express from "express";
@@ -53,7 +53,7 @@ app.listen(app.get("port"), () =>
 );
 ```
 
-Sla dit bestand op als `server.ts` en start het op met `ts-node server.ts`. Je kan nu naar http://localhost:3000 surfen en je ziet de tekst `Hello World` verschijnen.
+Sla dit bestand op als `server.ts` en start het op met `ts-node server.ts`. Je kan nu naar `http://localhost:3000` surfen en je ziet de tekst `Hello World` verschijnen.
 
 Laten we elke lijn bekijken
 
@@ -63,15 +63,15 @@ import express from "express";
 const app = express();
 ```
 
-We importeren de express module en de nodige types en voeren `express()` uit. Het resultaat hiervan is een `Express` object die de Express applicatie voorstelt.
+We importeren de express module en de nodige types en voeren `express()` uit. Het resultaat hiervan is een `Express` object dat de Express applicatie voorstelt.
 
-We kunnen dit object gebruiken om een aantal settings aan te passen, te beslissen welke url welke data (html, json, etc) laadt en de applicatie te starten.
+We kunnen dit object gebruiken om een aantal settings aan te passen, te beslissen welke url welke data (HTML, JSON, etc.) laadt en de applicatie te starten.
 
-```
+```typescript
 app.set('port', 3000);
 ```
 
-app.set laat ons toe bepaalde properties van onze Express applicatie aan te passen. Het is belangrijk om te definieren op welke poort onze webapplicatie gaat luisteren. Een typische keuze tijdens ontwikkeling is de poort 3000. Dit wil zeggen dat we lokaal naar http://localhost:3000 zullen moeten gaan.
+`app.set` laat ons toe bepaalde properties van onze Express applicatie aan te passen. Het is belangrijk om te definieren op welke poort onze webapplicatie gaat luisteren. Een typische keuze tijdens ontwikkeling is de poort 3000. Dit wil zeggen dat we lokaal naar `http://localhost:3000` zullen moeten gaan.
 
 Laten we nu eerst de laatste lijnen bekijken:
 
@@ -80,13 +80,13 @@ app.listen(app.get('port'),
     ()=>console.log( '[server] http://localhost:' + app.get('port')));
 ```
 
-`app.listen` zorgt dat onze web applicatie start met luisteren op de meegegeven poort. Let op, we gebruiken in de eerste parameter app.get om de property die we daarnet een waarde hadden gegeven op te roepen. De tweede parameter is een callback die wordt uitgevoerd wanneer het luisteren succesvol is opgestart. Hier printen we gewoon de url + port uit op de console ter info.
+`app.listen` zorgt dat onze web applicatie start met luisteren op de meegegeven poort. Let op, we gebruiken in de eerste parameter app.get om de property die we daarnet een waarde hadden gegeven op te roepen. De tweede parameter is een callback die wordt uitgevoerd wanneer het luisteren succesvol is opgestart. Hier printen we gewoon de url en port uit op de console ter info.
 
 #### Express routes
 
-Web applicaties en websites bevatten meestal meer dan 1 "pagina". Tot nu toe zie je het path in een URL als een locatie op een webserver. Bv. localhost:3000/index.html zou de index.html zijn die zich bevindt in de root folder. localhost:3000/profile/addPicture.html zou een file addPicture.html zijn die zich in /profile/ bevindt.
+Web applicaties en websites bevatten meestal meer dan 1 pagina. Tot nu toe zie je het path in een URL als een locatie op een webserver. Bv. `localhost:3000/index.html` zou de file `index.html` zijn die zich bevindt in de root folder. `localhost:3000/profile/addPicture.html` zou een file `addPicture.html` zijn die zich in `/profile/` bevindt.
 
-Express laat ons toe zelf te bepalen welke data wordt teruggestuurd adhv het path dat gekozen wordt. In ons voorbeeld zal localhost:3000/ Hello World tonen:
+Express laat ons toe zelf te bepalen welke data wordt teruggestuurd aan de hand van de URL. In ons voorbeeld zal `localhost:3000/` de tekst "Hello World" tonen:
 
 ```typescript
 app.get('/',(req,res)=>{
@@ -95,17 +95,17 @@ app.get('/',(req,res)=>{
 })
 ```
 
-Express werkt met routes. Een route bepaalt welk path welke datat terugstuurt. Je doet dit adhv de methode app.get. app.get heeft 2 parameters:
+Express werkt met routes. Een route bepaalt welk path welke data terugstuurt. Je doet dit aan de hand van de methode `app.get`. `app.get` heeft 2 parameters:
 
 * het pad
 * een functie die de data terugstuurt naar de client
 
-Het pad hier is '/'. Dit komt overeen met localhost:3000/. Vervang je dit met bv '/helloworld' dan zal je naar lolalhost:3000/helloworld moeten gaan. localhost:3000 zal niet meer werken.
+Het pad hier is '/'. Dit komt overeen met `localhost:3000/`, omdat het relatief is ten opzichte van het adres van de server. Vervang je dit door bv '/helloworld', dan zal je naar `localhost:3000/helloworld` moeten gaan. localhost:3000 zal niet meer werken.
 
-De functie als tweede parameter verwacht zelf 2 parameters:
+De functie als tweede parameter heeft zelf 2 parameters:
 
 * het **request** object. Dit object heeft informatie over de request die de client heeft gedaan. Denk bv. aan de headers, de body, de query parameters, etc. Het is een object van het type Request.
-* het **response** object Het request object bevat informatie over de vraag van de client (bv. data die de client stuurt, meer hierover later).
+* het **response** object. Het request object bevat informatie over de vraag van de client (bv. data die de client stuurt, meer hierover later).
 
 Het response object laat ons toe een response te sturen naar de client. We gebruiken hier 2 functies:
 
@@ -113,13 +113,13 @@ Het response object laat ons toe een response te sturen naar de client. We gebru
 res.type("text/html");
 ```
 
-type() laat ons toe het Content-type van de response te bepalen. Een volledige lijst van types vind je hier. De belangrijkste die we gaan gebruiken zijn "text/html" en "application/json".
+`type()` laat ons toe het Content-type van de response te bepalen. Een volledige lijst van types vind je hier. De belangrijkste die we gaan gebruiken zijn `"text/html"` en `"application/json"`.
 
 ```typescript
 res.send("Hello <strong>World</strong>")
 ```
 
-Om data terug te sturen gebruiken we de send() functie. Omdat we HTML willen terugsturen, vullen we de parameter met een string in HTML formaat.
+Om data terug te sturen gebruiken we de `send()` functie. Omdat we HTML willen terugsturen, vullen we de parameter met een string in HTML formaat.
 
 #### Multiple routes
 
@@ -140,7 +140,7 @@ app.get("/goodbye",(req,res)=>{
 });
 ```
 
-Voor elke route roepen we app.get op met het path dat we willen instellen en de data die we willen terugsturen.
+Voor elke route roepen we `app.get` op met het path dat we willen instellen en de data die we willen terugsturen.
 
 We kunnen ook verkeerde paths opvangen. Als de gebruiker naar een path gaat dat niet bestaat, kunnen we ze bv. een foutmelding geven.
 
@@ -198,7 +198,8 @@ app.get('/getData',(req,res)=>{
     res.json(data);
 })
 
-app.listen(app.get('port'), ()=>console.log( '[server] http://localhost:' + app.get('port')));</code></pre>
+app.listen(app.get('port'), ()=>console.log( '[server] http://localhost:' + app.get('port')));
+</code></pre>
 
 We hebben een variabele data aangemaakt die een array van objecten bevat. Om deze data te sturen gebruiken we een ander type: application/json.
 
