@@ -26,6 +26,13 @@
 
 ## Operationele aspecten
 
+* [Wat is Cryptografie?](operationele-aspecten/wat-is-cryptografie/README.md)
+  * [Decryptie](operationele-aspecten/wat-is-cryptografie/decryptie.md)
+  * [Encryptie](operationele-aspecten/wat-is-cryptografie/encryptie.md)
+* [Transport Layer Security (TLS)](operationele-aspecten/transport-layer-security-tls/README.md)
+  * [Let's Encrypt](operationele-aspecten/transport-layer-security-tls/lets-encrypt.md)
+* [Paswoord Hashing](operationele-aspecten/paswoord-hashing/README.md)
+  * [Paswoord Salting](operationele-aspecten/paswoord-hashing/paswoord-salting.md)
 * [Secure Shell (SSH)](operationele-aspecten/secure-shell-ssh/README.md)
   * [een SSH-sleutelpaar genereren](operationele-aspecten/secure-shell-ssh/een-ssh-sleutelpaar-genereren.md)
   * [SSH config](operationele-aspecten/secure-shell-ssh/ssh-config.md)
