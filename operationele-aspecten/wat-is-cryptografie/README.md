@@ -8,6 +8,8 @@ description: Cryptografie is een techniek die gebruikt wordt om informatie te be
 
 Cryptografie is de wetenschap van het versleutelen en ontcijferen van informatie om onbevoegde toegang te voorkomen. Bij cryptografie worden gegevens en persoonlijke informatie getransformeerd van simpele text naar een willekeurige reeks cijfers en letters die moeilijk te ontcijferen zijn. Alleen de juiste ontvanger kan het bericht ontcijferen en aldus toegang krijgen tot de informatie.
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><a href="https://binarycoders.dev/">https://binarycoders.dev/</a></p></figcaption></figure>
+
 {% hint style="info" %}
 **De kunst van cryptografie wordt al duizenden jaren gebruikt om berichten te coderen.** In films zien we vaak dat rechercheurs gebruik maken van specifieke codewoorden om informatie uit te wisselen. Alleen als beide partijen het juiste codewoord bevestigen, gaan ze verder met de transactie. Dit is een voorbeeld van hoe cryptografie gebruikt wordt om communicatie veilig te houden.
 {% endhint %}

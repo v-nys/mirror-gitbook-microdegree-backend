@@ -125,7 +125,7 @@ Wanneer een gebruiker zich succesvol aanmeldt met zijn inloggegevens, genereert 
 3. De gebruiker gebruikt de JWT om toegang te krijgen tot beveiligde bronnen. De JWT wordt meegestuurd in de HTTP-authorization header;
 4. De resource server verifieert vervolgens de authenticiteit van de token met behulp van de "secret" of een public key;
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p><a href="https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7">https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p><a href="https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7">https://dev.to/kcdchennai/how-jwt-json-web-token-authentication-works-21e7</a></p></figcaption></figure>
 
 {% hint style="info" %}
 Houd er ook mee rekening dat de informatie opgeslagen in JSON Web Tokens, hoewel beschermd tegen manipulatie, voor iedereen leesbaar is. **Plaats geen geheime informatie in de payload of header-elementen van een JWT, tenzij deze versleuteld zijn.**
