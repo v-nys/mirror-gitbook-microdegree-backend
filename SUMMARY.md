@@ -27,8 +27,8 @@
 ## Operationele aspecten
 
 * [Wat is Cryptografie?](operationele-aspecten/wat-is-cryptografie/README.md)
-  * [Decryptie](operationele-aspecten/wat-is-cryptografie/decryptie.md)
   * [Encryptie](operationele-aspecten/wat-is-cryptografie/encryptie.md)
+  * [Decryptie](operationele-aspecten/wat-is-cryptografie/decryptie.md)
   * [Ciphertext](operationele-aspecten/wat-is-cryptografie/ciphertext.md)
 * [Transport Layer Security (TLS)](operationele-aspecten/transport-layer-security-tls/README.md)
   * [Let's Encrypt](operationele-aspecten/transport-layer-security-tls/lets-encrypt.md)

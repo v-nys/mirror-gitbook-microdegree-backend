@@ -85,7 +85,7 @@ Een JWT kan bijvoorbeeld een claim met de naam `name` bevatten die beweert dat d
 
 Vervolgens de payload ook JSON Base64Url-gecodeerd om het tweede deel van de JWT te vormen.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Encoded payload (claims)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Encoded payload (claims)</p></figcaption></figure>
 
 #### Signature
 
