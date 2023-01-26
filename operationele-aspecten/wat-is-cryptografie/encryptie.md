@@ -1,7 +1,7 @@
 ---
 description: >-
-  Encryptie is het proces waarbij gevoelige gegevens of informatie worden
-  omgezet in onbegrijpelijke gegevens
+  Encryptie is het proces waarbij gegevens of informatie wordt omgezet in
+  onbegrijpelijke tekst met behulp van een coderingssleutel.
 ---
 
 # Encryptie
