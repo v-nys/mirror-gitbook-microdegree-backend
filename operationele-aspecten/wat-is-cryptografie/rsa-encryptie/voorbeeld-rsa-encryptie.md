@@ -28,7 +28,7 @@ In het algemeen wordt aangeraden om een grotere sleutelgrootte te gebruiken voor
 
 Probeer het woord "**AP Hogeschool**" te coderen in dit voorbeeld. Je moet beslissen of de sleutel die wordt gebruikt voor codering privé of openbaar is, omdat dit invloed heeft op het proces van het versleutelen van de informatie. Gebruik voor dit voorbeeld de openbare sleutel. Je hebt ook de mogelijkheid om aangepaste cijfers te gebruiken, maar voor nu volstaat het om gewone RSA te gebruiken.
 
-<img src="../../../.gitbook/assets/image (7).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (7) (3).png" alt="" data-size="original">
 
 Vervolgens kan je de gegevens versleutelen door op de knop **Encrypt** te klikken.
 
@@ -38,7 +38,7 @@ Vervolgens kan je de gegevens versleutelen door op de knop **Encrypt** te klikke
 
 Om het bericht te versturen naar de ontvanger, moet je eerst de ciphertext genereren. De ontvanger moet al in het bezit zijn van de bijbehorende privésleutel die is gegenereerd uit hetzelfde paar als de openbare sleutel die je hebt gebruikt voor codering. Er kan geen andere privésleutel worden gebruikt om het bericht te decoderen. Je moet de privésleutel van de ontvanger hier plakken en selecteren. Let erop dat het cijfer dat wordt gebruikt voor decodering overeen moet komen met het cijfer dat is gebruikt tijdens het coderingproces.
 
-![](<../../../.gitbook/assets/image (2).png>)&#x20;
+![](<../../../.gitbook/assets/image (2) (3).png>)&#x20;
 
 Zodra je op **Decrypt** klikt, krijg je de originele tekst te zien.
 
