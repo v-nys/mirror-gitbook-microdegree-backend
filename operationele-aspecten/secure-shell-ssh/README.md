@@ -2,7 +2,7 @@
 
 Secure Shell (SSH) is een netwerkprotocol dat veilige communicatie tussen twee computers mogelijk maakt. Het wordt vaak gebruikt om op een veilige manier toegang te krijgen tot een externe computer via internet, bijvoorbeeld om in te loggen op een server en opdrachten uit te voeren, of om bestanden veilig over te zetten tussen computers. SSH maakt gebruik van encryptie om de gegevens die worden verzonden te beschermen, wat het moeilijk maakt voor onbevoegden om de informatie te onderscheppen en te lezen. Het is een belangrijk hulpmiddel voor netwerkbeveiliging.
 
-Het biedt een op tekst gebaseerde interface met behulp van een externe shell. Nadat je verbinding hebt gemaakt, worden alle opdrachten die je in je lokale terminal typt, naar de externe server verzonden en daar uitgevoerd.
+Het biedt een op tekst gebaseerde interface met behulp van een externe [shell](../wat-is-een-shell.md). Nadat je verbinding hebt gemaakt, worden alle opdrachten die je in je lokale terminal typt, naar de externe server verzonden en daar uitgevoerd.
 
 ### Hoe werkt SSH?
 

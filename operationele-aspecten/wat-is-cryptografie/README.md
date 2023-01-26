@@ -38,6 +38,33 @@ Asymmetrische cryptografie, ook wel publieke sleutelcryptografie genoemd, gebrui
 
 Hashing is een techniek waarmee informatie wordt omgezet in een unieke code waarmee de authenticatie van de data kan worden geverifieerd zonder dat de oorspronkelijke data wordt uitgelezen. Hashing is een **eenrichtingsproces**, zonder sleutel om de invoer in zijn oorspronkelijke formaat te ontgrendelen.
 
+### Historische betekenis van cryptografie
+
+De twee beroemdste voorbeelden van cryptografie in de oudheid zijn:
+
+* Caesar cijfer
+* Enigma-machine
+
+#### Ceasar cijfer
+
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+Het Caesar-cijfer is een oud en eenvoudig type encryptie dat vernoemd is naar Julius Caesar, die het gebruikte om zijn privé-correspondentie te beschermen. Het werkt door elke letter in een tekst te verplaatsen naar een andere letter in het alfabet, gebaseerd op een bepaalde sleutel.
+
+Bijvoorbeeld, als de sleutel 3 is, dan wordt elke letter in de tekst verplaatst naar de derde letter ernaast in het alfabet. Dus de letter "A" wordt veranderd in "D", "B" wordt veranderd in "E" en zo verder.
+
+Het Caesar-cijfer is een voorbeeld van een substitutie-cijfer, omdat het vervangt letters met andere letters. Het is echter zeer eenvoudig te kraken omdat er slechts 26 mogelijke sleutels zijn (één voor elke letter van het alfabet) en een gerichte aanval kan gemakkelijk de juiste sleutel vinden.
+
+In de moderne tijd, Caesar-cijfer wordt meestal gebruikt als een educatief hulpmiddel om te leren over encryptie, in plaats van een beveiligingsmechanisme. Er zijn veel geavanceerde encryptie methodes die worden gebruikt voor echte beveiliging, zoals RSA.
+
+#### Enigma machine
+
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Enigma machine - <a href="https://ariaturns.files.wordpress.com/2015/01/enigma.jpg">https://ariaturns.files.wordpress.com/2015/01/enigma.jpg</a></p></figcaption></figure>
+
+De Enigma-machine was een mechanische encryptie-apparaat dat werd gebruikt in de Tweede Wereldoorlog door de Duitsers om hun geheime communicatie te coderen en te decoderen. Het apparaat bestond uit een reeks rotors die de letters van de tekst vervangen met andere letters, gebaseerd op een bepaalde sleutel.
+
+De rotors konden worden geconfigureerd in verschillende posities, waardoor er miljoenen mogelijke sleutels waren. De Enigma-machine was echter niet onkraakbaar. De geallieerden wisten het te ontcijferen dankzij de inspanningen van de beroemde codebrekers Alan Turing en zijn team.
+
 ## Conclusie
 
 Als webdeveloper zul je waarschijnlijk te maken krijgen met cryptografie, vooral als je werkt met beveiliging van websites of mobiele apps. Bijvoorbeeld bij online betalingen of inloggen, hier worden vaak **TSL** certificaten gebruikt.&#x20;

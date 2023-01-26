@@ -2,9 +2,9 @@
 
 Het genereren van een nieuw SSH-sleutelpaar met public en private keys op je lokale computer is de eerste stap naar authenticatie met een externe server zonder wachtwoord. Tenzij er een goede reden is om dit niet te doen, moet je altijd authenticeren met behulp van SSH-sleutels.
 
-Er zijn een aantal cryptografische algoritmen die je kan gebruiken om SSH-sleutels te genereren, waaronder `RSA`, `DSA` en `ECDSA`. `RSA`-sleutels hebben over het algemeen de voorkeur en zijn het standaardsleuteltype.
+Er zijn een aantal cryptografische algoritmen die je kan gebruiken om SSH-sleutels te genereren, waaronder [`RSA`](../wat-is-cryptografie/rsa-encryptie/), `DSA` en `ECDSA`. `RSA`-sleutels hebben over het algemeen de voorkeur en zijn het standaardsleuteltype.
 
-Om een `RSA`-sleutelpaar op je lokale computer te genereren, typ je:
+Om een [`RSA`](../wat-is-cryptografie/rsa-encryptie/)-sleutelpaar op je lokale computer te genereren, typ je:
 
 ```
 ssh-keygen
@@ -41,7 +41,7 @@ ssh-keygen -b 4096
 
 Als je eerder een andere sleutelpaar had aangemaakt, wordt er gevraagd of je de vorige sleutel wilt overschrijven:
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 Als je "`y`" kiest, wordt je vorige sleutel overschreven en kan je met die sleutel niet meer inloggen op servers. Zorg er daarom voor dat je de sleutels voorzichtig overschrijft.
 
@@ -59,7 +59,7 @@ Om het wachtwoord te wijzigen of te verwijderen, typ je eenvoudig:
 ssh-keygen -p
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Je public SSH-key handmatig naar een server kopiëren
 

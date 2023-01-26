@@ -14,7 +14,7 @@ De Thunder Client extensie maakt het gemakkelijk om API-aanvragen te maken en te
 
 Om de VScode extensie thunder client te gebruiken, moet deze eerst worden geïnstalleerd in VScode. Dit kan door naar de VScode Marketplace te gaan en te zoeken naar "Thunder Client" of door direct naar de extensie-pagina te gaan via deze link: [https://marketplace.visualstudio.com/items?itemName=Thunder-Client](https://marketplace.visualstudio.com/items?itemName=Thunder-Client).
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Na de installatie van de extensie, kan deze worden geopend door naar de commando-palet te gaan (`CTRL + SHIFT + P`) en "Thunder Client: Open" te selecteren. Dit opent het Thunder Client-venster in VScode.
 
@@ -28,7 +28,7 @@ In het Thunder Client-venster kan je nieuwe aanvragen maken door op "**New Reque
 
 Als je een aanvraag hebt gemaakt, kan je deze uitvoeren door op de "Send" knop te klikken in de rechterbovenhoek van het aanvraagvenster. Dit zal de aanvraag uitvoeren en het resultaat weergeven in het venster daarnaast, inclusief de aanvraagstatus, het aanvraaglichaam en de headers.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Activity tabblad
 
@@ -36,7 +36,7 @@ Het tabblad Activity toont de geschiedenis van je recente API-verzoeken. Door me
 
 Je kan ook aanvragen opslaan en laden door op de "Save" en "Load" knoppen te klikken in de linkerbovenhoek van het aanvraagvenster. Dit maakt het gemakkelijker om vaak gebruikte aanvragen op te slaan en later te laden voor hergebruik.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Aanmaken van een collectie
 
@@ -44,7 +44,7 @@ Collecties zijn een groep API-verzoeken. Met Thunder Client kan je werken met co
 
 Om met collecties te werken, klik je op het tabblad "**Collections**" en vervolgens op het pictogram waarnaar de pijl wijst in de onderstaande afbeelding. Dit toont een vervolgkeuzelijst waarin je selecteert of je een nieuwe collectie wilt aanmaken of een bestaande collectie wilt importeren.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Omgevingsvariabelen
 
@@ -64,7 +64,7 @@ Er is ook ondersteuning voor query parameters, headers, autorisatie, body en tes
 
 **Query parameters** stellen je in staat informatie mee te geven via de url.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### HTTP-headers
 

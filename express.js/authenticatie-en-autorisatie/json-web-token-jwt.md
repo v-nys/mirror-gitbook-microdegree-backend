@@ -39,7 +39,7 @@ Een JWT er meestal als volgt uit.
 header.payload.signature
 ```
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Bron: <a href="https://supertokens.com/blog/what-is-jwt">https://supertokens.com/blog/what-is-jwt</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Bron: <a href="https://supertokens.com/blog/what-is-jwt">https://supertokens.com/blog/what-is-jwt</a></p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p><a href="https://jwt.io/#debugger-io">https://jwt.io/#debugger-io</a></p></figcaption></figure>
 
@@ -85,7 +85,7 @@ Een JWT kan bijvoorbeeld een claim met de naam `name` bevatten die beweert dat d
 
 Vervolgens de payload ook JSON Base64Url-gecodeerd om het tweede deel van de JWT te vormen.
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Encoded payload (claims)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption><p>Encoded payload (claims)</p></figcaption></figure>
 
 #### Signature
 
