@@ -1,6 +1,6 @@
 ---
 description: >-
-  Bij decodering extraheert en converteert het systeem of de gebruiker de
+  Bij decryptie extraheert en converteert het systeem of de gebruiker de
   versleutelde gegevens en transformeert het naar 'plain' tekst
 ---
 
