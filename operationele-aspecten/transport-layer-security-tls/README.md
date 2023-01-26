@@ -47,6 +47,14 @@ De website columbia.edu heeft geen TLS/SSL certificaat en is met andere woorden 
 In moderne webbrowsers zoals Google Chrome worden websites die geen gebruik maken van HTTPS anders gemarkeerd. Het hangslot in de URL-balk geeft aan dat de webpagina veilig is.
 {% endhint %}
 
+### Wat doet TLS?
+
+Het TLS-protocol bestaat uit drie hoofdcomponenten: versleuteling, authenticatie en integriteit.
+
+* **Encryptie**: verbergt de gegevens die worden overgedragen van derden.
+* **Authenticatie**: zorgt ervoor dat de partijen die informatie uitwisselen, zijn wie ze beweren te zijn.
+* **Integriteit**: controleert of de gegevens niet zijn aangepast of vervalst.
+
 #### Bronnen
 
 * [https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/)
