@@ -6,7 +6,7 @@ description: Cryptografie is een techniek die gebruikt wordt om informatie te be
 
 ## Cryptografie
 
-Cryptografie is de wetenschap van het versleutelen en ontcijferen van informatie om onbevoegde toegang te voorkomen. Bij cryptografie worden gegevens en persoonlijke informatie getransformeerd van simpele text naar een willekeurige reeks cijfers en letters die moeilijk te ontcijferen zijn. Alleen de juiste ontvanger kan het bericht ontcijferen en aldus toegang krijgen tot de informatie.
+Cryptografie is de wetenschap van het versleutelen en ontcijferen van informatie om onbevoegde toegang te voorkomen. Bij cryptografie worden gegevens en persoonlijke informatie getransformeerd van 'plain' text naar een willekeurige reeks cijfers en letters die moeilijk te ontcijferen zijn. Alleen de juiste ontvanger kan het bericht ontcijferen en aldus toegang krijgen tot de informatie.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><a href="https://binarycoders.dev/">https://binarycoders.dev/</a></p></figcaption></figure>
 
@@ -36,7 +36,7 @@ Asymmetrische cryptografie, ook wel publieke sleutelcryptografie genoemd, gebrui
 
 #### Hashing
 
-Hashing is een techniek waarmee informatie wordt omgezet in een unieke code waarmee de authenticatie van de data kan worden geverifieerd zonder dat de oorspronkelijke data wordt uitgelezen. Hashing is een eenrichtingsproces, zonder sleutel om de invoer in zijn oorspronkelijke formaat te ontgrendelen.
+Hashing is een techniek waarmee informatie wordt omgezet in een unieke code waarmee de authenticatie van de data kan worden geverifieerd zonder dat de oorspronkelijke data wordt uitgelezen. Hashing is een **eenrichtingsproces**, zonder sleutel om de invoer in zijn oorspronkelijke formaat te ontgrendelen.
 
 ## Conclusie
 
