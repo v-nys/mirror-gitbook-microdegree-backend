@@ -49,7 +49,7 @@ In moderne webbrowsers zoals Google Chrome worden websites die geen gebruik make
 
 ### Wat doet TLS?
 
-Het TLS-protocol bestaat uit drie hoofdcomponenten: versleuteling, authenticatie en integriteit.
+Het TLS-protocol bestaat uit drie hoofdcomponenten: encryptie, authenticatie en integriteit.
 
 * **Encryptie**: verbergt de gegevens die worden overgedragen van derden.
 * **Authenticatie**: zorgt ervoor dat de partijen die informatie uitwisselen, zijn wie ze beweren te zijn.
