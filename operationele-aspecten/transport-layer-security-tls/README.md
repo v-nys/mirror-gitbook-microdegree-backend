@@ -55,6 +55,8 @@ Het TLS-protocol bestaat uit drie hoofdcomponenten: encryptie, authenticatie en 
 * **Authenticatie**: zorgt ervoor dat de partijen die informatie uitwisselen, zijn wie ze beweren te zijn.
 * **Integriteit**: controleert of de gegevens niet zijn aangepast of vervalst.
 
+### Wat is een SSL/TLS certificaat?
+
 #### Bronnen
 
 * [https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/)
