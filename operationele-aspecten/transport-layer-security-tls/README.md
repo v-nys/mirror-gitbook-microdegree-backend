@@ -48,7 +48,7 @@ Elke website, vooral die waarvoor inloggegevens nodig zijn, moet `HTTPS` gebruik
 
 De[ website van AP](https://intranet.ap.be/dashboard) heeft een TLS/SSL certificaat dat de verbinding beveiligd. Je kan zien aan de URL dat het begint met `HTTPS`.
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (2).png>)
 
 De sample pagina van [columbia.edu](https://www.columbia.edu/)[ ](http://www.columbia.edu/\~fdc/sample.html)heeft geen TLS/SSL certificaat en is met andere woorden niet beveiligd. De gegevens die vanuit de website worden verstuurd zijn niet geëncrypteerd. M.a.w. kwaadwillige personen kunnen de informatie onderscheppen, lezen en zelfs veranderen. Om dit te voorkomen moet columbia.edu een TLS/SSL certificaat aanschaffen voor deze pagina dat de verbinding via `HTTPS` beveiligd.
 

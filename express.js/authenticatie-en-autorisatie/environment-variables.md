@@ -78,7 +78,7 @@ Een .`env`-bestand is een geweldige manier om al je omgevingsvariabelen op één
 
 Maak een `.gitignore`-bestand en voeg er `.env` aan toe, zoals weergegeven in de volgende afbeelding.
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Bron: <a href="https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786">https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption><p>Bron: <a href="https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786">https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786</a></p></figcaption></figure>
 
 {% hint style="info" %}
 Het `.gitignore`-bestand vertelt het version control systeem om de bestanden (of folders) die je opsomt te negeren.
