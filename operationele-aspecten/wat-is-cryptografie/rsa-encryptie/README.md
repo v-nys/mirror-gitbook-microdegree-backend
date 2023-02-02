@@ -8,7 +8,7 @@ description: >-
 
 RSA is een type van encryptie dat gebruikt wordt voor het coderen en decoderen van gegevens. Het staat voor de namen van zijn ontwikkelaars: Ron Rivest, Adi Shamir en Leonard Adleman. RSA werkt met een systeem van **openbare** en **privé sleutels**, waarbij de openbare sleutel gebruikt wordt om gegevens te coderen en de privé sleutel gebruikt wordt om de gegevens te decoderen.&#x20;
 
-RSA is een van de meest gebruikte encryptie methoden voor internetbeveiliging en wordt vaak gebruikt voor SSL certificaten, online betalingen, VPN-client en -server, SSH en gegevensbescherming.
+RSA is een van de meest gebruikte encryptie methoden voor internetbeveiliging en wordt vaak gebruikt voor SSL/TLS certificaten, online betalingen, VPN-client en -server, SSH en gegevensbescherming.
 
 ### Online RSA Generator Tool
 
