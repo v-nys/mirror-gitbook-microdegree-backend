@@ -16,6 +16,7 @@
 * [Requests](express.js/requests.md)
 * [Static files](express.js/static-files.md)
 * [MySQL Connector](express.js/mysql-connector.md)
+* [Cookies & Sessions](express.js/cookies.md)
 * [Authenticatie en Autorisatie](express.js/authenticatie-en-autorisatie/README.md)
   * [JSON Web Token (JWT)](express.js/authenticatie-en-autorisatie/json-web-token-jwt.md)
     * [jsonwebtokens NPM package](express.js/authenticatie-en-autorisatie/json-web-token-jwt/jsonwebtokens-npm-package.md)
