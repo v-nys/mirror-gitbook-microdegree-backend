@@ -44,7 +44,7 @@ HTTPS definieert het formaat van berichten waarmee webbrowsers en webbrowsers co
 
 Elke website, vooral die waarvoor inloggegevens nodig zijn, moet `HTTPS` gebruiken. Je kan zien of een website SSL/TLS heeft geïmplementeerd door naar de URL te kijken, aangezien het SSL/TLS-certificaat websites in staat stelt de URL van HTTP naar HTTPS om te zetten.
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (4).png>)
 
 De[ website van AP](https://intranet.ap.be/dashboard) heeft een TLS/SSL certificaat dat de verbinding beveiligd. Je kan zien aan de URL dat het begint met `HTTPS`.
 

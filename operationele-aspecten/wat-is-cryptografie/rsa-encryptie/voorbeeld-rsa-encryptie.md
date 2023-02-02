@@ -42,7 +42,7 @@ Om het bericht te versturen naar de ontvanger, moet je eerst de ciphertext gener
 
 Zodra je op **Decrypt** klikt, krijg je de originele tekst te zien.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Bronnen
 

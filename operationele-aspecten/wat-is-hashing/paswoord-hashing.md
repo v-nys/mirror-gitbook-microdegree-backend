@@ -31,6 +31,8 @@ Bovendien kunnen vergelijkingen tussen hashes worden uitgevoerd zonder dat de oo
 Dit is mogelijk omdat dezelfde hash altijd wordt bekomen voor dezelfde invoer!
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/CPT-Hashing-Password-Login.svg/1200px-CPT-Hashing-Password-Login.svg.png">https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/CPT-Hashing-Password-Login.svg/1200px-CPT-Hashing-Password-Login.svg.png</a></p></figcaption></figure>
+
 Het gebruik van hashing voor paswoorden is niet perfect, aangezien het nog steeds mogelijk is om hashes te hacken door middel van bijvoorbeeld [brute force-aanvallen](https://www.fortinet.com/resources/cyberglossary/brute-force-attack). Daarom wordt het aanbevolen om hash-functies te gebruiken die zeer moeilijk te hacken zijn en om extra beveiliging te implementeren, zoals [salt](paswoord-salting.md), om de beveiliging van paswoorden te verbeteren.
 
 #### Bronnen
