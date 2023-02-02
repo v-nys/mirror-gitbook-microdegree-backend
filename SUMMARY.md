@@ -35,6 +35,7 @@
 * [Transport Layer Security (TLS)](operationele-aspecten/transport-layer-security-tls/README.md)
   * [Let's Encrypt](operationele-aspecten/transport-layer-security-tls/lets-encrypt.md)
 * [Wat is Hashing](operationele-aspecten/wat-is-hashing/README.md)
+  * [Paswoord Hashing](operationele-aspecten/wat-is-hashing/paswoord-hashing.md)
   * [Paswoord Salting](operationele-aspecten/wat-is-hashing/paswoord-salting.md)
 * [Wat is een Shell?](operationele-aspecten/wat-is-een-shell.md)
 * [Secure Shell (SSH)](operationele-aspecten/secure-shell-ssh/README.md)

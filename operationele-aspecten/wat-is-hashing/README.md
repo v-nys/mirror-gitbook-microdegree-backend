@@ -45,20 +45,6 @@ Aangezien elk bestand op een computer uiteindelijk slechts gegevens zijn die in 
 * **SHA-2**: Deze cryptografische hashfunctie is ontwikkeld door de NSA en bouwt voort op het oudere SHA-1-algoritme. De SHA-2-familie van hash-algoritmen zijn de meest gebruikte hash-functies. `SHA-256` wordt vandaag de dag nog steeds gebruikt.
 * **BCrypt**:  Deze hash-functie is ontworpen om traag te zijn, met de bedoeling om het kraken van paswoorden tijdrovender te maken en cybercriminelen te ontmoedigen om snelle aanvallen uit te voeren.
 
-### Hashen van paswoorden
-
-Het gebruik van hashing voor paswoorden is zeer nuttig omdat het de originele paswoorden vervangt door hun hashed-versie in de databank, cache, session of cookie.
-
-Het is onmogelijk om van een hash terug te gaan naar het oorspronkelijke paswoord (**eenrichtingsproces**). Dit maakt het zeer moeilijker voor aanvallers om toegang te krijgen tot de originele gegevens, zelfs als de databank wordt gekraakt of een session/cookie wordt gestolen.
-
-Bovendien kunnen vergelijkingen tussen hashes worden uitgevoerd zonder dat de oorspronkelijke paswoorden ergens opgeslagen moeten worden. Dit betekent wanneer een gebruiker inlogt, wordt het getypte paswoord gehasht en vergeleken met de gehashte invoer uit de databasetabel. Als er een match is, voila! De gebruiker mag doorgaan.
-
-{% hint style="info" %}
-Dit is mogelijk omdat dezelfde hash altijd wordt bekomen voor dezelfde invoer!
-{% endhint %}
-
-Het gebruik van hashing voor paswoorden is niet perfect, aangezien het nog steeds mogelijk is om hashes te hacken door middel van bijvoorbeeld [brute force-aanvallen](https://www.fortinet.com/resources/cyberglossary/brute-force-attack). Daarom wordt het aanbevolen om hash-functies te gebruiken die zeer moeilijk te hacken zijn en om extra beveiliging te implementeren, zoals [salt](paswoord-salting.md), om de beveiliging van paswoorden te verbeteren.
-
 #### Bronnen
 
 * [https://cybernews.com/security/hashing-vs-encryption/](https://cybernews.com/security/hashing-vs-encryption/)
