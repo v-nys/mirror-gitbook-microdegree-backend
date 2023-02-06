@@ -1,9 +1,5 @@
 # Wat is lokaal versiebeheer?
 
-{% hint style="success" %}
-[Kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=07633b1b-ded1-479d-ba4a-ad8d00b8242e)
-{% endhint %}
-
 ## Inleiding
 
 Als je nog nooit met versiebeheer gewerkt hebt, kan het moeilijk zijn om je een goed beeld te vormen van hoe alle puzzelstukjes van Git in elkaar passen. Laat ons het dus eerst even hebben over wat Git precies is, voor we het leren gebruiken.
