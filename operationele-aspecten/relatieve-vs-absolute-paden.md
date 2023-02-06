@@ -1,8 +1,8 @@
 ---
 description: >-
-  We gebruiken absolute en relatieve paden regelmatig wanneer we website gaan
-  ontwikkelen. Ze worden gebruikt bij links of bij het opvragen van externe
-  gegevens
+  We gebruiken zowel absolute als relatieve paden regelmatig wanneer we een
+  website ontwikkelen. Ze worden gebruikt bij links of bij het opvragen van
+  externe gegevens.
 ---
 
 # Relatieve vs absolute paden
