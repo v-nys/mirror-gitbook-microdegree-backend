@@ -6,6 +6,7 @@
 
 ## Versiebeheer
 
+* [Wat is versiebeheer?](wat-is-versiebeheer.md)
 * [Wat is lokaal versiebeheer?](lokaal-werken/wat-is-lokaal-versiebeheer.md)
 * [Basisbegrippen](lokaal-werken/basisbegrippen.md)
 * [Branching workflow](lokaal-werken/branching-workflow.md)
