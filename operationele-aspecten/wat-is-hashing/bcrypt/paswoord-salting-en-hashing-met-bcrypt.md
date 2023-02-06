@@ -46,12 +46,25 @@ Creeër een folder genaamd "bcrypt-example" en open het in VScode en installeer 
 npm install bcrypt
 ```
 
-Er zal een `package.json` file worden aangemaakt met de volgende inhoud.
+Installeer vervolgens @types/node als dev dependency.
+
+```
+npm install @types/node --save-dev
+```
+
+Er zal een `package.json` file worden aangemaakt met de volgende inhoud.&#x20;
+
+{% hint style="info" %}
+Hou er mee rekening dat de versies voor jou kunnen afwijken van het voorbeeld hieronder!
+{% endhint %}
 
 ```json
 {
   "dependencies": {
     "bcrypt": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.19"
   }
 }
 ```
