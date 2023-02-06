@@ -2,7 +2,12 @@
 
 ## Databases
 
-* [Page 2](README.md)
+* [Wat is een databank?](semester-1-databanken-intro/wat-is-een-databank.md)
+* [Wat is een relationele databank?](semester-1-databanken-intro/wat-is-een-relationele-databank.md)
+* [Installatie MySQL via Docker](semester-1-databanken-intro/installatie-mysql-via-docker.md)
+* [Installatie MySQL Workbench](semester-1-databanken-intro/installatie-software.md)
+* [CREATE DATABASE](semester-1-databanken-intro/create-database.md)
+* [DROP DATABASE](semester-1-databanken-intro/drop-database.md)
 
 ## Versiebeheer
 
