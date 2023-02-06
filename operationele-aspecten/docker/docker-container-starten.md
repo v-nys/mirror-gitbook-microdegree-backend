@@ -4,9 +4,9 @@
 
 Om een Docker-container uit te voeren, heb je een Docker-image nodig. Dit is het sjabloon dat de broncode, bibliotheken, afhankelijkheden, tools en andere bestanden bevat die nodig zijn om een container te laten werken. Je kan een Docker-image maken met behulp van een [Dockerfile](https://docs.docker.com/engine/reference/builder/) en de [docker build commando](https://docs.docker.com/get-started/02\_our\_app/), of je kan een image uit een register halen, zoals [Docker Hub](https://hub.docker.com/).
 
-In deze zelfstudie zullen we gebruik maken van de image "[denising/hallo-student](https://hub.docker.com/repository/docker/denising/hallo-student/)" dat terug te vinden is op Docker Hub.
+In deze zelfstudie zal je gebruik maken van de image "[denising/hallo-student](https://hub.docker.com/repository/docker/denising/hallo-student/)" dat terug te vinden is op Docker Hub.
 
-Je kan de opdracht `docker run` gebruiken om een container uit te voeren. De opdracht `docker run` heeft de volgende syntaxis:
+Je kan de commando `docker run` gebruiken om een container uit te voeren. De commando [`docker run`](https://docs.docker.com/engine/reference/run/) heeft de volgende syntaxis:
 
 ```docker
 ## Syntaxis
@@ -19,7 +19,7 @@ Het commando `docker images` geeft een lijst weer met de lokaal geïnstalleerde 
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-In dit voorbeeld zullen we de image denising/hallo-student binnen halen van Docker Hub met behulp van het commando `docker pull`. Kopieer de code hieronder en plak het in je terminal:
+In dit voorbeeld zal je de image denising/hallo-student binnenhalen (van Docker Hub) met behulp van het commando `docker pull`. Kopieer de code hieronder en plak het in je terminal:
 
 ```docker
 docker pull denising/hallo-student:latest
@@ -51,7 +51,7 @@ docker run -p 3000:3000 denising/hallo-student
 
 Als je `docker run` uitvoert vooraleer je een image lokaal hebt binnengehaald met `docker pull`, zal docker automatisch gaan kijken op [Docker Hub](https://hub.docker.com/) indien de image bestaat en deze downloaden.
 
-Voer onderstaande code uit in je terminal:
+Start een nieuwe container op voor de image [docker/getting-started](https://hub.docker.com/r/docker/getting-started). Kopieer de onderstaande code uit in je terminal:
 
 ```
 docker run -d -p 80:80 docker/getting-started
@@ -59,21 +59,23 @@ docker run -d -p 80:80 docker/getting-started
 
 * `-d` is de optie voor detached mode, waarbij de container op de achtergrond wordt uitgevoerd.
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ### Stap 3: verwijderen van een container
 
 Het commando `docker ps -a` geeft een lijst weer van al je containers.
 
 <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-Indien we een container willen verwijderen kunnen we het commando `docker rm CONTAINER_NAME` of `docker rm CONTAINER_ID` gebruiken.
+Indien je een container wilt verwijderen kan je het commando `docker rm CONTAINER_NAME` of `docker rm CONTAINER_ID` gebruiken.
 
-Laten we de container verwijderen dat de image van denising/hallo-student gebruikt. Je kan de naam van je container terug vinden in de laatste kolom.
+Verwijder de container dat de image van denising/hallo-student gebruikt. Je kan de naam van je container terug vinden in de laatste kolom.
 
 ```docker
 docker rm admiring_williamson
 ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Bronnen
 
