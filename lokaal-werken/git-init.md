@@ -1,8 +1,4 @@
-# git init
-
-{% hint style="success" %}
-[Kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=933d67bb-6e8d-4269-81bb-ad8d00dc5bd9)
-{% endhint %}
+# `git init`
 
 ## Wat doet `git init`?
 
