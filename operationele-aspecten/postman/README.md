@@ -4,7 +4,7 @@ description: >-
   API's.
 ---
 
-# Postman
+# postman
 
 ## Wat is Postman <a href="#wat-is-postman" id="wat-is-postman"></a>
 
@@ -43,7 +43,7 @@ https://swapi.dev/api/
 
 **Stel je HTTP-verzoek in op GET**. Voer in het veld URL van de request de link in. Klik vervolgens op "**Send**". Je zal vanonder, in de body, een antwoord krijgen en een statuscode van **200 OK**. Er zouden 5 resultaten in de body moeten staan die aangeven dat je request succesvol is uitgevoerd.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Opmerking** :eyes:: het kan voorkomen dat de request in Postman niet succesvol is. Dit kan te wijten zijn aan een ongeldige request URL.
@@ -85,7 +85,7 @@ Parameters worden gemaakt door het gebruik van dubbele accolades: `{{sample}}`. 
 
 **Stap 4)** Ga terug naar je GET request en klik nogmaals op "**Send**". Je zou nu wel een resultaat moeten terug krijgen!
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Opmerking** :eyes:: Zorg er altijd voor dat je parameters een bron hebben zoals een omgevingsvariabele om fouten te voorkomen!
@@ -115,4 +115,4 @@ Laten we beginnen met het maken van een collectie:
 
 **Stap 5)** Maak een nieuwe request aan voor `{{url}}/planets` en herhaal stap 3 , zodat de collectie nu twee verzoeken bevat.
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>

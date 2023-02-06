@@ -73,7 +73,7 @@ Hou er mee rekening dat de versies voor jou kunnen afwijken van het voorbeeld hi
 
 Maak een nieuwe file aan genaamd "bcrypt-example.ts" in je root folder en importeer bcrypt.
 
-![](<../../../.gitbook/assets/image (2) (6).png>)
+![](<../../../.gitbook/assets/image (2).png>)
 
 {% code title="bcrypt-example.ts" %}
 ```typescript

@@ -5,7 +5,7 @@ description: >-
   hashing-algoritme, zoals SHA-256 of SHA-512.
 ---
 
-# Wat is Hashing
+# Wat is hashing
 
 ## Wat is hashing?
 
@@ -13,7 +13,7 @@ Hashing is een proces waarbij gegevens worden omgezet in unieke [ciphertext](../
 
 Hashing is vergelijkbaar met [encryptie](../wat-is-cryptografie/encryptie.md) in die zin dat het gegevens versleuteld tot een onleesbare reeks tekens en letters ([ciphertext](../wat-is-cryptografie/ciphertext.md)).
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p><a href="https://www.appsealing.com/hashing-algorithms/">https://www.appsealing.com/hashing-algorithms/</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p><a href="https://www.appsealing.com/hashing-algorithms/">https://www.appsealing.com/hashing-algorithms/</a></p></figcaption></figure>
 
 {% hint style="info" %}
 Hashing verschilt echter aanzienlijk van encryptie doordat het een **eenrichtingsproces** is. Het kan dus niet worden gedecodeerd met behulp van een sleutel.
@@ -39,7 +39,7 @@ Aangezien elk bestand op een computer uiteindelijk slechts gegevens zijn die in 
    1. &#x20;Het is belangrijk op te merken dat dezelfde hash altijd wordt bekomen voor dezelfde invoer. Dit betekent dat als een gebruiker hetzelfde paswoord invoert, altijd dezelfde hash wordt berekend.
 3. **Eenrichtingsproces**: Eenmaal getransformeerd door het algoritme, is het onmogelijk om de gegevens terug te zetten naar de oorspronkelijke staat.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>source: </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>source: </p></figcaption></figure>
 
 #### De voornaamste hash-algoritmes:
 

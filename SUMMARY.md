@@ -54,7 +54,9 @@
 
 ## Operationele aspecten
 
-* [docker](operationele-aspecten/docker.md)
+* [docker](operationele-aspecten/docker/README.md)
+  * [installatie docker](operationele-aspecten/docker/installatie-docker.md)
+  * [docker container starten](operationele-aspecten/docker/docker-container-starten.md)
 * [Wat is cryptografie?](operationele-aspecten/wat-is-cryptografie/README.md)
   * [encryptie](operationele-aspecten/wat-is-cryptografie/encryptie.md)
   * [decryptie](operationele-aspecten/wat-is-cryptografie/decryptie.md)
