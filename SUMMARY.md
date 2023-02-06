@@ -57,6 +57,8 @@
 * [Wat is Hashing](operationele-aspecten/wat-is-hashing/README.md)
   * [Paswoord Hashing](operationele-aspecten/wat-is-hashing/paswoord-hashing.md)
   * [Paswoord Salting](operationele-aspecten/wat-is-hashing/paswoord-salting.md)
+  * [bcrypt](operationele-aspecten/wat-is-hashing/bcrypt/README.md)
+    * [Paswoord salting en hashing met bcrypt](operationele-aspecten/wat-is-hashing/bcrypt/paswoord-salting-en-hashing-met-bcrypt.md)
 * [Wat is een Shell?](operationele-aspecten/wat-is-een-shell.md)
 * [Secure Shell (SSH)](operationele-aspecten/secure-shell-ssh/README.md)
   * [een SSH-sleutelpaar genereren](operationele-aspecten/secure-shell-ssh/een-ssh-sleutelpaar-genereren.md)
