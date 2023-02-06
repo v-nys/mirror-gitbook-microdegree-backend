@@ -15,7 +15,7 @@ Er zijn een paar plaatsen waar je dit commando niet mag uitvoeren:
 
 ## Demonstratie
 
-Voor een demonstratie van dit commando, zie de kennisclip bovenaan de pagina.
+Voor een demonstratie van dit commando, zie de bijbehorende kennisclip op DigitAP.
 
 ## Gevolgen
 
