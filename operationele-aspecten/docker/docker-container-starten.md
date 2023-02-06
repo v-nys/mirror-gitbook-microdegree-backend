@@ -65,7 +65,7 @@ Het commando `docker ps -a` geeft een lijst weer van al je containers.
 
 <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-Indien we een container willen verwijderen kunnen we het commando `docker rm CONTIAINER_NAME` of `docker rm CONTAINER_ID` gebruiken.
+Indien we een container willen verwijderen kunnen we het commando `docker rm CONTAINER_NAME` of `docker rm CONTAINER_ID` gebruiken.
 
 Laten we de container verwijderen dat de image van denising/hallo-student gebruikt. Je kan de naam van je container terug vinden in de laatste kolom.
 
