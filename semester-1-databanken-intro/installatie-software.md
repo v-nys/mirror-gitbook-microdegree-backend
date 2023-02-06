@@ -2,7 +2,7 @@
 description: Installatiehandleiding
 ---
 
-# Installatie van alle software
+# Installatie MySQL Workbench
 
 Download: [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/)
 
@@ -34,5 +34,4 @@ Je klikt na het invullen van de juiste gegevens op de knop "**Store in Vault**" 
 
 Je moet volgende boodschap krijgen.
 
-![](../.gitbook/assets/image.png)
-
+![](<../.gitbook/assets/image (2).png>)
