@@ -1,9 +1,5 @@
 # Basisbegrippen
 
-{% hint style="success" %}
-[Kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=43ced464-39c8-406a-877f-ad98009a63a6)
-{% endhint %}
-
 ## Wat bedoelen we met "fasen van data"?
 
 Om Git goed te gebruiken, moet je goed beseffen op welke manier de tijdlijn voor ons project wordt opgebouwd. We noteren namelijk niet elke wijziging meteen op de tijdlijn - het zou bijvoorbeeld heel onoverzichtelijk zijn een nieuwe wijziging te noteren elke keer we een bestand opslaan. In plaats daarvan maken we voor elke gebeurtenis op de tijdlijn een soort "kladversie in potlood" en pas wanneer we tevreden zijn, zetten we de gebeurtenis "in pen" in op de tijdlijn. Je kan de tijdlijn dus zien als een gedetailleerd **logboek** van alle belangrijke aanpassingen die ooit gebeurd zijn in je project. We bekijken dit met een voorbeeld. We hebben code voor een website en we willen daaraan een "reset password" knop toevoegen. Welke stappen doorlopen we daarvoor? Onderstaande figuur toont ze alle vier, daarna volgt een uitleg van wat elke stap precies voorstelt.
