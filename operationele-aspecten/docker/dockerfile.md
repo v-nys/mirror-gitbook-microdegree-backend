@@ -16,11 +16,11 @@ De Dockerfile is essentieel voor het automatiseren van het bouwproces van Docker
 
 ### Voorbeeld van een Dockerfile
 
-Stel dat we een eenvoudige Node.js-webapplicatie willen bouwen die "Hello, world!" op de browser toont.&#x20;
+Stel dat we een eenvoudige Node.js-webapplicatie willen bouwen die "**Hello World**" in de console logt.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Simpele node applicatie</p></figcaption></figure>
 
-Hier is een voorbeeld van hoe we een Dockerfile kunnen maken voor dit project:
+#### Hier is een voorbeeld van hoe we een Dockerfile kunnen maken voor dit project:
 
 ```bash
 FROM node:alpine
@@ -47,7 +47,7 @@ CMD ["npm", "start"]
 4. `RUN npm install`:  Deze regel installeert de nodige npm-packages
 5. `CMD ["npm", "start"]`: Uiteindelijk specificeren we dat het commando `npm start` uitgevoerd moet worden wanneer de container opgestart wordt.
 
-Nadat we het Dockerfile gemaakt hebben, kunnen we een Docker-image bouwen voor onze Node.js-applicatie door het volgende commando uit te voeren:
+Nadat je de Dockerfile gemaakt hebben, kan je een Docker-image bouwen voor je Node.js-applicatie door het volgende commando uit te voeren (navigeer in je terminal naar de map waarin je Dockerfile leeft):
 
 ```bash
 docker build -t my-node-app .
@@ -56,10 +56,12 @@ docker build -t my-node-app .
 Dit zal een Docker-image bouwen met de naam 'my-node-app' op basis van de informatie in het Dockerfile. Nadat de image is gebouwd, kunnen we deze opstarten door het volgende commando uit te voeren:
 
 ```bash
-docker run -p 3000:3000 my-node-app
+docker run my-node-app
 ```
 
-Dit zal een nieuwe container opstarten vanaf onze Docker-image en onze Node.js-applicatie uitvoeren. De applicatie zal beschikbaar zijn op poort 3000, en we kunnen deze bezoeken door onze browser naar `http://localhost:3000` te richten.
+Dit zal een nieuwe container opstarten vanaf onze Docker-image en onze Node.js-applicatie uitvoeren.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Conclusie
 
