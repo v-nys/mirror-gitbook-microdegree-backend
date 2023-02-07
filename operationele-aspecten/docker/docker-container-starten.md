@@ -17,7 +17,7 @@ docker run [options] IMAGE [COMMAND] [ARG...]
 
 Het commando `docker images` geeft een lijst weer met de lokaal geïnstalleerde docker images.
 
-<figure><img src="../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 In dit voorbeeld zal je de image denising/hallo-student binnenhalen (van Docker Hub) met behulp van het commando `docker pull`. Kopieer de code hieronder en plak het in je terminal:
 
@@ -75,7 +75,7 @@ docker run -d -p 80:80 docker/getting-started
 * `-d` is de optie voor detached mode, waarbij de container op de achtergrond wordt uitgevoerd.
 * `-p 80:80` is de optie voor het doorgeven van een poort, in dit geval wordt poort 80 op de host doorgestuurd naar poort 80 in de container.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 docker kan de image niet lokaal vinden, dus haalt het in de achtergrond de image op van Docker Hub.

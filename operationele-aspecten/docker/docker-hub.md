@@ -1,3 +1,9 @@
+---
+description: >-
+  Docker Hub is een centrale plek waar developers Docker-images kunnen opslaan,
+  delen, en ontdekken.
+---
+
 # docker hub
 
 ## Docker Hub&#x20;
