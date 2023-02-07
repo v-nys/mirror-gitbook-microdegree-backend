@@ -81,7 +81,7 @@ docker run -d -p 80:80 docker/getting-started
 docker kan de image niet lokaal vinden, dus haalt het in de achtergrond de image op van Docker Hub.
 {% endhint %}
 
-Je kan tenslotte navigeren naar [http://localhost:80](http://localhost) en de website raadplegen in je browser. Let erop dat je container op de achtergrond aanstaat!
+Je kan tenslotte navigeren naar [http://localhost:80](http://localhost) en de website raadplegen in je browser. Let erop dat je container in de achtergrond aanstaat!
 
 ### **Detached (-d)**
 
