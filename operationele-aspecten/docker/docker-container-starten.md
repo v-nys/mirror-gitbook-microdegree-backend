@@ -75,7 +75,7 @@ docker run -d -p 80:80 docker/getting-started
 * `-d` is de optie voor detached mode, waarbij de container op de achtergrond wordt uitgevoerd.
 * `-p 80:80` is de optie voor het doorgeven van een poort, in dit geval wordt poort 80 op de host doorgestuurd naar poort 80 in de container.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 docker kan de image niet lokaal vinden, dus haalt het in de achtergrond de image op van Docker Hub.
