@@ -14,7 +14,7 @@ De Thunder Client extensie maakt het gemakkelijk om API-aanvragen te maken en te
 
 Om de VScode extensie thunder client te gebruiken, moet deze eerst worden geïnstalleerd in VScode. Dit kan door naar de VScode Marketplace te gaan en te zoeken naar "Thunder Client" of door direct naar de extensie-pagina te gaan via deze link: [https://marketplace.visualstudio.com/items?itemName=Thunder-Client](https://marketplace.visualstudio.com/items?itemName=Thunder-Client).
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Na de installatie van de extensie, kan deze worden geopend door naar de commando-palet te gaan (`CTRL + SHIFT + P`) en "Thunder Client: Open" te selecteren. Dit opent het Thunder Client-venster in VScode.
 
@@ -56,7 +56,7 @@ Je kan omgevingsvariabelen toevoegen door op het tabblad "**Env**" te klikken en
 
 Afhankelijk van het type verzoek biedt Thunder Client een lijst met HTTP-VERBS voor verzoeken zoals `GET`, `POST`, `PUT`, `DELETE` en `PATCH`. Je kan het type verzoek aanpassen in de linkerbovenhoek van het aanvraagvenster.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Query Parameters
 
@@ -64,7 +64,7 @@ Er is ook ondersteuning voor query parameters, headers, autorisatie, body en tes
 
 **Query parameters** stellen je in staat informatie mee te geven via de url.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### HTTP-headers
 
