@@ -6,7 +6,11 @@ description: >-
 
 # dockerfile
 
-## Wat is een Dockerfile?
+##
+
+##
+
+## Stap 1: Basis-image kiezenStap 1: Basis-image kiezenWat is een Dockerfile?
 
 Een Dockerfile is een scriptbestand dat de stappen bevat die nodig zijn om een Docker image te bouwen. Het is een tekstbestand met specifieke opdrachten die door Docker worden uitgevoerd om de Docker image op te bouwen en te configureren.
 
@@ -22,7 +26,8 @@ Stel dat we een eenvoudige Node.js-webapplicatie willen bouwen die "**Hello Worl
 
 #### Hier is een voorbeeld van hoe we een Dockerfile kunnen maken voor dit project:
 
-```bash
+```docker
+# Stap 1: Basis-image kiezen
 FROM node:alpine
 
 # Stap 2: Werkdirectory aanmaken en naar deze werkdirectory gaan
