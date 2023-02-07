@@ -1,10 +1,5 @@
 # gitignore
 
-{% hint style="success" %}
-* [Kennisclip basis](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ed0a016d-8b01-44c6-a9e8-ad9e00e46e55)
-* [Kennisclip niet-letterlijke patronen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a926940c-dbf6-4697-9211-ad9f0087379b)
-{% endhint %}
-
 Je wil niet altijd alle data die je produceert bijhouden in versiebeheer. Dat hoeft ook niet. De file `.gitignore` staat je toe bepaalde bestanden uit te sluiten.
 
 Enkele voorbeelden van bestanden die je niet wil bijhouden:
