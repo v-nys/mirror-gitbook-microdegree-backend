@@ -4,9 +4,9 @@ description: >-
   en het besturingssysteem van een computer.
 ---
 
-# Wat is een Shell?
+# wat is een Shell?
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>MacOS Terminal / zsh shell</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption><p>MacOS Terminal / zsh shell</p></figcaption></figure>
 
 Een shell is een programma dat fungeert als een interface tussen de gebruiker en het besturingssysteem van een computer. Het biedt gebruikers de mogelijkheid om opdrachten te geven aan het besturingssysteem via een command line interface (CLI). Dit in tegenstelling met een grafische gebruikersinterface (GUI), waarbij gebruikers klikken op iconen en menu's om opdrachten te geven.
 

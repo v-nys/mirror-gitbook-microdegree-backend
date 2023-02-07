@@ -95,7 +95,7 @@ Als we hier op vertrouwen en de waarde van de cookie niet controleren, dan kan e
 
 Om dit probleem op te lossen, gebruiken we sessions. Een session is een object dat de server bijhoudt voor elke client. De server kan deze objecten gebruiken om informatie over de client bij te houden. Om sessions te kunnen gebruiken wordt er een unieke id gegenereerd voor elke client. Deze id wordt opgeslagen in een cookie. De server kan dan de id van de cookie gebruiken om de juiste session op te halen.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p><a href="https://dev.to/dennis1001/understanding-cookies-and-sessions-in-php-35k5">https://dev.to/dennis1001/understanding-cookies-and-sessions-in-php-35k5</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p><a href="https://dev.to/dennis1001/understanding-cookies-and-sessions-in-php-35k5">https://dev.to/dennis1001/understanding-cookies-and-sessions-in-php-35k5</a></p></figcaption></figure>
 
 Je kan dit nakijken in je browser door de cookies te bekijken, je zal een cookie zien een waarde die op een lange string lijkt. Deze string is de id van de session.
 

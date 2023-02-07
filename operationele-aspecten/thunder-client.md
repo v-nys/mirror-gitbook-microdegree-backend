@@ -4,7 +4,7 @@ description: >-
   direct in de editor te testen.
 ---
 
-# Thunder Client
+# thunder client
 
 ## Wat is Thunder Client?
 
@@ -50,7 +50,7 @@ Om met collecties te werken, klik je op het tabblad "**Collections**" en vervolg
 
 Je kan omgevingsvariabelen toevoegen door op het tabblad "**Env**" te klikken en vervolgens op het pictogram te klikken waarnaar de pijl wijst in de onderstaande afbeelding. Dit toont een vervolgkeuzelijst om de `env`-variabelen voor verzoeken in te stellen. Je kan ook bestaande variabelen importeren.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Type aanvragen
 

@@ -10,11 +10,11 @@ Om een [`RSA`](../wat-is-cryptografie/rsa-encryptie/)-sleutelpaar op je lokale c
 ssh-keygen
 ```
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 Met deze prompt kan je de locatie kiezen om je `RSA` private key op te slaan. Druk op ENTER om dit als standaard te behouden, waardoor ze worden opgeslagen in de verborgen map `.ssh` in de thuismap van je gebruiker. Als je de standaardlocatie behoudt laat, kan je SSH-client de sleutels automatisch vinden.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 Bij de volgende prompt kan je een wachtwoord van willekeurige lengte invoeren om je private key te beveiligen. Standaard moet je elke keer dat je de private key gebruikt je wachtwoord invoeren als extra beveiligingsmaatregel. Voel je vrij om op ENTER te drukken om dit leeg te laten als je geen wachtwoord wilt. Houd er echter rekening mee dat iedereen die de controle over je private key krijgt, hierdoor kan inloggen op je servers.
 
@@ -59,7 +59,7 @@ Om het wachtwoord te wijzigen of te verwijderen, typ je eenvoudig:
 ssh-keygen -p
 ```
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Je public SSH-key handmatig naar een server kopiëren
 
