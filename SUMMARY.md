@@ -60,7 +60,7 @@
   * [docker container starten](operationele-aspecten/docker/docker-container-starten.md)
   * [dockerfile](operationele-aspecten/docker/dockerfile.md)
   * [docker compose](operationele-aspecten/docker/docker-compose/README.md)
-    * [installation](operationele-aspecten/docker/docker-compose/installation.md)
+    * [installatie](operationele-aspecten/docker/docker-compose/installatie.md)
     * [docker-compose.yml](operationele-aspecten/docker/docker-compose/docker-compose.yml.md)
 * [Wat is cryptografie?](operationele-aspecten/wat-is-cryptografie/README.md)
   * [encryptie](operationele-aspecten/wat-is-cryptografie/encryptie.md)
