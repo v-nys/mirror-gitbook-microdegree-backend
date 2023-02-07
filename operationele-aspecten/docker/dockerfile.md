@@ -6,11 +6,7 @@ description: >-
 
 # dockerfile
 
-##
-
-##
-
-## Stap 1: Basis-image kiezenStap 1: Basis-image kiezenWat is een Dockerfile?
+## Wat is een Dockerfile?
 
 Een Dockerfile is een scriptbestand dat de stappen bevat die nodig zijn om een Docker image te bouwen. Het is een tekstbestand met specifieke opdrachten die door Docker worden uitgevoerd om de Docker image op te bouwen en te configureren.
 
@@ -64,10 +60,8 @@ Dit zal een Docker-image bouwen met de naam 'my-node-app' op basis van de inform
 docker run my-node-app
 ```
 
-Dit zal een nieuwe container opstarten vanaf onze Docker-image en onze Node.js-applicatie uitvoeren.
+Dit zal een nieuwe container opstarten en de code van onze Node.js-applicatie uitvoeren.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-### Conclusie
-
-Dus in het algemeen, bouwt de Dockerfile een Docker-container die de Node.js-applicatie bevat en deze uitvoert wanneer de container opgestart wordt.
+Samengevat, bouwt de Dockerfile een Docker-container die de Node.js-applicatie bevat en deze uitvoert wanneer de container opgestart wordt.

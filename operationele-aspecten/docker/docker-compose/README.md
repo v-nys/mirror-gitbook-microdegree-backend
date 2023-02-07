@@ -8,13 +8,13 @@ description: >-
 
 ## Wat is Docker Compose?
 
-Docker Compose is een tool voor het definiëren en uitvoeren van multi-container Docker-applicaties. Het maakt het mogelijk om een complete stack van services te definiëren in een enkel bestand, genaamd `docker-compose.yml`.
+Docker Compose is een tool voor het definiëren en uitvoeren van multi-container Docker-applicaties. Het maakt het mogelijk om een complete **stack** van services te definiëren in een enkel bestand, genaamd `docker-compose.yml`.
 
 Een applicatie kan bestaan uit meerdere containers waarop verschillende services worden uitgevoerd. Het kan vervelend zijn om containers handmatig te starten en te beheren, dus heeft Docker een handige tool gemaakt die het proces versnelt: Docker Compose.
 
 <figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
-Met Docker Compose kun je bijvoorbeeld een webapplicatie definiëren die bestaat uit een webcontainer en een databasecontainer. Met een enkele opdracht kun je deze containers tegelijk starten, communiceren en beheren. Hierdoor is het eenvoudiger om complexe applicaties op te zetten en uit te voeren, zonder de noodzaak om veel commandoregels of scripts te schrijven.
+Met Docker Compose kan je bijvoorbeeld een webapplicatie definiëren die bestaat uit een webcontainer en een databasecontainer. Met een enkele opdracht kun je deze containers tegelijk starten, communiceren en beheren. Hierdoor is het eenvoudiger om complexe applicaties op te zetten en uit te voeren, zonder de noodzaak om veel commandoregels of scripts te schrijven.
 
 Docker Compose is een uitstekende oplossing voor ontwikkelaars die een snelle manier willen hebben om hun applicaties te testen en uit te voeren in een productie-achtige omgeving, zonder dat ze zich zorgen hoeven te maken over de configuratie van de infrastructuur.
 

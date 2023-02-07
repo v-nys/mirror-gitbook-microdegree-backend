@@ -6,7 +6,7 @@ description: >-
 
 # docker hub
 
-## Docker Hub&#x20;
+## Docker Hub
 
 Docker Hub is een centrale plek waar developers Docker-images kunnen opslaan, delen, en ontdekken. Het is een cloud-gebaseerde service die ontworpen is om het proces van het ontwikkelen, testen en distributie van Docker-applicaties te vereenvoudigen. Met Docker Hub kun je je eigen Docker-images hosten en publiceren, of je kunt bestaande Docker-images van andere ontwikkelaars gebruiken voor jouw eigen projecten.
 
@@ -18,7 +18,7 @@ Je kan images publiceren, delen, en ontdekken op Docker Hub zodra je [een accoun
 
 ### Publiceren van een docker image
 
-Je kan een image op Docker Hub publiceren met de volgende opdrachten:
+Je kan een image op Docker Hub publiceren met behulp van de volgende opdrachten:
 
 ```shell
 docker login
@@ -29,9 +29,9 @@ docker push USERNAME/CONTAINER_NAME
 Bekijk de [officiële docker documentatie ](https://docs.docker.com/engine/reference/commandline/push/)voor meer informatie over het commando `docker push`.
 {% endhint %}
 
-### Downloaden van een  docker image
+### Downloaden van een docker image
 
-Je kan een image op Docker Hub downloaden met de volgende opdrachten:
+Je kan een image op Docker Hub downloaden met behulp van de volgende opdracht:
 
 ```sh
 docker pull IMAGE_NAME

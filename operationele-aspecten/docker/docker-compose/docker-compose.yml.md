@@ -105,6 +105,3 @@ als we geen Dockerfile hebben en een service willen uitvoeren met een vooraf geb
 
 De clausule stelt ons in staat om een [omgevingsvariabele](../../../express.js/authenticatie-en-autorisatie/environment-variables.md) in de container in te stellen. Dit is hetzelfde als het argument `-e` in Docker bij het uitvoeren van een container.
 
-{% hint style="info" %}
-Voor meer informatie omtrent de docker compose file, bekijk d[e officiële documentatie](https://docs.docker.com/compose/compose-file/)!
-{% endhint %}
