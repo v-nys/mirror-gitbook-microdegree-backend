@@ -77,6 +77,10 @@ dit geeft aan dat we versie 3 van Docker Compose gebruiken en dat Docker de juis
 
 dit gedeelte definieert alle verschillende containers die we zullen maken. In ons voorbeeld hebben we twee services, **web** en **database**.
 
+#### volumes
+
+Een volume in Docker Compose is een mechanisme waarmee bestanden en data uit een Docker container op een permanente manier kunnen worden opgeslagen. Hierdoor blijven deze data behouden, zelfs als de container wordt verwijderd of opnieuw gebouwd. Volumes kunnen worden gedefinieerd in de `docker-compose.yml`-bestand en koppelen aan een hostmap of een externe opslagbron. Dit maakt het mogelijk om data en configuratiebestanden te delen tussen verschillende containers of tussen containers en het host-besturingssysteem.
+
 #### app en database
 
 dit zijn de namen van onze Node-app en mySQL databank. Docker Compose maakt containers met de door ons opgegeven naam.
@@ -88,10 +92,6 @@ dit specificeert de locatie van onze Dockerfile, en . vertegenwoordigt de map wa
 #### ports
 
 Dit wordt gebruikt om de poorten van de container toe te wijzen aan de hostmachine.
-
-#### volumes
-
-Een volume in Docker Compose is een mechanisme waarmee bestanden en data uit een Docker container op een permanente manier kunnen worden opgeslagen. Hierdoor blijven deze data behouden, zelfs als de container wordt verwijderd of opnieuw gebouwd. Volumes kunnen worden gedefinieerd in de `docker-compose.yml`-bestand en koppelen aan een hostmap of een externe opslagbron. Dit maakt het mogelijk om data en configuratiebestanden te delen tussen verschillende containers of tussen containers en het host-besturingssysteem.
 
 #### links
 
@@ -105,3 +105,6 @@ als we geen Dockerfile hebben en een service willen uitvoeren met een vooraf geb
 
 De clausule stelt ons in staat om een [omgevingsvariabele](../../../express.js/authenticatie-en-autorisatie/environment-variables.md) in de container in te stellen. Dit is hetzelfde als het argument `-e` in Docker bij het uitvoeren van een container.
 
+{% hint style="info" %}
+Voor meer informatie omtrent de docker compose file, bekijk d[e officiële documentatie](https://docs.docker.com/compose/compose-file/)!
+{% endhint %}
