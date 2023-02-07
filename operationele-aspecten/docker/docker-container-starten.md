@@ -6,13 +6,6 @@ Om een Docker-container uit te voeren, heb je een Docker-image nodig. Dit is het
 
 In deze zelfstudie zal je gebruik maken van de image "[denising/hallo-student](https://hub.docker.com/repository/docker/denising/hallo-student/)" dat terug te vinden is op Docker Hub.
 
-Je kan de commando `docker run` gebruiken om een container uit te voeren. De commando [`docker run`](https://docs.docker.com/engine/reference/run/) heeft de volgende syntaxis:
-
-```sh
-## Syntaxis
-docker run [options] IMAGE [COMMAND] [ARG...]
-```
-
 ### Stap 1: download een image van Docker Hub
 
 Het commando `docker images` geeft een lijst weer met de lokaal geïnstalleerde docker images.

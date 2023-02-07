@@ -19,3 +19,4 @@ Wanneer we echter gaan verwijzen naar pagina's van dezelfde website, hoeven we h
 * Starten met “../”: ga 1 niveau omhoog vanaf de huidige locatie en start daar
 * Starten met “../../”: ga 2 niveaus omhoog en start daar
 * Om niveaus te dalen, schrijf je de naam van het niveau gevolgd door een schuine streep
+* Soms zie je ook ”.”. Dat duidt dan op het huidige niveau. Zo kan je in `mijnbestand` verwijzen naar `anderbestand` als "anderbestand" of als "./anderbestand".

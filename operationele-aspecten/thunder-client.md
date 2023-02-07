@@ -64,7 +64,7 @@ Er is ook ondersteuning voor query parameters, headers, autorisatie, body en tes
 
 **Query parameters** stellen je in staat informatie mee te geven via de url.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### HTTP-headers
 

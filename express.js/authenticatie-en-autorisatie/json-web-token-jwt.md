@@ -39,9 +39,9 @@ Een JWT er meestal als volgt uit.
 header.payload.signature
 ```
 
-<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Bron: <a href="https://supertokens.com/blog/what-is-jwt">https://supertokens.com/blog/what-is-jwt</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption><p>Bron: <a href="https://supertokens.com/blog/what-is-jwt">https://supertokens.com/blog/what-is-jwt</a></p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p><a href="https://jwt.io/#debugger-io">https://jwt.io/#debugger-io</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p><a href="https://jwt.io/#debugger-io">https://jwt.io/#debugger-io</a></p></figcaption></figure>
 
 Laten we de verschillende onderdelen opsplitsen.
 
