@@ -1,9 +1,5 @@
 # Remotes
 
-{% hint style="success" %}
-[Kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=35b062c2-e33e-40a5-a027-adaf00b8079f)
-{% endhint %}
-
 ## Basisidee
 
 Zoals eerder al eens vermeld, wordt Git niet alleen gebruikt voor lokaal versiebeheer. Het wordt ook **gedistribueerd** gebruikt, dat wil zeggen over meerdere machines heen. De machines waarmee jij samenwerkt hebben ook een repository voor hetzelfde project. Als onze eigen repository geconfigureerd is om te communiceren met deze andere repositories, noemen we de andere repositories **remotes**.
