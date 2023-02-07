@@ -46,10 +46,6 @@ Omdat images in zekere zin slechts sjablonen zijn, kan je ze niet starten of uit
 
 De image-base waarop je een container maakt, bestaat afzonderlijk en kan niet worden gewijzigd. Wanneer je een gecontaineriseerde omgeving uitvoert, maak je in wezen een read-write kopie van dat bestandssysteem (docker-image) in de container. Dit voegt een containerlaag toe die wijzigingen van de volledige kopie van de image mogelijk maakt.
 
-###
-
-###
-
 ### Bronnen
 
 * [https://www.howtogeek.com/733522/docker-for-beginners-everything-you-need-to-know/](https://www.howtogeek.com/733522/docker-for-beginners-everything-you-need-to-know/)

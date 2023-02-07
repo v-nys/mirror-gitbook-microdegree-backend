@@ -17,7 +17,7 @@ docker run [options] IMAGE [COMMAND] [ARG...]
 
 Het commando `docker images` geeft een lijst weer met de lokaal geïnstalleerde docker images.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
 In dit voorbeeld zal je de image denising/hallo-student binnenhalen (van Docker Hub) met behulp van het commando `docker pull`. Kopieer de code hieronder en plak het in je terminal:
 
@@ -27,7 +27,7 @@ docker pull denising/hallo-student:latest
 
 Als je nu opnieuw `docker images` uitvoert zal je zien dat denising/hallo-student er tussen staat.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Je kan je lokale images ook raadplegen in Docker Desktop -> Images.
@@ -75,7 +75,7 @@ docker run -d -p 80:80 docker/getting-started
 * `-d` is de optie voor detached mode, waarbij de container op de achtergrond wordt uitgevoerd.
 * `-p 80:80` is de optie voor het doorgeven van een poort, in dit geval wordt poort 80 op de host doorgestuurd naar poort 80 in de container.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 docker kan de image niet lokaal vinden, dus haalt het in de achtergrond de image op van Docker Hub.
@@ -85,7 +85,7 @@ Je kan tenslotte navigeren naar [http://localhost:80](http://localhost) en de we
 
 ### **Detached (-d)**
 
-Om een container in ontkoppelde modus te starten, gebruik je de flag `-d=true` of alleen de optie `-d`. Het is de bedoeling dat containers die in detached modus zijn gestart, worden afgesloten wanneer het rootproces dat wordt gebruikt om de container uit te voeren, wordt afgesloten, tenzij je ook de optie `--rm` opgeeft. Als je `-d` gebruikt met `--rm`, wordt de container verwijderd wanneer deze wordt afgesloten of wanneer de daemon wordt afgesloten, afhankelijk van wat zich het eerst voordoet.&#x20;
+Om een container in ontkoppelde modus te starten, gebruik je de flag `-d=true` of alleen de optie `-d`. Het is de bedoeling dat containers die in detached modus zijn gestart, worden afgesloten wanneer het rootproces dat wordt gebruikt om de container uit te voeren, wordt afgesloten, tenzij je ook de optie `--rm` opgeeft. Als je `-d` gebruikt met `--rm`, wordt de container verwijderd wanneer deze wordt afgesloten of wanneer de daemon wordt afgesloten, afhankelijk van wat zich het eerst voordoet.
 
 Als je de optie `-d` niet meegeeft bij het uitvoeren van het `docker run` commando, wordt de container niet in detached mode uitgevoerd. In plaats daarvan zal de container in de foreground blijven en zal de output van de container direct naar de terminal gaan. Dit betekent dat de terminal bezet is totdat de container stopt of is beëindigd.
 

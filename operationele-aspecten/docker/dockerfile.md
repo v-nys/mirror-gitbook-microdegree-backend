@@ -4,7 +4,7 @@ description: >-
   Docker image te bouwen.
 ---
 
-# Dockerfile
+# dockerfile
 
 ## Wat is een Dockerfile?
 
@@ -16,20 +16,51 @@ De Dockerfile is essentieel voor het automatiseren van het bouwproces van Docker
 
 ### Voorbeeld van een Dockerfile
 
-{% code title="Dockerfile" %}
-```docker
+Stel dat we een eenvoudige Node.js-webapplicatie willen bouwen die "Hello, world!" op de browser toont.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Simpele node applicatie</p></figcaption></figure>
+
+Hier is een voorbeeld van hoe we een Dockerfile kunnen maken voor dit project:
+
+```bash
 FROM node:alpine
-COPY . /app
+
+# Stap 2: Werkdirectory aanmaken en naar deze werkdirectory gaan
 WORKDIR /app
-CMD node message.js
+
+# Stap 3: Bestanden kopiëren
+# '.' representeert de root directory
+COPY . .
+
+# Stap 4: Nodige packages installeren
+RUN npm install
+
+# Stap 5: Uitvoeren van de applicatie
+CMD ["npm", "start"]
 ```
-{% endcode %}
 
 #### Hier is wat de verschillende regels in het Dockerfile doen:
 
 1. `FROM node:alpine`: Deze regel specificeert welke basis-image gebruikt moet worden voor de container. In dit geval wordt het '[node:alpine](https://hub.docker.com/\_/node)'-image gebruikt, wat een kleine en lichtgewichtte distributie van Node.js is gebaseerd op de Alpine Linux-distributie.
-2. `COPY . /app`: Deze regel kopieert alle bestanden en mappen uit de huidige directory naar de `/app` directory in de container. Dit betekent dat alle bestanden uit de huidige directory (waarin de Dockerfile zich bevindt) zullen worden gekopieerd naar de `/app` directory in de container.
-3. `WORKDIR /app`: Deze regel stelt de standaard werkdirectory in voor de container op `/app`. Dit betekent dat elke opdracht die uitgevoerd wordt binnen de container uitgevoerd zal worden vanuit de `/app` directory.
-4. `CMD node message.js`: Deze regel specificeert de opdracht die uitgevoerd moet worden wanneer de container opgestart wordt. In dit geval wordt het `node` commando uitgevoerd met `message.js` als argument, wat betekent dat de `message.js`-applicatie uitgevoerd zal worden bij het opstarten van de container.
+2. `WORKDIR /app`: Deze regel stelt de standaard werkdirectory in voor de container op `/app`. Dit betekent dat elke opdracht die uitgevoerd wordt binnen de container uitgevoerd zal worden vanuit de `/app` directory.
+3. `COPY . .`: Deze regel kopieert alle bestanden en mappen uit de huidige directory naar de root directory in de container. Dit betekent dat alle bestanden uit de huidige directory (waarin de Dockerfile zich bevindt) zullen worden gekopieerd naar de root directory in de container.
+4. `RUN npm install`:  Deze regel installeert de nodige npm-packages
+5. `CMD ["npm", "start"]`: Uiteindelijk specificeren we dat het commando `npm start` uitgevoerd moet worden wanneer de container opgestart wordt.
+
+Nadat we het Dockerfile gemaakt hebben, kunnen we een Docker-image bouwen voor onze Node.js-applicatie door het volgende commando uit te voeren:
+
+```bash
+docker build -t my-node-app .
+```
+
+Dit zal een Docker-image bouwen met de naam 'my-node-app' op basis van de informatie in het Dockerfile. Nadat de image is gebouwd, kunnen we deze opstarten door het volgende commando uit te voeren:
+
+```bash
+docker run -p 3000:3000 my-node-app
+```
+
+Dit zal een nieuwe container opstarten vanaf onze Docker-image en onze Node.js-applicatie uitvoeren. De applicatie zal beschikbaar zijn op poort 3000, en we kunnen deze bezoeken door onze browser naar `http://localhost:3000` te richten.
+
+### Conclusie
 
 Dus in het algemeen, bouwt de Dockerfile een Docker-container die de Node.js-applicatie bevat en deze uitvoert wanneer de container opgestart wordt.

@@ -52,7 +52,7 @@ Installeer vervolgens @types/node als dev dependency.
 npm install @types/node --save-dev
 ```
 
-Er zal een `package.json` file worden aangemaakt met de volgende inhoud.&#x20;
+Er zal een `package.json` file worden aangemaakt met de volgende inhoud.
 
 {% hint style="info" %}
 Hou er mee rekening dat de versies voor jou kunnen afwijken van het voorbeeld hieronder!
@@ -73,7 +73,7 @@ Hou er mee rekening dat de versies voor jou kunnen afwijken van het voorbeeld hi
 
 Maak een nieuwe file aan genaamd "bcrypt-example.ts" in je root folder en importeer bcrypt.
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (2).png>)
 
 {% code title="bcrypt-example.ts" %}
 ```typescript
