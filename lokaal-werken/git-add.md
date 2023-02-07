@@ -1,9 +1,5 @@
 # git add
 
-{% hint style="success" %}
-[Kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=cdfd2107-109b-43d3-b68f-ad9800a304d5)
-{% endhint %}
-
 ## Omschrijving van het commando
 
 Het commando `git add` gebruik je om wijzigingen "in potlood" te noteren. Dit doe je zodat je een nieuw punt op je tijdlijn zorgvuldig kan samenstellen voor je het definitief maakt.

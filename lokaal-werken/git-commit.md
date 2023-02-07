@@ -1,9 +1,5 @@
 # git commit
 
-{% hint style="success" %}
-[Kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6f4d98c5-6aaf-49f9-8be2-ad9800acb7f2)
-{% endhint %}
-
 ## Betekenis
 
 Met het commando git commit verplaatsen we wijzigingen van de staging area naar een nieuwe punt (een **commit**) in de project history. We zetten "potlood" dus om naar "pen".
