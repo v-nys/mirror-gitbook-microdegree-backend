@@ -29,10 +29,7 @@
 * [git merge](lokaal-werken/git-merge.md)
 * [gitignore](lokaal-werken/gitignore.md)
 * [Remotes](gedistribueerd-werken/remotes.md)
-* [Pull requests](gedistribueerd-werken/pull-requests.md)
-* [git clone](gedistribueerd-werken/git-clone.md)
 * [git push](gedistribueerd-werken/git-push.md)
-* [git pull](gedistribueerd-werken/git-pull.md)
 
 ## Express.js
 
