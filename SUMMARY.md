@@ -1,11 +1,12 @@
 # Table of contents
+
 * [Welkom](README.md)
 
 ## Databases
 
 * [Wat is een databank?](semester-1-databanken-intro/databanken/inleiding.md)
 * [Wat is een relationele databank?](semester-1-databanken-intro/databanken/wat-is-een-relationele-databank.md)
-* [Installatie MySQL via Docker](semester-1-databanken-intro/installatie-mysql-via-docker.md)
+* [Installatie MySQL via Docker](databases/installatie-mysql-via-docker.md)
 * [Installatie MySQL Workbench](semester-1-databanken-intro/installatie-software.md)
 * [DDL instructies](semester-1-databanken-intro/deeltalen/ddl/README.md)
   * [CREATE DATABASE](semester-1-databanken-intro/deeltalen/ddl/create-database.md)
@@ -55,7 +56,10 @@
 
 * [docker](operationele-aspecten/docker/README.md)
   * [installatie docker](operationele-aspecten/docker/installatie-docker.md)
+  * [docker hub](operationele-aspecten/docker/docker-hub.md)
+  * [Dockerfile](operationele-aspecten/docker/dockerfile.md)
   * [docker container starten](operationele-aspecten/docker/docker-container-starten.md)
+  * [docker compose](operationele-aspecten/docker/docker-compose.md)
 * [Wat is cryptografie?](operationele-aspecten/wat-is-cryptografie/README.md)
   * [encryptie](operationele-aspecten/wat-is-cryptografie/encryptie.md)
   * [decryptie](operationele-aspecten/wat-is-cryptografie/decryptie.md)

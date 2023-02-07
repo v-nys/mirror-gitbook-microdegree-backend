@@ -8,7 +8,7 @@ In deze zelfstudie zal je gebruik maken van de image "[denising/hallo-student](h
 
 Je kan de commando `docker run` gebruiken om een container uit te voeren. De commando [`docker run`](https://docs.docker.com/engine/reference/run/) heeft de volgende syntaxis:
 
-```docker
+```sh
 ## Syntaxis
 docker run [options] IMAGE [COMMAND] [ARG...]
 ```
@@ -17,11 +17,11 @@ docker run [options] IMAGE [COMMAND] [ARG...]
 
 Het commando `docker images` geeft een lijst weer met de lokaal geïnstalleerde docker images.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
 In dit voorbeeld zal je de image denising/hallo-student binnenhalen (van Docker Hub) met behulp van het commando `docker pull`. Kopieer de code hieronder en plak het in je terminal:
 
-```docker
+```sh
 docker pull denising/hallo-student:latest
 ```
 
@@ -37,7 +37,7 @@ Je kan je lokale images ook raadplegen in Docker Desktop -> Images.
 
 Je kan een container aanmaken en uitvoeren met behulp van het commando `docker run`. Maak een container aan en voer deze uit door de onderstaande code te kopiëren naar je terminal:
 
-```docker
+```sh
 docker run denising/hallo-student
 ```
 
@@ -56,7 +56,7 @@ Indien je een container wilt verwijderen kan je het commando `docker rm CONTAINE
 
 Verwijder de container dat de image van denising/hallo-student gebruikt. Je kan de naam van je container terug vinden in de laatste kolom.
 
-```docker
+```sh
 docker rm admiring_williamson
 ```
 
@@ -68,14 +68,14 @@ Als je `docker run` uitvoert vooraleer je een image lokaal hebt binnengehaald me
 
 Start een nieuwe container op voor de image [docker/getting-started](https://hub.docker.com/r/docker/getting-started). Kopieer de onderstaande code naar je terminal:
 
-```
+```sh
 docker run -d -p 80:80 docker/getting-started
 ```
 
 * `-d` is de optie voor detached mode, waarbij de container op de achtergrond wordt uitgevoerd.
 * `-p 80:80` is de optie voor het doorgeven van een poort, in dit geval wordt poort 80 op de host doorgestuurd naar poort 80 in de container.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 docker kan de image niet lokaal vinden, dus haalt het in de achtergrond de image op van Docker Hub.
@@ -102,6 +102,10 @@ Met de `-p` optie kun je specificeren welke poorten op de host moeten worden doo
 De syntaxis voor de `-p` optie is `-p <host-poort>:<container-poort>`, waarbij `host-poort` de poort is op de host en `container-poort` de poort is in de container.
 
 Bijvoorbeeld: `docker run -p 8080:80 nginx` zal poort 80 in de `nginx` container doorgeven naar poort 8080 op de host. Hierdoor kun je de nginx webserver in de container bereiken via `http://localhost:8080` in je webbrowser.
+
+{% hint style="info" %}
+Bekijk de[ officiële documentatie](https://docs.docker.com/engine/reference/run/) van `docker run` voor meer informatie.
+{% endhint %}
 
 ### Bronnen
 
