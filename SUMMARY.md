@@ -7,7 +7,7 @@
 * [Wat is een relationele databank?](semester-1-databanken-intro/databanken/wat-is-een-relationele-databank.md)
 * [Installatie MySQL via Docker](semester-1-databanken-intro/installatie-mysql-via-docker.md)
 * [Installatie MySQL Workbench](semester-1-databanken-intro/installatie-software.md)
-* [DDL instructies](semester-1-databanken-intro/ddl/README.md)
+* [DDL instructies](semester-1-databanken-intro/deeltalen/ddl/README.md)
   * [CREATE DATABASE](semester-1-databanken-intro/deeltalen/ddl/create-database.md)
   * [DROP DATABASE](semester-1-databanken-intro/deeltalen/ddl/drop-database.md)
 
