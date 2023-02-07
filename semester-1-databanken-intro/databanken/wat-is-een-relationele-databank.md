@@ -1,9 +1,5 @@
 # Wat is een relationele databank
 
-{% hint style="success" %}
-[Kennisclip voor deze inhoud](https://youtu.be/wKcjQbXl-g4)
-{% endhint %}
-
 De "relationele" database is waarschijnlijk de meestgebruikte soort database. Dit type database is uitgewerkt in de jaren 1970 en steunt op de wiskundige verzamelingenleer.
 
 Zonder deze wiskundige fundering in veel detail te behandelen: het basisidee is dat "interessante gehelen" van informatie in verzamelingen van één soort data worden opgedeeld. Tussen deze verzamelingen bestaan verbanden.

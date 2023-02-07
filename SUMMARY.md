@@ -2,6 +2,10 @@
 
 * [Welkom](README.md)
 
+## FriendFace
+* [Het FriendFace project](friendface/README.md)
+  * [Setup Express.js](friendface/setup-express.md)
+
 ## Databases
 
 * [Wat is een databank?](semester-1-databanken-intro/databanken/inleiding.md)
