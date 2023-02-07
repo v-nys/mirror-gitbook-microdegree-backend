@@ -46,6 +46,13 @@ Omdat images in zekere zin slechts sjablonen zijn, kan je ze niet starten of uit
 
 De image-base waarop je een container maakt, bestaat afzonderlijk en kan niet worden gewijzigd. Wanneer je een gecontaineriseerde omgeving uitvoert, maak je in wezen een read-write kopie van dat bestandssysteem (docker-image) in de container. Dit voegt een containerlaag toe die wijzigingen van de volledige kopie van de image mogelijk maakt.
 
+### Voordelen van Docker
+
+1. **Portabiliteit**: Docker stelt ontwikkelaars in staat om hun applicaties te bouwen en uit te voeren op elke machine die Docker ondersteunt, zonder zorgen te maken over compatibiliteitsproblemen tussen omgevingen.
+2. **Isolatie**: Docker-containers kunnen op een afgeschermde manier worden uitgevoerd, waardoor ze niet kunnen interfereren met andere processen en diensten op de hostmachine. Dit verhoogt de stabiliteit en betrouwbaarheid van de applicaties.
+3. **Gemakkelijk deployment**: Docker stelt ontwikkelaars in staat om containers met hun toepassingen en bijbehorende afhankelijkheden eenvoudig te verplaatsen tussen verschillende omgevingen. Dit betekent dat ontwikkelaars minder tijd hoeven te besteden aan het oplossen van compatibiliteitsproblemen en problemen met de configuratie.
+4. **Snelheid**: Docker-containers starten en stoppen snel en zijn licht van gewicht, waardoor ze sneller kunnen worden gedeployed en uitgevoerd dan traditionele virtuele machines.
+
 ### Bronnen
 
 * [https://www.howtogeek.com/733522/docker-for-beginners-everything-you-need-to-know/](https://www.howtogeek.com/733522/docker-for-beginners-everything-you-need-to-know/)
