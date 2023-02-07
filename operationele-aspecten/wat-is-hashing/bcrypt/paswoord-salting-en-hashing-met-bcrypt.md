@@ -42,13 +42,13 @@ In het bovenstaande voorbeeld genereren we eerst een salt met 10 rondes en gebru
 
 Creeër een folder genaamd "bcrypt-example" en open het in VScode en installeer de node-module bcrypt met behulp van de onderstaande commmando.
 
-```
+```sh
 npm install bcrypt
 ```
 
 Installeer vervolgens @types/node als dev dependency.
 
-```
+```sh
 npm install @types/node --save-dev
 ```
 

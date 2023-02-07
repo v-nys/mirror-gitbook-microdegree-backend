@@ -46,19 +46,9 @@ Omdat images in zekere zin slechts sjablonen zijn, kan je ze niet starten of uit
 
 De image-base waarop je een container maakt, bestaat afzonderlijk en kan niet worden gewijzigd. Wanneer je een gecontaineriseerde omgeving uitvoert, maak je in wezen een read-write kopie van dat bestandssysteem (docker-image) in de container. Dit voegt een containerlaag toe die wijzigingen van de volledige kopie van de image mogelijk maakt.
 
-### Wat is een Dockerfile?
+###
 
-Een Dockerfile is een scriptbestand dat de stappen bevat die nodig zijn om een Docker image te bouwen. Het is een tekstbestand met specifieke opdrachten die door Docker worden uitgevoerd om de Docker image op te bouwen en te configureren.
-
-Een Dockerfile bevat informatie over de basisimage waarop de Docker image gebouwd wordt, de software en bibliotheken die moeten worden geïnstalleerd, de configuratie-instellingen die moeten worden toegepast en de commands die moeten worden uitgevoerd bij het opstarten van een Docker container.
-
-Het Dockerfile is essentieel voor het automatiseren van het bouwproces van Docker images en garandeert dat de Docker image altijd op dezelfde manier wordt gebouwd, ongeacht de machine waarop het draait of de ontwikkelomgeving.
-
-### Conclusie
-
-Zodra je het proces van het maken van een container begrijpt, zal je gemakkelijk het verschil tussen images en containers herkennen.
-
-Na het lezen van dit hoofdstuk zal je een goed begrip moeten hebben van wat een Docker-image is, wat een container is, wat Dockerfiles zijn en hoe ze zijn verbonden.
+###
 
 ### Bronnen
 
