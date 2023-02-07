@@ -14,24 +14,22 @@ installatie MySQL Workbench
 
 Basisscherm MySQL Workbench:
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/startschermmysqlworkbench.png" alt=""><figcaption>Startscherm MySQL Workbench</figcaption></figure>
 
 **Stap 1:** Klik op het plusje.
 
-![](<../.gitbook/assets/image (5) (3).png>)
+![](<../.gitbook/assets/mysqlworkbenchplusje.png>)
 
 **Stap 2:** Vul de juiste gegevens in.
 
-Voor jouw gebruikersnaam en paswoord verwijzen we naar de e-mail die je hebt ontvangen van lector V. Nys.
+<figure><img src="../.gitbook/assets/mysqlworkbenchconnectiegegevens.png" alt=""><figcaption>Connectiegegevens. Deze kunnen anders zijn naargelang de situatie.</figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
+Je klikt na het invullen van de juiste gegevens op de knop "**Store in Keychain**" en vult het paswoord voor de ingevulde gebruiker in.
 
-Je klikt na het invullen van de juiste gegevens op de knop "**Store in Vault**" en vult het paswoord dat je via vermelde mail hebt ontvangen in.
-
-![](<../.gitbook/assets/image (3) (2).png>)
+![](<../.gitbook/assets/mysqlworkbenchwachtwoord.png>)
 
 **Stap 3:** Connectie testen.
 
 Je moet volgende boodschap krijgen.
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/mysqlworkbenchsuccessfulconnection.png>)
