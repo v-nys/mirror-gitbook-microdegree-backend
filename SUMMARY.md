@@ -59,6 +59,7 @@
   * [docker compose](operationele-aspecten/docker/docker-compose/README.md)
     * [installatie](operationele-aspecten/docker/docker-compose/installatie.md)
     * [docker-compose.yml](operationele-aspecten/docker/docker-compose/docker-compose.yml.md)
+    * [docker compose commands](operationele-aspecten/docker/docker-compose/docker-compose-commands.md)
 * [Wat is cryptografie?](operationele-aspecten/wat-is-cryptografie/README.md)
   * [encryptie](operationele-aspecten/wat-is-cryptografie/encryptie.md)
   * [decryptie](operationele-aspecten/wat-is-cryptografie/decryptie.md)
