@@ -108,6 +108,11 @@ Bijvoorbeeld: `docker run -v /home/user/Documents:/home/ubuntu/Documents ubuntu`
 Bekijk de[ officiële documentatie](https://docs.docker.com/engine/reference/run/) van `docker run` voor meer informatie.
 {% endhint %}
 
+### Opkuisen
+Als je klaar bent met een container, kan je hem stoppen via `docker container stop`, gevolgd door de naam of het ID van de container die je wil stoppen. Als je hem dan van je systeem wil verwijderen, kan dat via `docker container rm`, opnieuw gevolgd door de naam of het ID. 
+
+Om dit niet te vergeten, kan je hem ook opstarten door `--rm` toe te voegen aan het `docker run` commando. Zo vermijd je dat je een groot aantal niet-gebruikte containers bijhoudt op je systeem (en schijfruimte verspilt).
+
 ### Bronnen
 
 * [https://tecadmin.net/docker-run/](https://tecadmin.net/docker-run/)
