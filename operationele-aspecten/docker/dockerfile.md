@@ -36,7 +36,10 @@ COPY . .
 # Stap 4: Nodige packages installeren
 RUN npm install
 
-# Stap 5: Uitvoeren van de applicatie
+# Stap 5: Luisteren op netwerkpoort 80
+EXPOSE 80
+
+# Stap 6: Uitvoeren van de applicatie
 CMD ["npm", "start"]
 ```
 
@@ -46,7 +49,8 @@ CMD ["npm", "start"]
 2. `WORKDIR /app`: Deze regel stelt de standaard werkdirectory in voor de container op `/app`. Dit betekent dat elke opdracht die uitgevoerd wordt binnen de container uitgevoerd zal worden vanuit de `/app` directory.
 3. `COPY . .`: Deze regel kopieert alle bestanden en mappen uit de huidige directory naar de root directory in de container. Dit betekent dat alle bestanden uit de huidige directory (waarin de Dockerfile zich bevindt) zullen worden gekopieerd naar de root directory in de container.
 4. `RUN npm install`:  Deze regel installeert de nodige npm-packages
-5. `CMD ["npm", "start"]`: Uiteindelijk specificeren we dat het commando `npm start` uitgevoerd moet worden wanneer de container opgestart wordt.
+5. `EXPOSE 80`: Deze regel zorgt dat de container deze netwerkpoort in de gaten houdt. Anders zal hij niet reageren als bijvoorbeeld een browser contact neemt via deze poort.
+6. `CMD ["npm", "start"]`: Uiteindelijk specificeren we dat het commando `npm start` uitgevoerd moet worden wanneer de container opgestart wordt.
 
 Nadat je de Dockerfile gemaakt hebben, kan je een Docker-image bouwen voor je Node.js-applicatie door het volgende commando uit te voeren (navigeer in je terminal naar de map waarin je Dockerfile leeft):
 
