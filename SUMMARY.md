@@ -4,7 +4,7 @@
 
 ## FriendFace
 * [Het FriendFace project](friendface/README.md)
-  * [Setup Express.js](friendface/setup-express.md)
+  * [Stap 1: Setup Express.js](friendface/setup-work-environment-intent-express.md)
 
 ## Databases
 
