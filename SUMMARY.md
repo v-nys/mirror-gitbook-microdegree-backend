@@ -56,7 +56,6 @@
 ## Operationele aspecten
 
 * [docker](operationele-aspecten/docker/README.md)
-  * [installatie docker](operationele-aspecten/docker/installatie-docker.md)
   * [docker hub](operationele-aspecten/docker/docker-hub.md)
   * [docker container starten](operationele-aspecten/docker/docker-container-starten.md)
   * [dockerfile](operationele-aspecten/docker/dockerfile.md)
