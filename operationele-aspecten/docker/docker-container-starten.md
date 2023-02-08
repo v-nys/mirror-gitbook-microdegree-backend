@@ -96,6 +96,14 @@ De syntaxis voor de `-p` optie is `-p <host-poort>:<container-poort>`, waarbij `
 
 Bijvoorbeeld: `docker run -p 8080:80 nginx` zal poort 80 in de `nginx` container doorgeven naar poort 8080 op de host. Hierdoor kun je de nginx webserver in de container bereiken via `http://localhost:8080` in je webbrowser.
 
+### Linken van een directory
+
+De `-v` optie bij het `docker run` commando is de optie voor het "mounten" van directories. Dit houdt in dat je een directory op je hostmachine linkt aan een locatie in de container.
+
+De syntaxis is gelijkaardig aan die voor `-p`. Op de linkerkant plaats je het pad van de directory op je hostmachine, op de rechterkant plaats je het pad van de directory op je container.
+
+Bijvoorbeeld: `docker run -v /home/user/Documents:/home/ubuntu/Documents ubuntu` zal onze eigen folder `/home/user/Documents` leesbaar delen met de container, die hem kan terugvinden onder `/home/ubuntu/Documents`.
+
 {% hint style="info" %}
 Bekijk de[ officiële documentatie](https://docs.docker.com/engine/reference/run/) van `docker run` voor meer informatie.
 {% endhint %}
