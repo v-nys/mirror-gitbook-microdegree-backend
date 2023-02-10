@@ -1,4 +1,5 @@
-# Mysql Connector
+# MySQL Connector
+
 ## MySql2
 
 De MySQL2 library is een npm module die het mogelijk maakt om verbinding te maken met een MySQL database. Deze maakt het mogelijk om queries te gaan uitvoeren vanuit node.js code. We werken dus niet meer rechstreeks met een client zoals MySQL Workbench of phpMyAdmin. We gaan de queries uitvoeren vanuit node.js code.
@@ -15,10 +16,10 @@ npm install mysql2
 
 Om een verbinding te maken met een database maken we gebruik van de `createConnection` functie. Deze functie heeft als argumenten een object met de volgende properties:
 
-  * `host`: De hostnaam van de database server. 
-  * `user`: De gebruikers naam van de database. 
-  * `password`: Het wachtwoord van de database.
-  * `database`: De naam van de database.
+* `host`: De hostnaam van de database server.
+* `user`: De gebruikers naam van de database.
+* `password`: Het wachtwoord van de database.
+* `database`: De naam van de database.
 
 We kiezen hier om gebruik te maken van de promise versie van de `mysql2` library. Dit doen we door te de `createConnection` functie te importeren vanuit de `mysql2/promise` module. Dit zorgt ervoor dat we gebruik kunnen maken van de `async/await` syntax.
 
@@ -48,11 +49,11 @@ main();
 
 Merk hier op dat we de code in een `try/catch` blok zetten. Dit doen we omdat we hiermee de fouten kunnen opvangen die op kunnen treden. In het `catch` blok loggen we de error naar de console. Als je bijvoorbeeld geen verbinding kunt maken omdat je een foutieve gebruikersnaam of wachtwoord hebt ingevuld dan zal de error hier worden opgevangen.
 
-Momenteel sluiten we direct de connectie na het maken van de connectie. Dit doen we omdat we nu nog geen queries uitvoeren. Als we queries uitvoeren dan willen we de connectie open houden totdat we klaar zijn met de queries. 
+Momenteel sluiten we direct de connectie na het maken van de connectie. Dit doen we omdat we nu nog geen queries uitvoeren. Als we queries uitvoeren dan willen we de connectie open houden totdat we klaar zijn met de queries.
 
 ### Queries uitvoeren
 
-Om queries uit te voeren maken we gebruik van het `connection` object dat we hebben aangemaakt. We maken hier gebruik van de `execute` functie waar we de query meegeven als argument. Deze functie geeft een array terug met twee elementen. Het eerste element is een array met de resultaten van de query. Het tweede element is een array met metadata over de query. We gaan hier alleen gebruik maken van het eerste element. 
+Om queries uit te voeren maken we gebruik van het `connection` object dat we hebben aangemaakt. We maken hier gebruik van de `execute` functie waar we de query meegeven als argument. Deze functie geeft een array terug met twee elementen. Het eerste element is een array met de resultaten van de query. Het tweede element is een array met metadata over de query. We gaan hier alleen gebruik maken van het eerste element.
 
 #### Select met meerdere resultaten
 
@@ -69,7 +70,7 @@ console.log(rows_users);
 // ]
 ```
 
-Je krijgt hier een array terug met resultaten van de query. Dit object is van het type `RowDataPacket`. Wil je voor dit object autocomplete functionaliteit hebben en static typing dan moet je voor het resultaten object een interface aanmaken die `RowDataPacket` extend. 
+Je krijgt hier een array terug met resultaten van de query. Dit object is van het type `RowDataPacket`. Wil je voor dit object autocomplete functionaliteit hebben en static typing dan moet je voor het resultaten object een interface aanmaken die `RowDataPacket` extend.
 
 ```typescript
 interface User extends RowDataPacket {
@@ -103,7 +104,7 @@ const user = rows_user[0];
 
 #### Prepared statements
 
-Als je een query uitvoert met een `WHERE` clause dan is het mogelijk dat je een SQL injection aanval krijgt. Dit is een aanval waarbij een gebruiker een query kan uitvoeren die niet de bedoeling is. Om dit te voorkomen kun je gebruik maken van prepared statements. Dit zijn statements waarbij je de variabelen in de query vervangt door een placeholder. Deze placeholders worden vervolgens vervangen door de variabelen die je meegeeft aan de `execute` functie. 
+Als je een query uitvoert met een `WHERE` clause dan is het mogelijk dat je een SQL injection aanval krijgt. Dit is een aanval waarbij een gebruiker een query kan uitvoeren die niet de bedoeling is. Om dit te voorkomen kun je gebruik maken van prepared statements. Dit zijn statements waarbij je de variabelen in de query vervangt door een placeholder. Deze placeholders worden vervolgens vervangen door de variabelen die je meegeeft aan de `execute` functie.
 
 ```typescript
 const [rows_user] = await connection.execute<User[]>('SELECT * FROM `users` WHERE `id` = ?', [1]);
@@ -115,7 +116,7 @@ Gebruik altijd prepared statements als je een `WHERE` clause gebruikt. Dit voork
 
 #### Insert
 
-Als je een insert query wilt uitvoeren dan kun je de `execute` functie ook gebruiken. Je moet dan wel de `INSERT` query gebruiken. 
+Als je een insert query wilt uitvoeren dan kun je de `execute` functie ook gebruiken. Je moet dan wel de `INSERT` query gebruiken.
 
 ```typescript
 const [result] = await connection.execute<OkPacket>('INSERT INTO `users` (`name`, `email`) VALUES (?, ?)', ['Andie Similon', 'andie.similon@ap.be']);
@@ -126,7 +127,7 @@ De `result` variabele is van het type `OkPacket`. Dit is een object dat de metad
 
 #### Update
 
-Op dezelfde manier kun je ook een update query uitvoeren. 
+Op dezelfde manier kun je ook een update query uitvoeren.
 
 ```typescript
 const [result_update] = await connection.execute<OkPacket>('UPDATE `users` SET `name` = ? WHERE `id` = ?', ['Jon', 1]);
@@ -149,7 +150,7 @@ console.log(result_delete.affectedRows);
 Als je een stored procedure wilt uitvoeren dan kun je de `execute` functie ook gebruiken. Je moet dan wel de `CALL` query gebruiken. Wil je hiervoor geen interface voor aanmaken kan je ook altijd de `RowDataPacket` gebruiken. Dit werkt ook voor andere queries.
 
 ```typescript
-const [rows_likes] = await connection.execute<RowDataPacket[]>('CALL get_likes_for_post(?)', [1]);
+const [[rows_likes]] = await connection.execute<RowDataPacket[]>('CALL get_likes_for_post(?)', [1]);
 console.log(rows_likes[0].likes);
 ```
 
@@ -184,7 +185,7 @@ Het eerste wat we doen is een express app aanmaken. We maken ook een connectie m
 
 ### Get users
 
-We gaan nu een route maken om alle gebruikers op te halen. We maken hiervoor een `GET` request naar de `/users` route. 
+We gaan nu een route maken om alle gebruikers op te halen. We maken hiervoor een `GET` request naar de `/users` route.
 
 ```typescript
 app.get('/users', async (req, res) => {
@@ -204,7 +205,7 @@ app.get('/users/:id', async (req, res) => {
 
 ### Create user
 
-We gaan nu een route maken om een gebruiker aan te maken. We maken hiervoor een `POST` request naar de `/users` route. 
+We gaan nu een route maken om een gebruiker aan te maken. We maken hiervoor een `POST` request naar de `/users` route.
 
 ```typescript
 app.post('/users', async (req, res) => {
@@ -218,7 +219,7 @@ Na het aanmaken van de gebruiker willen we ook de gebruiker terugsturen. We doen
 
 ### Update user
 
-We gaan nu een route maken om een gebruiker aan te passen. We maken hiervoor een `PUT` request naar de `/users/:id` route. 
+We gaan nu een route maken om een gebruiker aan te passen. We maken hiervoor een `PUT` request naar de `/users/:id` route.
 
 ```typescript
 app.put('/users/:id', async (req, res) => {
@@ -235,7 +236,7 @@ We kijken of de gebruiker is aangepast door te kijken of er 1 rij is aangepast. 
 
 ### Delete user
 
-We gaan nu een route maken om een gebruiker te verwijderen. We maken hiervoor een `DELETE` request naar de `/users/:id` route. 
+We gaan nu een route maken om een gebruiker te verwijderen. We maken hiervoor een `DELETE` request naar de `/users/:id` route.
 
 ```typescript
 app.delete('/users/:id', async (req, res) => {

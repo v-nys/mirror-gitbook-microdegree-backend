@@ -32,7 +32,7 @@ Probeer het woord "**AP Hogeschool**" te coderen in dit voorbeeld. Je moet besli
 
 Vervolgens kan je de gegevens versleutelen door op de knop **Encrypt** te klikken.
 
-![](<../../../.gitbook/assets/image (25) (1).png>)
+![](<../../../.gitbook/assets/image (25) (1) (1).png>)
 
 ### Stap 3: Decrypteren van de ciphertext
 
