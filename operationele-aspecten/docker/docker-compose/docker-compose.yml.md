@@ -43,6 +43,9 @@ services:
       - "5000:5000"
 
     # Link database container naar app container voor bereikbaarheid.
+    # Dit is enkel noodzakelijk wanneer je containers expliciet opdeelt in netwerken.
+    # Anders kunnen containers elkaar sowieso bereiken.
+    # Hier is het dus niet strikt noodzakelijk.
     links:
       - database
     
@@ -96,6 +99,8 @@ Dit wordt gebruikt om de poorten van de container toe te wijzen aan de hostmachi
 #### links
 
 De `links` optie in Docker Compose maakt het mogelijk om containers met elkaar te verbinden. Hiermee kunnen containers op elkaar reageren en informatie uitwisselen, wat nuttig is als je bijvoorbeeld een database in een container wilt gebruiken vanuit een andere container met een webapplicatie. De `links` optie geeft een lijst van containers waarmee de huidige container verbonden moet worden.
+
+Je kan containers opdelen in netwerken en dan is dit onderdeel strikt noodzakelijk. Anders is het een *best practice*.
 
 #### image
 
