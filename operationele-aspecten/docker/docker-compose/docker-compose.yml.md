@@ -48,6 +48,10 @@ services:
     # Hier is het dus niet strikt noodzakelijk.
     links:
       - database
+
+    # Start deze container pas op als de andere gestart is
+    depends_on:
+      - database
     
   database:
     # image om te halen van Docker Hub
@@ -78,7 +82,7 @@ dit geeft aan dat we versie 3 van Docker Compose gebruiken en dat Docker de juis
 
 #### services
 
-dit gedeelte definieert alle verschillende containers die we zullen maken. In ons voorbeeld hebben we twee services, **web** en **database**.
+dit gedeelte definieert alle verschillende containers die we zullen maken. In ons voorbeeld hebben we twee services, **app** en **database**.
 
 #### volumes
 
@@ -86,15 +90,18 @@ Een volume in Docker Compose is een mechanisme waarmee bestanden en data uit een
 
 #### app en database
 
-dit zijn de namen van onze Node-app en mySQL databank. Docker Compose maakt containers met de door ons opgegeven naam.
+Dit zijn de namen van onze Node-app en MySQL databank. Docker Compose maakt containers met de door ons opgegeven naam.
 
 #### build
 
-dit specificeert de locatie van onze Dockerfile, en . vertegenwoordigt de map waar het bestand `docker-compose.yml` zich bevindt.
+Dit specificeert de locatie van onze Dockerfile, en . vertegenwoordigt de map waar het bestand `docker-compose.yml` zich bevindt.
 
 #### ports
 
 Dit wordt gebruikt om de poorten van de container toe te wijzen aan de hostmachine.
+
+#### `depends_on`
+Dit geeft aan dat de app afhankelijk is van de database. Hij zal hierdoor pas opstarten nadat de database gestart is. Wanneer de volledige stack wordt afgesloten, zal de app ook eerst stoppen en dan pas de database.
 
 #### links
 
