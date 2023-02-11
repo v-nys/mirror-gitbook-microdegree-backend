@@ -5,6 +5,7 @@
 ## FriendFace
 * [Het FriendFace project](friendface/README.md)
   * [Stap 1: Setup Express.js](friendface/setup-work-environment-intent-express.md)
+  * [Stap 2: MySQL toevoegen](friendface/setup-work-environment-intent-stack-with-mysql.md)
 
 ## Databases
 
