@@ -44,11 +44,11 @@ services:
 
     # Link database container naar app container voor bereikbaarheid.
     links:
-      - "database:backenddb"
+      - database
     
   database:
-
     # image om te halen van Docker Hub
+    # dit is een veelgebruikte opslagplaats voor kant-en-klare images
     image: mysql/mysql-server:5.7
 
     # Omgevingsvariabelen voor opstartscript
@@ -99,12 +99,12 @@ De `links` optie in Docker Compose maakt het mogelijk om containers met elkaar t
 
 #### image
 
-als we geen Dockerfile hebben en een service willen uitvoeren met een vooraf gebouwde image, specificeren we de image-locatie hier. Compose zal een image downloaden van Docker Hub van en daarvan een container aanmaken.
+Als we geen Dockerfile hebben en een service willen uitvoeren met een vooraf gebouwde image, specificeren we de image-locatie hier. Compose zal een image downloaden van Docker Hub van en daarvan een container aanmaken.
 
 #### environment
 
-De clausule stelt ons in staat om een [omgevingsvariabele](../../../express.js/authenticatie-en-autorisatie/environment-variables.md) in de container in te stellen. Dit is hetzelfde als het argument `-e` in Docker bij het uitvoeren van een container.
+[Omgevingsvariabelen](../../../express.js/authenticatie-en-autorisatie/environment-variables.md) kunnen gebruikt worden om instellingen voor een specifieke container toe te voegen. Dit is hetzelfde als het argument `-e` in Docker bij het uitvoeren van een container. Normaal gesproken vind je de betekenis van deze variabelen terug op Docker Hub.
 
 {% hint style="info" %}
-Voor meer informatie omtrent de docker compose file, bekijk d[e officiële documentatie](https://docs.docker.com/compose/compose-file/)!
+Voor meer informatie omtrent de Docker Compose file, bekijk [de officiële documentatie](https://docs.docker.com/compose/compose-file/)!
 {% endhint %}

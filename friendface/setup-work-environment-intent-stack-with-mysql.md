@@ -8,4 +8,3 @@ We delen dit opnieuw op in stappen:
 3. Een simpele instructie uitvoeren en bijhouden in een script.
 4. Deze database server **samen** opstarten met een andere container.
 5. Dit automatisch doen wanneer we FriendFace openen in Visual Studio Code.
-6. Ons bestaand script automatisch laten lopen in de nieuwe database.
