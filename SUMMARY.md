@@ -67,6 +67,7 @@
     * [docker compose commands](operationele-aspecten/docker/docker-compose/docker-compose-commands.md)
   * [VS Code remote dev](operationele-aspecten/docker/remotedev/README.md)
     * [postStartCommand](operationele-aspecten/docker/remotedev/post-start-command.md)
+    * [met meerdere containers](operationele-aspecten/docker/remotedev/met-docker-compose.md)
 * [Wat is cryptografie?](operationele-aspecten/wat-is-cryptografie/README.md)
   * [encryptie](operationele-aspecten/wat-is-cryptografie/encryptie.md)
   * [decryptie](operationele-aspecten/wat-is-cryptografie/decryptie.md)
