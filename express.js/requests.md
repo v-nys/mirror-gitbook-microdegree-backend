@@ -205,3 +205,31 @@ app.post('/sendData',(req, res)=>{
 {% hint style="info" %}
 Probeer nu zelf query string en route parameters te combineren met een POST request.
 {% endhint %}
+
+### Delete requests
+
+We hebben tot nu toe enkel GET en POST requests behandeld. Als je bepaalde data wil verwijderen kan je dit doen aan de hand van een DELETE request. 
+
+```typescript
+app.delete('/person/:index',(req,res)=>{
+    let index = parseInt(req.params.index);
+    people.splice(index,1);
+    res.status(204).send(); 
+});
+```
+
+We geven hier een status code mee van 204. Dit betekent dat de request geslaagd is, maar dat er geen inhoud teruggegeven wordt. Dit is een conventie die je kan gebruiken om aan te geven dat de request geslaagd is.
+
+### PUT requests
+
+PUT requests zijn gelijkaardig aan POST requests. Het verschil is dat PUT requests de data die je meegeeft gebruikt om een bestaande resource te vervangen of aan te passen. 
+
+```typescript
+app.put('/person/:index',(req,res)=>{
+    let index = parseInt(req.params.index);
+    people[index] = req.body;
+    res.json(people[index]); 
+});
+```
+
+Je kan hier het aangepaste object terugsturen of een status code van 204 (zoals bij delete).
