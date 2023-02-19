@@ -7,6 +7,7 @@
   * [Stap 1: Setup Express.js](friendface/setup-work-environment-intent-express.md)
   * [Stap 2: MySQL toevoegen](friendface/setup-work-environment-intent-stack-with-mysql.md)
   * [Stap 3: Lokaal versiebeheer toevoegen](friendface/setup-work-environment-intent-local-version-control.md)
+  * [Stap 4: Gedistribueerd versiebeheer toevoegen](friendface/setup-work-environment-intent-distributed-version-control.md)
 
 ## Databases
 
