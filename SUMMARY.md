@@ -8,6 +8,8 @@
   * [Stap 2: MySQL toevoegen](friendface/setup-work-environment-intent-stack-with-mysql.md)
   * [Stap 3: Lokaal versiebeheer toevoegen](friendface/setup-work-environment-intent-local-version-control.md)
   * [Stap 4: Gedistribueerd versiebeheer toevoegen](friendface/setup-work-environment-intent-distributed-version-control.md)
+  * [Stap 5: Eenvoudige gebruikersprofielen](friendface/barebones-user-profiles.md)
+  * [Stap 6: SQL scripts bij opstart](friendface/startup-sql-scripts.md)
 
 ## Databases
 
