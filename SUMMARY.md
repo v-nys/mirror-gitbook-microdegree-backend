@@ -3,6 +3,7 @@
 * [Welkom](README.md)
 
 ## FriendFace
+
 * [Het FriendFace project](friendface/README.md)
   * [Stap 1: Setup Express.js](friendface/setup-work-environment-intent-express.md)
   * [Stap 2: MySQL toevoegen](friendface/setup-work-environment-intent-stack-with-mysql.md)
@@ -56,7 +57,9 @@
 * [EJS Advanced](express.js/ejs-advanced.md)
 * [Requests](express.js/requests.md)
 * [Static files](express.js/static-files.md)
-* [MySQL Connector](express.js/mysql-connector.md)
+* [MySQL Connector](express.js/mysql-connector/README.md)
+  * [prepared statements](express.js/mysql-connector/prepared-statements.md)
+  * [als onderdeel van een Express applicatie](express.js/mysql-connector/als-onderdeel-van-een-express-applicatie.md)
 * [Cookies & Sessions](express.js/cookies.md)
 * [Authenticatie en Autorisatie](express.js/authenticatie-en-autorisatie/README.md)
   * [JSON Web Token (JWT)](express.js/authenticatie-en-autorisatie/json-web-token-jwt.md)

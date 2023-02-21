@@ -10,7 +10,7 @@ In deze zelfstudie zal je gebruik maken van de image "[denising/hallo-student](h
 
 Het commando `docker images` geeft een lijst weer met de lokaal geïnstalleerde docker images.
 
-<figure><img src="../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (5).png" alt=""><figcaption></figcaption></figure>
 
 In dit voorbeeld zal je de image denising/hallo-student binnenhalen (van Docker Hub) met behulp van het commando `docker pull`. Kopieer de code hieronder en plak het in je terminal:
 
@@ -20,7 +20,7 @@ docker pull denising/hallo-student:latest
 
 Als je nu opnieuw `docker images` uitvoert zal je zien dat denising/hallo-student er tussen staat.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Je kan je lokale images ook raadplegen in Docker Desktop -> Images.
@@ -109,7 +109,8 @@ Bekijk de[ officiële documentatie](https://docs.docker.com/engine/reference/run
 {% endhint %}
 
 ### Opkuisen
-Als je klaar bent met een container, kan je hem stoppen via `docker container stop`, gevolgd door de naam of het ID van de container die je wil stoppen. Als je hem dan van je systeem wil verwijderen, kan dat via `docker container rm`, opnieuw gevolgd door de naam of het ID. 
+
+Als je klaar bent met een container, kan je hem stoppen via `docker container stop`, gevolgd door de naam of het ID van de container die je wil stoppen. Als je hem dan van je systeem wil verwijderen, kan dat via `docker container rm`, opnieuw gevolgd door de naam of het ID.
 
 Om dit niet te vergeten, kan je hem ook opstarten door `--rm` toe te voegen aan het `docker run` commando. Zo vermijd je dat je een groot aantal niet-gebruikte containers bijhoudt op je systeem (en schijfruimte verspilt).
 

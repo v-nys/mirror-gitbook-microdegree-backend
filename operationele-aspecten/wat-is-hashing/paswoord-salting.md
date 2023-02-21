@@ -18,7 +18,7 @@ Tijdens het aanmaken van je account wordt het paswoord verzonden naar de server.
 Het salted-paswoord wordt vervolgens gehasht en tenslotte samen met de salt in de database opgeslagen.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>source: <a href="http://www.troyhunt.com/content/images/2016/02/12341233image_thumb4.png">http://www.troyhunt.com/content/images/2016/02/12341233image_thumb4.png</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (5).png" alt=""><figcaption><p>source: <a href="http://www.troyhunt.com/content/images/2016/02/12341233image_thumb4.png">http://www.troyhunt.com/content/images/2016/02/12341233image_thumb4.png</a></p></figcaption></figure>
 
 ### Aanvallen op niet salted-paswoorden
 
