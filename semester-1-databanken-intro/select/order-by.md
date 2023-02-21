@@ -48,7 +48,7 @@ Dit sorteert nog steeds boeken volgens voornaam van de auteur en gebruikt ook de
 | Steve | Klabnik | The Rust Programming Language |
 | James | Corey | Caliban's War |
 | James | M.R. | Collected Ghost Stories |
-| James | M.R. | Count Magnues and Other Ghost Stories |
+| James | M.R. | Count Magnus and Other Ghost Stories |
 | James | Corey | Leviathan Wakes |
 | Alexander | Theroux | Darconville's Cat |
 | Albert | Camus | La Peste |
