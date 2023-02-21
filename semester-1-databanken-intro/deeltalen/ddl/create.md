@@ -14,14 +14,14 @@ We willen volgende gegevens in het systeem bijhouden:
 
 ![](../../../.gitbook/assets/lievelingsboek.png)
 
-Gebruik eerst `USE` om je database te activeren. Eerst leggen we vast we welke tabellen en welke datatypes we nodig hebben:
+Gebruik eerst `USE` om je database te activeren. Bijvoorbeeld `USE microdegree` als je een database genaamd `microdegree` hebt. Dan leggen we vast we welke tabellen en welke datatypes we nodig hebben:
 
 ![](../../../.gitbook/assets/eerste-erd.png)
 
 Negeer de "1 more" onder "Geboortejaar". Negeer ook het gele sleuteltje. Die zaken komen later. Om de tabel "Personen" aan te maken, schrijven we:
 
 ```sql
--- hier komt eerst een USE instructie om de database te activeren
+-- hier komt de instructie om de database te activeren
 CREATE TABLE Personen(Voornaam VARCHAR(50), Familienaam VARCHAR(50), Geboortejaar INT);
 ```
 
