@@ -4,20 +4,20 @@
 
 Soms maken we fouten bij het ingeven van data. Soms verouderen gegevens. In beide situaties willen we bestaande rijen wel bewaren, maar bepaalde kolomwaarden aanpassen. We kunnen het `UPDATE` statement hier voor gebruiken.
 
-MySQL staat dit om veiligheidsredenen niet zomaar toe, maar voorlopig zijn we aan het verkennen. Om dit dus toch mogelijk te maken, moet je `SET SQL_SAFE_UPDATES = 0` toevoegen voor een "onveilig" commando en achteraf `SET SQL_SAFE_UPDATES = 1` toevoegen.
-
 Bijvoorbeeld:
 
 ```sql
-USE ApDB;
+/* Het aanpassen van SQL_SAFE_UPDATES is geen deel van de UPDATE instructie zelf,
+   maar zorgt dat MySQL ons niet "beschermt" tegen het aanpassen van data.
+   Dit is niet voor alle soorten UPDATE-instructies nodig, maar de reden zou ons te ver leiden. */
 SET SQL_SAFE_UPDATES = 0;
 UPDATE Boeken SET Categorie = 'Metafysica';
 SET SQL_SAFE_UPDATES = 1;
 ```
 
-Dit zet de kolom Categorie van **alle** boeken op "Metafysica".
+Dit zet de kolom `Categorie` van **alle** boeken op "Metafysica".
 
-Je kan ook de inhoud van meer dan één kolom aanpassen. Dat zou je als volgt doen (maar hoef je **niet** uit te voeren of op te slaan):
+Je kan ook de inhoud van meer dan één kolom aanpassen. Dat zou je als volgt doen:
 
 ```sql
 USE ApDB;

@@ -26,6 +26,8 @@
   * [CREATE TABLE](semester-1-databanken-intro/deeltalen/ddl/create.md)
 * [DML instructies](semester-1-databanken-intro/deeltalen/dml/README.md)
   * [INSERT](semester-1-databanken-intro/deeltalen/dml/insert.md)
+  * [DELETE](semester-1-databanken-intro/deeltalen/dml/delete.md)
+  * [UPDATE](semester-1-databanken-intro/deeltalen/dml/update.md)
 * [SELECT instructie](semester-1-databanken-intro/select/README.md)
   * [gegevens ordenen](semester-1-databanken-intro/select/order-by.md)
   * [gegevens filteren](semester-1-databanken-intro/select/where.md)

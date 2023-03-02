@@ -52,3 +52,6 @@ WHERE Titel <> NULL;
 
 **Het ligt niet aan de data! Vergelijkingen met `NULL` via `=` en `<>` zijn zinloos!** Als je wil controleren of de waarde in een bepaalde kolom ontbreekt, schrijf dan `IS NULL` in plaats van `= NULL`!
 
+{% hint style="danger" %}
+De vergelijking van strings in MySQL is standaard **niet hoofdlettergevoelig**! Je zou dus wel eens rijen kunnen zien die je eerst niet verwachtte!
+{% endhint %}
