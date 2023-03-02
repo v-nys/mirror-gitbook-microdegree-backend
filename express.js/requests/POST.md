@@ -15,21 +15,19 @@ app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended:true}))
 ```
 
-Let op: limit kies je zelf. Dit is de grootte van het request.
+De waarde voor `limit` kies je zelf. Dit is de maximale grootte van het request. De tweede lijn zorgt ervoor dat de inhoud van de `POST` omgezet wordt in een handig JSON object.
 
-De tweede lijn zorgt ervoor dat de inhoud van de `POST` omgezet wordt in een handig JSON object.&#x20;
-
-Om een `POST` request te behandelen gebruiken `we app.post` ipv `app.get`.
+Om een `POST` request te behandelen gebruiken we `app.post` ipv `app.get`.
 
 ```typescript
 app.post('/sendData',(req, res)=>{
-    ...
-})
+    // code hier
+});
 ```
 
-Laten we een simpel form maken dat onze sendData route aanroept:
+Laten we een simpel formulier maken om gegevens naar deze route te sturen:
 
-```typescript
+```html
 <form action="/sendData" method="post">
     <div>
         <label for="fname">First name?</label>
@@ -45,9 +43,7 @@ Laten we een simpel form maken dat onze sendData route aanroept:
 </form>
 ```
 
-Dit voorbeeld stuurt 2 velden: fname en lname. Het formulier doet ook een POST request (zie method).
-
-Om de data die gestuurd is op te vragen, gebruiken we weeral het Request object. Hierin bevindt zich de property body die de velden zal bevatten van ons POST request:
+Dit voorbeeld stuurt 2 velden: `fname` en `lname`. Omdat het attribuut `method` van het `form`-element op `post` staat, worden de gegevens verstuurd als een `POST` request. Om de data die gestuurd is op te vragen, gebruiken we het Request object. Hierin bevindt zich de property `body` die de velden bevat van het `POST` request:
 
 ```typescript
 app.post('/sendData',(req, res)=>{
@@ -55,12 +51,6 @@ app.post('/sendData',(req, res)=>{
     res.json(data);
 })
 ```
-
-{% hint style="info" %}
-* Query string parameters vind je terug in req.query.
-* Route parameters vind je terug in req.params.
-* POST data vind je terug in req.body
-{% endhint %}
 
 De velden fname en lname bevinden zich in `req.body`:
 
@@ -72,7 +62,3 @@ app.post('/sendData',(req, res)=>{
     res.send(`Hello ${firstName} ${lastName}`);
 })
 ```
-
-{% hint style="info" %}
-Probeer nu zelf query string en route parameters te combineren met een POST request.
-{% endhint %}
