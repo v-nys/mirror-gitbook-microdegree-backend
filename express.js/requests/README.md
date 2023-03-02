@@ -16,6 +16,7 @@ De gebruiker vraagt bijvoorbeeld naar `localhost:3030` en krijgt zo de tekst "ha
 Wat als we de gebruiker wat meer controle willen geven over de request?
 
 ## **GET requests**
+
 `GET`-requests zijn de "default". Express-applicaties bevatten vaak calls van de vorm `app.get` en deze dienen dus om aan te geven hoe een `GET`-request moet worden afgehandeld. Met andere woorden: wat moet gebeuren wanneer de gebruiker naar een bepaalde pagina surft. Om meer data mee te geven kunnen we gebruik maken van query strings, bijvoorbeeld:
 
 ```typescript
@@ -41,11 +42,11 @@ let people = ["Sven","Andie","George","Geoff"];
 
 app.get("/person",(req,res)=>{
     res.type('text/html')
-    let index = req.query.index;
+    let index_ = req.query.index;
     // TypeScript kan niet garanderen dat deze parameter een geldige waarde heeft gekregen
     // de if staat ons toe binnen dat block te veronderstellen dat string het type is
-    if (typeof index === "string") {
-      let index = parseInt(req.query.index);
+    if (typeof index_ === "string") {
+      let index = parseInt(index_);
       res.send(people[index]);
     }
     else {

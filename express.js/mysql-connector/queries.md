@@ -1,8 +1,8 @@
-### Queries uitvoeren
+# queries uitvoeren
 
 Om queries uit te voeren maken we gebruik van het `connection` object. We maken hier gebruik van de `execute` functie waar we de query meegeven als argument. Deze functie geeft een array terug met twee elementen. Het eerste element is een array met de resultaten van de query. Het tweede element is een array met metadata over de query. We gaan hier alleen gebruik maken van het eerste element.
 
-#### Select met meerdere resultaten
+## Select met meerdere resultaten
 
 Als je bijvoorbeeld een query uitvoeren om alle gebruikers van een `Users` tabel op te halen dan zou je de volgende code kunnen gebruiken:
 
@@ -49,4 +49,3 @@ const [rows_user] = await connection.execute<User[]>('SELECT * FROM `users` WHER
 const user = rows_user[0];
 ```
 
-##
