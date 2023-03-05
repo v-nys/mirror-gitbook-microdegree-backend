@@ -33,13 +33,14 @@
 * [gegevens berekenen en weergeven](semester-1-databanken-intro/select/README.md)
   * [gegevens ordenen](semester-1-databanken-intro/select/order-by.md)
   * [gegevens filteren](semester-1-databanken-intro/select/where.md)
-  * [booleaanse operatoren]()
-  * [LIKE]()
-  * [functies]()
-  * [aggregatiefuncties]()
-  * [GROUP BY]()
-  * [HAVING]()
-  * [uitvoeringsvolgorde]()
+  * [booleaanse operatoren](semester-1-databanken-intro/select/logische-operatoren.md)
+  * [LIKE](semester-1-databanken-intro/select/like.md)
+  * [functies](semester-1-databanken-intro/select/functies.md)
+  * [aggregatiefuncties](semester-1-databanken-intro/select/aggregatiefuncties.md)
+  * [DISTINCT](semester-1-databanken-intro/select/distinct.md)
+  * [GROUP BY](semester-1-databanken-intro/select/groupby.md)
+  * [HAVING](semester-1-databanken-intro/select/having.md)
+  * [uitvoeringsvolgorde](semester-1-databanken-intro/select/uitvoeringsvolgorde.md)
 
 ## Versiebeheer
 
