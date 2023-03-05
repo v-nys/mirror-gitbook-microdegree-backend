@@ -1,8 +1,4 @@
-# SELECT met clausules
-
-{% hint style="success" %}
-[Kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3e0ba6f3-fc38-4dec-950e-adc5007c0443)
-{% endhint %}
+# Uitvoeringsvolgorde
 
 Het is niet voldoende om rijen te kunnen opvragen. Je moet ook in staat zijn om specifieke informatie op te vragen, statistische gegevens te genereren, enz. Dit kan door uitdrukkingen en extra clausules te gebruiken in `SELECT` statements.
 
@@ -34,8 +30,6 @@ Hiermee kan je:
 * statistische eigenschappen van de getoonde data afdwingen
 * de uitvoer sorteren
 
-In de loop van deze cursus komen al deze clausules aan bod.
-
 ### Verwerking
 
 Hoewel bovenstaande volgorde bepaalt hoe je een query moet uitschrijven, is dat niet hoe een query wordt uitgevoerd. De verschillende onderdelen worden verwerkt als volgt:
@@ -44,14 +38,16 @@ Hoewel bovenstaande volgorde bepaalt hoe je een query moet uitschrijven, is dat 
 2. WHERE
 3. GROUP BY
 4. HAVING
-5. SELECT
-6. ORDER BY
-
-Waarschijnlijk ken je al deze clausules nog niet, maar dat is niet erg. Je kan terug kijken naar deze uitleg telkens je een nieuwe clausule leert. Het idee is als volgt:
+5. ORDER BY
+6. SELECT
 
 * eerst geef je aan waar je data vandaag komt
 * dan bepaal je, per record, of dat record mee verwerkt zal worden of niet
 * de behouden records kan je groeperen om informatie over een bepaald groepje te tonen
 * per groepje kan je opnieuw bepalen of dat groepje verwerkt zal worden
+* je kan vastleggen in welke volgorde deze resultaten uiteindelijk verschijnen
 * de resultaten van je verwerking kan je behouden om weer te geven
-* en je kan vastleggen in welke volgorde deze resultaten uiteindelijk verschijnen
+
+{% hint style="warning" %}
+Dit is **cruciale informatie**. Als je in je hoofd de tekst van boven naar onder probeert uit te voeren, zal je complexe queries **nooit** correct schrijven.
+{% endhint %}
