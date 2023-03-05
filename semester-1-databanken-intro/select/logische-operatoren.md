@@ -13,7 +13,7 @@ De bouwstenen zijn:
 * `TRUE`, `FALSE` en `NULL`
 * haakjes \(voor groepering\)
 * de logische operatoren `AND`, `OR` en `NOT` \(en `XOR`\)
-* en andere constructies die een voorwaarde uitdrukken \(deze komen later aan bod\)
+* en alle andere constructies die `TRUE`, `FALSE` of `NULL` als uitkomst kunnen produceren
 
 Het gebruik van de ronde haakjes dient om de volgorde van de evaluatie van de operatoren te bepalen. Wat tussen haakjes staat, werk je eerst uit als één geheel, vooraleer je de onderdelen buiten deze haakjes uitrekent.
 
@@ -45,7 +45,7 @@ Voor de logische operatoren gebruiken we waarheidstabellen:
 Om deze te onthouden, doe je er best aan `NULL` te zien als een onbekend resultaat. Als je niet zeker bent wat de uitkomst is omwille van de aanwezigheid van `NULL`, zal de uitkomst zelf ook `NULL` zijn.
 {% endhint %}
 
-Je kan de waarheidstabellen ook nabouwen in Workbench, bv.:
+Je kan de waarheidstabellen ook controleren in Workbench, bv.:
 
 ```sql
 SELECT TRUE OR NULL;

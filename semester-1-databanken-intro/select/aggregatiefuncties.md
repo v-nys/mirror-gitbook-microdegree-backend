@@ -1,16 +1,11 @@
 # Aggregaatfuncties
-
-{% hint style="success" %}
-[Kennisclip](https://youtu.be/VhBOMD5jc9g) (ondertiteling beschikbaar)
-{% endhint %}
-
-Aggregaatfuncties lijken op de functies die je al kent (`substring`, `concat`, `length`, `round`). Het verschil is dat, als je een kolomnaam invult, de aggregaatfunctie op **heel de kolom** wordt toegepast. Anders gezegd, aggregaatfuncties worden niet binnen een rij toegepast, maar over meerdere rijen heen. Voor elke rij wordt er een waarde geproduceerd en een aggregaatfunctie gebruikt al deze waarden samen als invoer.
+Aggregaatfuncties lijken op de functies die je al kent. Het verschil is dat, als je een kolomnaam invult, de aggregaatfunctie met **heel de kolom als invoer** wordt toegepast. Anders gezegd, aggregaatfuncties worden niet **binnen** een rij toegepast, maar **over** meerdere rijen heen. Voor elke rij wordt er een waarde geproduceerd en een aggregaatfunctie gebruikt al deze waarden samen als invoer.
 
 Op deze pagina geven we een overzicht van de belangrijkste aggregatiefuncties, maar er bestaan er nog.
 
 ## calibratie
 
-Voor deze voorbeelden gebruiken we volgende calibratiestap, die je moet opslaan als `0041__CreateHonden.sql`:
+Voor deze voorbeelden gebruiken we volgende calibratiestap:
 
 ```sql
 USE ApDB;
@@ -196,32 +191,29 @@ VALUES
 
 `COUNT` krijgt als invoer een lijst rijen en zegt hoeveel niet-`NULL` elementen er in deze lijst zitten.
 
-De simpelste toepassing is het tellen van al je records, zoals hier in `0042__SelectHonden.sql`:
+De simpelste toepassing is het tellen van al je records, zoals hier:
 
 ```sql
-USE ApDB;
 SELECT COUNT(Naam)
 FROM Honden;
 ```
 
-Dit levert slechts één resultaat, ongeacht hoe veel honden er in de database staan. Dit is anders dan bijvoorbeeld `LENGTH(Naam)`. Die laatste zou één resultaat per hond geven. De reden is dat `COUNT` een aggregaatfunctie is. Ze verzamelt alle waarden in de gegeven kolom `Naam`, telt hoe veel dat er zijn en toont dat resultaat. Namen die twee keer voorkomen, worden twee keer geteld. Let op: `COUNT` telt geen `NULL`-waarden.
+Dit levert slechts één resultaat, ongeacht hoe veel honden er in de database staan. Dit is anders dan bijvoorbeeld `CHAR_LENGTH(Naam)`. Die laatste zou één resultaat per hond geven. De reden is dat `COUNT` een aggregaatfunctie is. Ze verzamelt alle waarden in de gegeven kolom `Naam`, telt hoe veel dat er zijn en toont dat resultaat. Namen die twee keer voorkomen, worden twee keer geteld. Let op: `COUNT` telt geen `NULL`-waarden.
 
-Soms wil je gewoon weten hoe veel rijen er in een tabel zijn. Dan gebruik je `COUNT(*)`. Bijvoorbeeld:
+Soms wil je gewoon weten hoe veel rijen er in een tabel zijn. Dan gebruik je best `COUNT(*)`. Bijvoorbeeld:
 
 ```sql
-USE ApDB;
 SELECT COUNT(*)
 FROM Honden;
 ```
 
-Dit geeft hetzelfde resultaat, want `Naam` was toch een verplichte kolom.
+Dit geeft hetzelfde resultaat, want `Naam` was toch een verplicht in te vullen kolom.
 
 ## aggregaatfunctie: `SUM`
 
-Deze aggregaatfunctie krijgt een expressie en berekent voor de som van het toepassen van deze expressie voor elk record. Een eenvoudig voorbeeld van een expressie is hier (in `0043__SelectHonden.sql`) een kolomnaam:
+Deze aggregaatfunctie krijgt een expressie en berekent voor de som van het toepassen van deze expressie voor elk record. Een eenvoudig voorbeeld van een expressie is hier een kolomnaam:
 
 ```sql
-USE ApDB;
 SELECT SUM(Leeftijd)
 FROM Honden;
 ```
@@ -231,7 +223,6 @@ Merk op: hier zal je niet zomaar `*` in plaats van `Leeftijd` kunnen invullen. J
 Je kan wel iets algemener een expressie die een getal oplevert invullen, niet gewoon een kolomnaam. Dus je kan ook dit doen:
 
 ```sql
-USE ApDB;
 SELECT SUM(Leeftijd+1)
 FROM Honden;
 ```
@@ -242,10 +233,9 @@ Wat levert dit dan? De gezamenlijke leeftijd van alle honden, verhoogd met het a
 
 ## aggregaatfuncties: `MIN` en `MAX`
 
-Deze aggregaatfuncties krijgen een expressie en berekenen het minimum of het maximum voor het toepassen van deze expressie voor elk record. Een eenvoudig voorbeeld van een expressie is hier (in `0044__SelectHonden.sql`) een kolomnaam:
+Deze aggregaatfuncties krijgen een expressie en berekenen het minimum of het maximum voor het toepassen van deze expressie voor elk record. Een eenvoudig voorbeeld van een expressie is hier een kolomnaam:
 
 ```sql
-USE ApDB;
 SELECT MAX(Leeftijd)
 FROM Honden;
 ```
@@ -254,10 +244,9 @@ Dit vertelt je wat de leeftijd van de oudste hond in het systeem is.
 
 ## aggregaatfunctie: `AVG`
 
-Deze aggregaatfunctie krijgt een expressie en berekent het gemiddelde voor het toepassen van deze expressie voor elk record. Een eenvoudig voorbeeld van een expressie is hier (in `0045__SelectHonden.sql`) een kolomnaam:
+Deze aggregaatfunctie krijgt een expressie en berekent het gemiddelde voor het toepassen van deze expressie voor elk record. Een eenvoudig voorbeeld van een expressie is hier een kolomnaam:
 
 ```sql
-USE ApDB;
 SELECT AVG(Leeftijd)
 FROM Honden;
 ```
@@ -267,7 +256,6 @@ FROM Honden;
 Onder normale omstandigheden kan je geen combinatie maken van geaggregeerde resultaten en niet-geaggregeerde resultaten. Iets als het volgende gaat dus niet:
 
 ```sql
-USE ApDB;
 SELECT COUNT(*), Naam
 FROM Honden;
 ```

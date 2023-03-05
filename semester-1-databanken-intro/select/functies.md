@@ -1,10 +1,5 @@
 # Functies
-
-{% hint style="success" %}
-[Kennisclip voor deze inhoud](https://youtu.be/u8wtx8u5Xc0)
-{% endhint %}
-
-Functies in SQL staan je toe een waarde te berekenen in plaats van een vaste waarde of de waarde in een of andere kolom.
+Functies in SQL staan je toe een waarde te berekenen aan de hand van eventueel reeds gekende inputs.
 
 ## SUBSTRING
 
@@ -46,12 +41,12 @@ Je kan dit ook duidelijker laten weergeven in Workbench met:
 SELECT CONCAT(Voornaam,' ',Familienaam) AS Naam FROM Boeken;
 ```
 
-## LENGTH
+## CHAR\_LENGTH
 
 Hiermee bereken je de lengte van een stuk tekst. Je kan bijvoorbeeld dit doen:
 
 ```sql
-SELECT Length(Familienaam) FROM Boeken;
+SELECT CHAR_LENGTH(Familienaam) FROM Boeken;
 ```
 
 Dit zal je niet de familienaam van elke auteur tonen, maar wel het aantal letters in hun familienaam.
@@ -59,10 +54,14 @@ Dit zal je niet de familienaam van elke auteur tonen, maar wel het aantal letter
 Net zo kan je dit doen:
 
 ```sql
-SELECT Length('abc');
+SELECT CHAR_LENGTH('abc');
 ```
 
 Dan zal je als resultaat `3` krijgen.
+
+{% hint style="warning" %}
+Gewoonweg `LENGTH` bestaat ook, maar er is een subtiel verschil. Die functie geeft de lengte in bytes van een stuk tekst. Als je buiten het ASCII-alfabet gaat, kan die hoger liggen dan `CHAR_LENGTH`.
+{% endhint %}
 
 ## Wiskundige operaties
 
@@ -73,3 +72,14 @@ SELECT 1 + Duurtijd FROM Nummers;
 SELECT Duurtijd - 1 FROM Nummers;
 ```
 
+## RAND
+
+Deze functie heeft *geen* invoer nodig en produceert een willekeurig getal tussen 0 en 1. In principe kan ze 0 opleveren, maar nooit exact 1. Bijvoorbeeld:
+
+```sql
+SELECT RAND();
+```
+
+{% hint style="info" %}
+Hiermee heb je een beeld van enkele typische functies, maar MySQL voorziet er veel meer. Raadpleeg [de officiële documentatie](https://dev.mysql.com/doc/refman/8.0/en/functions.html) als je een bewerking nodig hebt waarvoor je verwacht dat de functionaliteit al voorzien zou kunnen zijn.
+{% endhint %}
