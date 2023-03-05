@@ -28,9 +28,16 @@
   * [INSERT](semester-1-databanken-intro/deeltalen/dml/insert.md)
   * [DELETE](semester-1-databanken-intro/deeltalen/dml/delete.md)
   * [UPDATE](semester-1-databanken-intro/deeltalen/dml/update.md)
-* [SELECT instructie](semester-1-databanken-intro/select/README.md)
+* [gegevens berekenen en weergeven](semester-1-databanken-intro/select/README.md)
   * [gegevens ordenen](semester-1-databanken-intro/select/order-by.md)
   * [gegevens filteren](semester-1-databanken-intro/select/where.md)
+  * [booleaanse operatoren]()
+  * [LIKE]()
+  * [functies]()
+  * [aggregatiefuncties]()
+  * [GROUP BY]()
+  * [HAVING]()
+  * [uitvoeringsvolgorde]()
 
 ## Versiebeheer
 
