@@ -11,8 +11,9 @@
   * [Stap 4: Gedistribueerd versiebeheer toevoegen](friendface/setup-work-environment-intent-distributed-version-control.md)
   * [Stap 5: Eenvoudige gebruikersprofielen](friendface/barebones-user-profiles.md)
   * [Stap 6: SQL scripts bij opstart](friendface/startup-sql-scripts.md)
-  * [Stap 7: simpele adminpagina](friendface/friendface/stap-7-simpele-adminpagina.md)
-  * [Stap 8: adminpagina met editing](friendface/friendface/stap-8-adminpagina-met-editing.md)
+  * [Stap 7: simpele adminpagina](friendface/stap-7-simpele-adminpagina.md)
+  * [Stap 8: adminpagina met editing](friendface/stap-8-adminpagina-met-editing.md)
+  * [Stap 9: statistieken over gebruikers](friendface/stap-9-adminpagina-met-statistieken.md)
 
 ## Databases
 
