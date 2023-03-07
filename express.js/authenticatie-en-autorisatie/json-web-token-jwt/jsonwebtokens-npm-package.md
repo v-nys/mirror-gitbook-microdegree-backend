@@ -3,10 +3,10 @@
 **jsonwebtoken** is een npm package die wordt gebruikt om JSON Web Tokens ([JWT](../json-web-token-jwt.md)) te maken, verifiëren en decoderen in een nodeJS applicatie.
 
 ```
-npm i jsonwebtoken
+npm i jsonwebtoken @types/jsonwebtoken
 ```
 
-De jsonwebtoken package biedt een aantal functies die kunnen worden gebruikt om JWTs te maken, verifiëren en decoderen.&#x20;
+De jsonwebtoken package biedt een aantal functies die kunnen worden gebruikt om JWTs te maken, verifiëren en decoderen.
 
 #### De belangrijkste functies zijn:
 
@@ -16,7 +16,7 @@ De jsonwebtoken package biedt een aantal functies die kunnen worden gebruikt om 
 
 ### jwt.sign()
 
-De `jwt.sign` functie uit de jsonwebtokens package is een functie die wordt gebruikt om een JSON Web Token (JWT) te genereren. De `jwt.sign` functie neemt twee parameters: het eerste is de informatie die je wilt opslaan in het JWT (dit wordt ook wel de "**payload**" genoemd), en het tweede is een "**geheim**" dat wordt gebruikt om de JWT te ondertekenen en te beveiligen. De functie retourneert vervolgens een JWT dat je kunt gebruiken om de opgeslagen informatie te versturen of op te halen.
+De `jwt.sign` functie uit de jsonwebtokens package is een functie die wordt gebruikt om een JSON Web Token (JWT) te genereren. De `jwt.sign` functie neemt twee argumenten: het eerste is de informatie die je wilt opslaan in het JWT (dit wordt ook wel de "**payload**" genoemd), en het tweede is een "**geheim**" dat wordt gebruikt om de JWT te ondertekenen en te beveiligen. De functie retourneert vervolgens een JWT dat je kunt gebruiken om de opgeslagen informatie te versturen of op te halen.
 
 Hier is een voorbeeld van hoe je de `jwt.sign` functie zou kunnen gebruiken in Typescript:
 
@@ -84,22 +84,6 @@ const decodedToken = jwt.decode(token);
 console.log(decodedToken); // { username: 'john', email: 'john@gmail.com' }
 ```
 
-{% hint style="info" %}
-**Let op:**  de `jwt.decode()` functie zal alleen de gebruikersgegevens uit het token halen, de token zelf wordt niet automatisch gevalideerd. Als de token vervalst is of ongeldig is, zal de functie nog steeds een object teruggeven met de gebruikersgegevens. Om de token te valideren en te verifiëren, moet je de `jwt.verify()` functie gebruiken.
+{% hint style="danger" %}
+**Let op:**  de `jwt.decode()` functie zal alleen de gebruikersgegevens uit het token halen, de token zelf wordt niet automatisch gevalideerd. Als de token vervalst is of ongeldig is, zal de functie nog steeds een object teruggeven met de gebruikersgegevens. Om de token te valideren en te verifiëren, moet je de `jwt.verify()` functie gebruiken. Je zal dus voornamelijk `jwt.verify` gebruiken.
 {% endhint %}
-
-{% hint style="info" %}
-**Je gebruikt voornamelijk `jwt.verify()`, uitzonderlijk zal je eens `jwt.decode()` gebruiken.**&#x20;
-{% endhint %}
-
-### Conclusie
-
-In dit hoofdstuk hebben we geleerd hoe we de **jsonwebtoken** **package** kunnen gebruiken om JWT tokens te genereren, valideren en decoderen.&#x20;
-
-We hebben gezien hoe we de `jwt.sign()` functie kunnen gebruiken om een JWT token te genereren met behulp van gebruikersgegevens en een geheime sleutel.&#x20;
-
-We hebben ook gezien hoe we de `jwt.verify()` functie kunnen gebruiken om een JWT token te valideren met behulp van de geheime sleutel.
-
-En tenslotte hebben we geleerd hoe we de `jwt.decode()` functie kunnen gebruiken om de gebruikersgegevens uit een JWT token te halen zonder de token te valideren.
-
-Met deze kennis kunnen we nu JWT tokens gebruiken in onze Node.js applicaties om de authenticatie en autorisatie van gebruikers te verbeteren en te beveiligen! :confetti\_ball:
