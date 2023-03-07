@@ -14,6 +14,7 @@
   * [Stap 7: simpele adminpagina](friendface/stap-7-simpele-adminpagina.md)
   * [Stap 8: adminpagina met editing](friendface/stap-8-adminpagina-met-editing.md)
   * [Stap 9: statistieken over gebruikers](friendface/stap-9-adminpagina-met-statistieken.md)
+  * [Stap 10: login zonder wachtwoord](friendface/stap-10-login-zonder-wachtwoord.md)
 
 ## Databases
 
