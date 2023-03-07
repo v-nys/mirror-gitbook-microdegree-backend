@@ -3,8 +3,10 @@
 **jsonwebtoken** is een npm package die wordt gebruikt om JSON Web Tokens ([JWT](../json-web-token-jwt.md)) te maken, verifiëren en decoderen in een nodeJS applicatie.
 
 ```
-npm i jsonwebtoken @types/jsonwebtoken
+npm i jsonwebtoken
 ```
+
+De types installeer je als development dependencies: `npm i --save-dev @types/jsonwebtoken`.
 
 De jsonwebtoken package biedt een aantal functies die kunnen worden gebruikt om JWTs te maken, verifiëren en decoderen.
 

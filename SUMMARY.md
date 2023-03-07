@@ -75,7 +75,7 @@
   * [queries uitvoeren](express.js/mysql-connector/queries.md)
   * [prepared statements](express.js/mysql-connector/prepared-statements.md)
   * [als onderdeel van een Express applicatie](express.js/mysql-connector/als-onderdeel-van-een-express-applicatie.md)
-* [Cookies & Sessions](express.js/cookies.md)
+* [Cookies](express.js/cookies.md)
 * [Authenticatie en Autorisatie](express.js/authenticatie-en-autorisatie/README.md)
   * [JSON Web Token (JWT)](express.js/authenticatie-en-autorisatie/json-web-token-jwt.md)
     * [jsonwebtokens NPM package](express.js/authenticatie-en-autorisatie/json-web-token-jwt/jsonwebtokens-npm-package.md)
