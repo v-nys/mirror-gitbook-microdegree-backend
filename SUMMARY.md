@@ -81,7 +81,6 @@
     * [jsonwebtokens NPM package](express.js/authenticatie-en-autorisatie/json-web-token-jwt/jsonwebtokens-npm-package.md)
   * [Environment Variables](express.js/authenticatie-en-autorisatie/environment-variables.md)
   * [body-parser NPM package](express.js/authenticatie-en-autorisatie/body-parser-npm-package.md)
-  * [Autorisatie (0Auth)](express.js/authenticatie-en-autorisatie/autorisatie-0auth.md)
 
 ## Operationele aspecten
 
