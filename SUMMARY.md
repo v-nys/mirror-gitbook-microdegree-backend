@@ -79,7 +79,6 @@
 * [Authenticatie en Autorisatie](express.js/authenticatie-en-autorisatie/README.md)
   * [JSON Web Token (JWT)](express.js/authenticatie-en-autorisatie/json-web-token-jwt.md)
     * [jsonwebtokens NPM package](express.js/authenticatie-en-autorisatie/json-web-token-jwt/jsonwebtokens-npm-package.md)
-    * [Voorbeeld oefening JWT authenticatie](express.js/authenticatie-en-autorisatie/json-web-token-jwt/voorbeeld-oefening-jwt-authenticatie.md)
   * [Environment Variables](express.js/authenticatie-en-autorisatie/environment-variables.md)
   * [body-parser NPM package](express.js/authenticatie-en-autorisatie/body-parser-npm-package.md)
   * [Autorisatie (0Auth)](express.js/authenticatie-en-autorisatie/autorisatie-0auth.md)
