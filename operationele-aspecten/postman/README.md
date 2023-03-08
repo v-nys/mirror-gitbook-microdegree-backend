@@ -111,7 +111,7 @@ Laten we beginnen met het maken van een collectie:
 
 **Stap 4)** Je Postman collectie zou nu één request moeten bevatten.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Stap 5)** Maak een nieuwe request aan voor `{{url}}/planets` en herhaal stap 3 , zodat de collectie nu twee verzoeken bevat.
 
