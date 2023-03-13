@@ -54,13 +54,11 @@ Als je er eenmaal een aantal hebt gedefinieerd, zal je snel merken dat het een o
 **Omgevingsvariabelen uitvoeren vanaf een terminal is zeker handig. Maar het heeft zijn nadelen:**
 
 * Je kan de lijst met variabelen niet raadplegen;
-* Het is veel te gemakkelijk om een ​​typefout te maken;
+* Het is veel te gemakkelijk om een typfout te maken;
 
 Een populaire oplossing voor het organiseren en onderhouden van je omgevingsvariabelen is het gebruik van een `.env`-bestand. Het helpt ons om alle omgevingsvariabelen op één plek te definiëren en indien nodig te wijzigen.
 
-Maak het `.env`-bestand in de hoofdmap van je app en voeg je variabelen en waarden eraan toe.
-
-
+Maak het `.env`-bestand ergens in de bestandenstructuur van je applicatie en voeg je variabelen en waarden eraan toe.
 
 {% code title=".env" %}
 ```json
@@ -74,65 +72,13 @@ API_URL=**************************
 
 #### Een .gitignore-bestand
 
-Een .`env`-bestand is een geweldige manier om al je omgevingsvariabelen op één plek te verzamelen. Zorg er wel voor dat je het `.env`-bestand niet in een version control systeem zoals [Git](https://git-scm.com/) plaatst. Anders bevat je version control historiek referenties van je omgevingsvariabelen. Dit zou een beveiligingsrisico vormen aangezien er gevoelige informatie in je omgevingsvariabelen kan staan.
+Een .`env`-bestand is een geweldige manier om al je omgevingsvariabelen op één plek te verzamelen. Zorg er wel voor dat je het `.env`-bestand niet in een version control systeem zoals Git plaatst. Anders bevat je version control historiek referenties van je omgevingsvariabelen. Dit zou een beveiligingsrisico vormen aangezien er gevoelige informatie in je omgevingsvariabelen kan staan.
 
-Maak een `.gitignore`-bestand en voeg er `.env` aan toe, zoals weergegeven in de volgende afbeelding.
+#### Gebruik in Docker
+In een Docker Compose file kan je een of meerdere `.env`-bestanden inladen door middel van een key `env_file`. Je vindt hiervan een voorbeeld in de [Docker Compose reference](https://docs.docker.com/compose/compose-file/#env_file).
 
-<figure><img src="../../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption><p>Bron: <a href="https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786">https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786</a></p></figcaption></figure>
-
-{% hint style="info" %}
-Het `.gitignore`-bestand vertelt het version control systeem om de bestanden (of folders) die je opsomt te negeren.
-{% endhint %}
-
-#### dotenv npm-module
-
-Je hebt je omgevingsvariabelen gedefinieerd in het `.env`-bestand maar hoe worden de waarden uit dit bestand ingeladen? De gemakkelijkste manier is door een npm-module genaamd `dotenv` te gebruiken. Installeer de module eenvoudig via npm:
-
-```
-npm install dotenv
-```
-
-Voeg daarna de volgende regel helemaal bovenaan je server.js toe:
-
-{% code title="server.js" %}
-```javascript
-require('dotenv').config();
-```
-{% endcode %}
-
-Deze code laadt automatisch het `.env`-bestand in de hoofdmap van je project en initialiseert de waarden, waarbij alle reeds vooraf ingestelde variabelen worden overgeslagen.
-
-Laten we onze server.js file een beetje bewerken:
-
-{% code title="server.js" %}
-```javascript
-console.log(`Your port is ${process.env.PORT}`); // undefined
-const dotenv = require('dotenv');
-dotenv.config();
-console.log(`Your port is ${process.env.PORT}`); // 3000
-```
-{% endcode %}
-
-Voer de code uit vanaf de terminal zonder expliciet een PORT variabele door te geven, met behulp van de volgende opdracht:
-
-```
-node server.js
-```
-
-De code geeft de beginwaarde weer van de `PORT`-omgevingsvariabele, die `undefined` zal zijn. Vervolgens importeer je de `dotenv`-package en voer je daarvan de `config()` functie uit, die het .env-bestand leest en de omgevingsvariabelen instelt. De laatste coderegel geeft degelijk de correcte waarde van `PORT` terug, namelijk 3000.
-
-### Conclusie
-
-**Custom omgevingsvariabelen gebruiken in Node stappenplan:**
-
-1. Maak een `.env`-bestand:
-   1. Het bestand moet in de hoofdmap van je project worden geplaatst;
-2. Installeer de `dotenv`-bibliotheek:&#x20;
-   1. npm install dotenv;
-3. require dotenv zo vroeg mogelijk:&#x20;
-   1. `require('dotenv').config({path: __dirname + '/.env'})`;
+Wanneer deze zijn ingeladen, kunnen applicaties in de container de variabelen gebruiken. Een Node.js-applicatie kan bijvoorbeeld `process.env.MYVARIABLE` gebruiken. Ze kunnen ook gebruikt worden in zogenaamde Bash-instructies voor de container (zoals `postStartCommand`), maar daar moet je dan het formaat `$MYVARIABLE` gebruiken.
 
 #### Resources
 
 * [Wat zijn Omgevingsvariabelen en hoe maak je een .env file aan?](https://www.codementor.io/@parthibakumarmurugesan/what-is-env-how-to-set-up-and-run-a-env-file-in-node-1pnyxw9yxj)
-* [Inladen van .env variabelen](https://www.npmjs.com/package/dotenv)

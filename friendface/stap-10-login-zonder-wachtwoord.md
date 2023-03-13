@@ -3,4 +3,4 @@ In deze stap zullen we gebruikers laten aanmelden als een bepaalde gebruiker. We
 
 We zullen hiervoor een route `/login` voorzien waarop de bezoeker een gebruikersnaam kan ingeven. De server zal dan controleren of deze gebruikersnaam bestaat. Als dit zo is, krijgt de bezoeker een "token" dat aantoont dat hij zich heeft aangemeld - zie dit als een virtueel polsbandje.
 
-Op alle reeds bestaande pagina's zullen we ook controleren of de gebruiker wel over dit token beschikt. Indien dit niet zo is, geven we een serverfout 500 terug.
+Op alle reeds bestaande pagina's zullen we ook controleren of de gebruiker wel over dit token beschikt. Indien dit niet zo is, geven we een foutcode 403 terug.
