@@ -1,0 +1,4 @@
+# Relaties voorstellen
+In een SQL-database wordt typisch één tabel per "entiteittype", dus per relevant concept in het probleemdomein, gebruikt. Dit is overzichtelijker en het vermijdt ook dat de voorstelling van de data heel chaotisch wordt, maar vaak zijn er belangrijke verbanden tussen concepten. Dit zijn de relaties.
+
+In een SQL-databank worden deze relaties, net als de entiteittypes zelf, in tabelvorm voorgesteld. Dit gebeurt met "primaire sleutels" en "vreemde sleutels". Hoewel dit nogal technische termen zijn, is het concept hetzelfde dat wordt toegepast in een vestiaire. Daar krijgt de eigenaar van een kledingstuk een ticketje met een getal op. Een ticketje met hetzelfde getal wordt op het kledingstuk gekleefd. In een SQL-database krijgen twee stukjes data die via een relatie met elkaar verbonden zijn allebei een gedeeld stukje informatie, dat toestaat om ze terug aan elkaar te linken. Deze stukjes informatie zijn de "sleutels".

@@ -17,6 +17,7 @@
   * [Stap 10: login zonder wachtwoord](friendface/stap-10-login-zonder-wachtwoord.md)
   * [Stap 11: gecentraliseerde waarden](friendface/stap-11-gecentraliseerde-waarden.md)
   * [Stap 12: moderne frontend](friendface/stap-12-moderne-frontend.md)
+  * [Stap 13: link berichten en profielen](friendface/stap-13-link-berichten-profielen.md)
 
 ## Databases
 
@@ -30,6 +31,11 @@
   * [CREATE DATABASE](semester-1-databanken-intro/deeltalen/ddl/create-database.md)
   * [DROP DATABASE](semester-1-databanken-intro/deeltalen/ddl/drop-database.md)
   * [CREATE TABLE](semester-1-databanken-intro/deeltalen/ddl/create.md)
+  * [ALTER TABLE](semester-1-databanken-intro/deeltalen/ddl/alter.md)
+  * [relaties voorstellen](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/README.md)
+    * [primaire sleutels](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/primary-keys.md)
+    * [vreemde sleutels](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/foreign-keys.md)
+    * [1-op-1 en 1-op-N relaties](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/1-op-n.md)
 * [DML instructies](semester-1-databanken-intro/deeltalen/dml/README.md)
   * [INSERT](semester-1-databanken-intro/deeltalen/dml/insert.md)
   * [DELETE](semester-1-databanken-intro/deeltalen/dml/delete.md)
@@ -45,6 +51,7 @@
   * [GROUP BY](semester-1-databanken-intro/select/groupby.md)
   * [HAVING](semester-1-databanken-intro/select/having.md)
   * [uitvoeringsvolgorde](semester-1-databanken-intro/select/uitvoeringsvolgorde.md)
+  * [tussenresultaten via sessievariabelen](semester-1-databanken-intro/select/sessievariabelen.md)
 
 ## Versiebeheer
 
