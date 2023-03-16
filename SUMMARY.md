@@ -17,7 +17,8 @@
   * [Stap 10: login zonder wachtwoord](friendface/stap-10-login-zonder-wachtwoord.md)
   * [Stap 11: gecentraliseerde waarden](friendface/stap-11-gecentraliseerde-waarden.md)
   * [Stap 12: moderne frontend](friendface/stap-12-moderne-frontend.md)
-  * [Stap 13: link berichten en profielen](friendface/stap-13-link-berichten-profielen.md)
+  * [Stap 13: data ophalen op de frontend](friendface/stap-13-data-ophalen-uit-react.md)
+  * [Stap 14: link berichten en profielen](friendface/stap-14-link-berichten-profielen.md)
 
 ## Databases
 
