@@ -5,16 +5,16 @@ De `body-parser` package is een middleware voor Node.js applicaties die wordt ge
 De body-parser package kan worden gebruikt om het request-lichaam te parsen en te gebruiken in routes en middleware. Dit maakt het gemakkelijker om gegevens uit het request-lichaam te halen en te gebruiken in de applicatie. Zonder de body-parser package zou de ontwikkelaar zelf het request-lichaam moeten parsen, wat tijdrovend en complex kan zijn.
 
 ```
-npm i body-parser
+npm install body-parser; npm install --save-dev @types/body-parser
 ```
 
-De body-parser package ondersteunt verschillende types request-lichamen, zoals `JSON`, `urlencoded` en `multi-part` formulieren. Deze formaten kunnen worden gespecificeerd wanneer de body-parser wordt geïnitialiseerd in de express-applicatie.
+De body-parser package ondersteunt verschillende types request-lichamen, zoals `JSON`, `urlencoded` en `multi-part` formulieren. Deze formaten kunnen worden gespecificeerd wanneer de body-parser wordt geïnitialiseerd in de Express-applicatie.
 
-Om de body-parser package te gebruiken, moet deze worden geïmporteerd en worden toegevoegd aan de express-app met behulp van de app.use() functie
+Om de body-parser package te gebruiken, moet deze worden geïmporteerd en worden toegevoegd aan de Express-app met behulp van de app.use() functie
 
 ```typescript
-const express = require('express');
-const bodyParser = require('body-parser');
+import express from 'express';
+import bodyParser from 'body-parser';
 
 const app = express();
 
@@ -28,21 +28,17 @@ Met deze code wordt de `body-parser` middleware toegevoegd aan de express-app en
 
 In een route kan het request-lichaam worden gehaald met behulp van de `req.body` eigenschap. Dit geeft een object terug met de gestructureerde gegevens uit het request-lichaam
 
-<pre class="language-typescript" data-title="server.ts"><code class="lang-typescript"><strong>// Importeer de nodige packages
-</strong>const express = require('express');
-const bodyParser = require('body-parser');
-
-// Maak een express-app
-const app = express();
-
-// Zet body-parser in om het request-lichaam te parsen
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
+<pre class="language-typescript" data-title="server.ts"><code class="lang-typescript">
+// Maak een interface voor het formulier
+interface Form {
+  field1: string,
+  field2: string,
+  // etc.
+}
 // Maak een route voor het verwerken van een formulier
 app.post('/form', (req, res) => {
 // Haal de formuliergegevens op uit het request-lichaam
-const formData = req.body;
+const formData: Form = req.body;
 
 // Log de formuliergegevens
 console.log(formData);
