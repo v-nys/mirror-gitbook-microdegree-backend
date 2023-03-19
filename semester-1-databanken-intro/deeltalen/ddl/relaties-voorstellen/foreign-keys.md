@@ -1,4 +1,4 @@
-# Vreemde sleutels
+# vreemde sleutels
 
 ## Concept
 
@@ -58,7 +58,7 @@ Je kan een foreign key constraint verwijderen via de naam, bijvoorbeeld:
 
 ```sql
 ALTER TABLE Books
-DROP CONSTRAINT fk_Books_Persons;
+DROP FOREIGN KEY fk_Books_Persons;
 ```
 
 {% hint style="warning" %}

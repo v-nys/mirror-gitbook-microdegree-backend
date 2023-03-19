@@ -1,4 +1,4 @@
-# 1-op-1 en 1-op-veel relaties voorstellen
+# 1-op-1 en 1-op-N relaties
 
 Afhankelijk van hoe entiteiten aan elkaar gekoppeld kunnen zijn, worden relaties ingedeeld in drie categorieën:
 
@@ -109,7 +109,7 @@ Zoals in het geval van de 1-op-1 relatie, kan deze relatie weergegeven worden al
 
 Dit gebruikt opnieuw meer opslagruimte dan nodig. We kunnen een foreign key om naar één tabel te verwijzen toevoegen aan de andere tabel. Maar, in tegenstelling tot de precieze 1-op-1-relatie, is de keuze hier niet vrij. De foreign key hoort thuis in de tabel die **niet aan de "exact-1"-kant** van de relatie zit.
 
-![Eén user kan meerdere tweets hebben, elke tweet komt van exact één user.](<../../../../.gitbook/assets/Screenshot from 2020-11-21 10-05-24.png>)
+![Eén user kan meerdere tweets hebben, elke tweet komt van exact één user.](../../../../.gitbook/assets/screenshot-from-2020-11-21-10-05-24.png)
 
 #### speciaal geval: een-op-max-een-relaties
 
