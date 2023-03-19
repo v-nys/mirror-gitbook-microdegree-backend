@@ -37,6 +37,7 @@
     * [primaire sleutels](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/primary-keys.md)
     * [vreemde sleutels](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/foreign-keys.md)
     * [1-op-1 en 1-op-N relaties](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/1-op-n.md)
+    * [referentiële constraints](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/referential-constraints.md)
 * [DML instructies](semester-1-databanken-intro/deeltalen/dml/README.md)
   * [INSERT](semester-1-databanken-intro/deeltalen/dml/insert.md)
   * [DELETE](semester-1-databanken-intro/deeltalen/dml/delete.md)
