@@ -51,3 +51,16 @@ ADD CONSTRAINT fk_Books_Persons
   FOREIGN KEY (Persons_Id)
   REFERENCES Persons(Id);
 ```
+
+## Constraint verwijderen
+
+Je kan een foreign key constraint verwijderen via de naam, bijvoorbeeld:
+
+```sql
+ALTER TABLE Books
+DROP CONSTRAINT fk_Books_Persons;
+```
+
+{% hint style="warning" %}
+Dit verwijdert de kolom niet. Het zorgt er alleen voor dat het DBMS niet meer afdwingt dat de verwijzingen naar een primary keywaarde op een andere plaats zijn.
+{% endhint %}
