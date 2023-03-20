@@ -19,6 +19,8 @@
   * [Stap 12: moderne frontend](friendface/stap-12-moderne-frontend.md)
   * [Stap 13: data ophalen op de frontend](friendface/stap-13-data-ophalen-uit-react.md)
   * [Stap 14: link berichten en profielen](friendface/stap-14-link-berichten-profielen.md)
+  * [Stap 15: bugfix databeheer](friendface/stap-15-bugfix-databeheer.md)
+  * [Stap 16: styling adminpagina](friendface/stap-16-styling-admin.md)
 
 ## Databases
 
