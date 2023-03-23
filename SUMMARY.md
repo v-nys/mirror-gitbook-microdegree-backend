@@ -51,6 +51,7 @@
   * [Booleaanse operatoren](semester-1-databanken-intro/select/logische-operatoren.md)
   * [LIKE](semester-1-databanken-intro/select/like.md)
   * [Functies](semester-1-databanken-intro/select/functies.md)
+    * [Nieuwe ID opvragen](semester-2-databanken/stored-procedures/gerelateerde-data-inserten.md)
   * [Aggregatiefuncties](semester-1-databanken-intro/select/aggregatiefuncties.md)
   * [DISTINCT](semester-1-databanken-intro/select/distinct.md)
   * [GROUP BY](semester-1-databanken-intro/select/groupby.md)
@@ -60,10 +61,9 @@
 * [SQL-injectie](semester-2-databanken/sql-injectie.md)
 * [Stored programs](semester-2-databanken/stored-procedures/README.md)
   * [Stored procedures](semester-2-databanken/stored-procedures/inleiding.md)
-  * [CREATE](semester-2-databanken/stored-procedures/create-stored-procedure.md)
+    * [CREATE](semester-2-databanken/stored-procedures/create-stored-procedure.md)
+    * [Parameters](semester-2-databanken/stored-procedures/parameters.md)
   * [Variabelen](semester-2-databanken/stored-procedures/variabelen.md)
-  * [Parameters](semester-2-databanken/stored-procedures/parameters.md)
-  * [Gerelateerde data invoegen](semester-2-databanken/stored-procedures/gerelateerde-data-inserten.md)
 
 
 ## Versiebeheer
@@ -75,12 +75,8 @@
 * [git add](lokaal-werken/git-add.md)
 * [git status](lokaal-werken/git-status.md)
 * [git commit](lokaal-werken/git-commit.md)
-* [git reset](lokaal-werken/git-reset.md)
 * [git log](lokaal-werken/git-log.md)
 * [git rm](lokaal-werken/git-rm.md)
-* [git branch](lokaal-werken/git-branch.md)
-* [git checkout](lokaal-werken/git-checkout.md)
-* [git merge](lokaal-werken/git-merge.md)
 * [gitignore](lokaal-werken/gitignore.md)
 * [Remotes](gedistribueerd-werken/remotes.md)
 * [git push](gedistribueerd-werken/git-push.md)
