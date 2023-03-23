@@ -3,6 +3,7 @@
 ## Inleiding
 Een stored procedure is, in essentie, een reeks stappen die opgeslagen zijn als één geheel in de database zelf. Procedures rechtstreeks opslaan in de database heeft aanzienlijke voordelen:
 
+- **Instructies samen opslaan:** Soms moet een reeks instructies achter elkaar uitgevoerd worden. In dat geval is het logisch deze instructies samen bij te houden als één geheel. Stored procedures staan dit toe.
 - **Vermindert het netwerkverkeer:** In plaats van meerdere lange sql statements vanuit een applicatie over het netwerk te versturen, moeten applicaties in geval van stored procedures alleen de naam en parameters van de opgeslagen procedures aan te roepen.
 - **Centraliseer zakelijke logica in de database zelf:** Stored procedures kunnen gebruikt worden om de business logica te implementeren. Ze moeten dus maar één keer geschreven worden, maar kunnen door meerdere client applicaties gebruikt worden.
 - **Database is veiliger:** De databasebeheerder kan passende rechten toekennen aan applicaties die alleen toegang hebben tot specifieke stored procedures zonder dat er rechten op de onderliggende tabellen moeten worden gegeven. Bovendien is invoer duidelijk afgebakend, zodat SQL-injectie (een klassieke methode om databases te hacken) uitgesloten wordt.
