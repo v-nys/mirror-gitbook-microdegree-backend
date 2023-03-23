@@ -10,10 +10,10 @@ Je kan je dit als volgt voorstellen: vertrek van uit een situatie waarin je loka
 
 Volgende figuur illustreert wat er gebeurt:
 
-![Lokaal werk wordt naar de remote gestuurd via git push](../.gitbook/assets/Screenshot from 2021-09-09 13-58-08.png)
+![Lokaal werk wordt naar de remote gestuurd via git push](<../.gitbook/assets/Screenshot from 2021-09-09 13-58-08.png>)
 
 ### Wat vermijden we?
 
 We vermijden een push naar een remote waarvan de tijdlijn informatie bevat die niet voorkomt op onze eigen tijdlijn. Dit kan je je als volgt inbeelden:
 
-![Het recentste lokale werk vertrekt niet van het recentste werk op de remote. Dat zorgt voor een conflict.](../.gitbook/assets/Screenshot from 2021-09-09 13-59-07.png)
+![Het recentste lokale werk vertrekt niet van het recentste werk op de remote. Dat zorgt voor een conflict.](<../.gitbook/assets/Screenshot from 2021-09-09 13-59-07.png>)
