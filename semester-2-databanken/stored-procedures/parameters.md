@@ -1,6 +1,5 @@
 # PARAMETERS
-
-Het gebruik van parameters is niet weg te denken bij het gebruik van stored procedures. Juist door het gebruik van parameters wordt het gebruik van stored procedures heel flexibel.
+Parameters zijn variabelen die een waarde krijgen bij oproep van de stored procedure of die toestaan een waarde uit de stored procedure te halen via een oproep. Het gebruik van parameters is niet weg te denken bij het gebruik van stored procedures. Juist door het gebruik van parameters wordt het gebruik van stored procedures heel flexibel.
 
 Er zijn drie mogelijkheden, nl. `IN`, `OUT` en `INOUT`.
 

@@ -10,6 +10,18 @@ Een stored procedure is, in essentie, een reeks stappen die opgeslagen zijn als 
 
 ## Aanmaken en bewerken
 
+### Voorbeelddatabase
+Al onderstaande voorbeelden gebruiken een database met volgende structuur:
+
+![](../../.gitbook/assets/aptunes\_erd.png)
+
+Je kan deze aanmaken via volgend script:
+
+{% file src="../../.gitbook/assets/aptunes2020.sql" %}
+Calibratiescript
+{% endfile %}
+
+
 ### CREATE
 Wanneer we onderstaand sql-statement uitvoeren, krijgen we de inhoud van de tabel muzikanten te zien.
 

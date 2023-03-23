@@ -61,7 +61,6 @@
 * [SQL-injectie](semester-2-databanken/sql-injectie.md)
 * [Stored programs](semester-2-databanken/stored-procedures/README.md)
   * [Stored procedures](semester-2-databanken/stored-procedures/inleiding.md)
-    * [CREATE](semester-2-databanken/stored-procedures/create-stored-procedure.md)
     * [Parameters](semester-2-databanken/stored-procedures/parameters.md)
   * [Variabelen](semester-2-databanken/stored-procedures/variabelen.md)
 
