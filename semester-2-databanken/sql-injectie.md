@@ -18,7 +18,7 @@ connection.execute(`SELECT * FROM Users WHERE UserName="${typedUserName}" and Pa
 Deze code bevat nog andere tekortkomingen wanneer het op security aankomt. Het wachtwoord wordt getoond wanneer het wordt ingetypt. De kolom voor wachtwoorden is op geen enkele manier versleuteld. Dit is om het voorbeeld duidelijker te maken. Het principe van SQL-injectie staat hier los van.
 {% endhint %}
 
-De backticks (de symbolen `\``, dus de "schuine enkele quotes") zorgen dat de ingetypte waarden worden ingevuld waar `${...}` staat. Dus hiermee krijgt de gebruiker normaal zijn / haar eigen gegevens te zien, op voorwaarde dat de combinatie van gebruikersnaam en wachtwoord klopt.
+De backticks (dus de "schuine enkele quotes") zorgen dat de ingetypte waarden worden ingevuld waar `${...}` staat. Dus hiermee krijgt de gebruiker normaal zijn / haar eigen gegevens te zien, op voorwaarde dat de combinatie van gebruikersnaam en wachtwoord klopt.
 
 {% hint style="info" %}
 Om precies te zijn: hiermee krijgt de gebruiker toegang tot deze gegevens. Er staat nog geen code om deze te tonen, maar in een volledig programma zou er meer code staan.
