@@ -61,8 +61,6 @@
 * [Stored programs](semester-2-databanken/stored-procedures/README.md)
   * [Stored procedures](semester-2-databanken/stored-procedures/inleiding.md)
   * [CREATE](semester-2-databanken/stored-procedures/create-stored-procedure.md)
-  * [DROP](semester-2-databanken/stored-procedures/drop.md)
-  * [DELIMITER](semester-2-databanken/stored-procedures/delimiter.md)
   * [Variabelen](semester-2-databanken/stored-procedures/variabelen.md)
   * [Parameters](semester-2-databanken/stored-procedures/parameters.md)
   * [Gerelateerde data invoegen](semester-2-databanken/stored-procedures/gerelateerde-data-inserten.md)
