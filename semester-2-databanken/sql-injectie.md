@@ -36,7 +36,7 @@ Wat is je wachtwoord?
 Dan is het effect dat volgende query wordt uitgevoerd:
 
 ```sql
-SELECT * FROM Users WHERE UserName="" OR TRUE; -- " and Password="${typedPassword}"
+SELECT * FROM Users WHERE UserName="" OR TRUE; -- " and Password="Who cares?"
 ```
 
 Hier wordt de `WHERE` volledig uitgeschakeld. De aanvaller krijgt op deze manier toegang tot **alle** gebruikersgegevens. Het is **altijd** een risico om gebruikersinvoer in SQL-code te plakken zonder eerst een grens te trekken tussen syntax en data.
