@@ -57,6 +57,7 @@
   * [HAVING](semester-1-databanken-intro/select/having.md)
   * [uitvoeringsvolgorde](semester-1-databanken-intro/select/uitvoeringsvolgorde.md)
   * [tussenresultaten via sessievariabelen](semester-1-databanken-intro/select/sessievariabelen.md)
+* [SQL-injectie](semester-2-databanken/sql-injectie.md)
 
 ## Versiebeheer
 
