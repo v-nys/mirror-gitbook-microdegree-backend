@@ -58,6 +58,7 @@
   * [HAVING](semester-1-databanken-intro/select/having.md)
   * [Uitvoeringsvolgorde](semester-1-databanken-intro/select/uitvoeringsvolgorde.md)
   * [Tussenresultaten via sessievariabelen](semester-1-databanken-intro/select/sessievariabelen.md)
+  * [Enkelvoudige JOIN](databases/joins-enkelvoudig.md)
 * [SQL-injectie](semester-2-databanken/sql-injectie.md)
 * [Stored programs](semester-2-databanken/stored-procedures/README.md)
   * [Stored procedures](semester-2-databanken/stored-procedures/inleiding.md)
