@@ -22,6 +22,7 @@
   * [Stap 15: bugfix databeheer](friendface/stap-15-bugfix-databeheer.md)
   * [Stap 16: styling adminpagina](friendface/stap-16-styling-admin.md)
   * [Stap 17: sneezes posten](friendface/stap-17-sneezes-posten.md)
+  * [Stap 18: sneezes tonen](friendface/stap-18-sneezes-tonen.md)
 
 ## Databases
 

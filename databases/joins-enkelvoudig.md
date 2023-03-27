@@ -63,7 +63,7 @@ WHERE Taken.Id = Taken_Id;
 Hier moet je `Taken.Id` schrijven omdat zowel `Taken` als `Leden` een kolom `Id` hebben. Door de tabelnaam toe te voegen, maak je duidelijk over welke kolom het precies gaat.
 
 {% hint style="info" %}
-In MySQL is er eigenlijk [geen verschil](https://dev.mysql.com/doc/refman/8.0/en/join.html) tussen een `CROSS JOIN` met een `WHERE` clause en een `INNER JOIN` met een `ON` clause, die we dadelijk zullen bekijken. We kiezen voor de ene of de andere vorm om uit te drukken wat we bedoelen, maar het resultaat zal hetzelfde zijn.
+Een andere schrijfwijze voor `FROM Taken CROSS JOIN Leden` is `FROM Taken, Leden`. Dit kan je misschien tegenkomen, maar in deze tekst wordt de explicietere schrijfwijze verkozen.
 {% endhint %}
 
 ## INNER JOIN
