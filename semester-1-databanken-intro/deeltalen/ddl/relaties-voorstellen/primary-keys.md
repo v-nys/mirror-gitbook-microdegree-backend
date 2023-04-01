@@ -151,7 +151,7 @@ CREATE TABLE Books(
 ```
 
 {% hint style="info" %}
-Het is ook mogelijk `PRIMARY KEY` bij meerdere kolommen te schrijven. Dit wil dan zeggen dat deze kolommen **samen** een rij uniek identificeren en heet een "compound key". In deze tekst wordt hier verder geen gebruik van gemaakt.
+Het is ook mogelijk een combinatie van kolommen als primaire sleutel te gebruiken, maar dan is de syntax iets minder handig. Deze is dan: `PRIMARY KEY (Kolom1, Kolom2,...)` na de kolomdefinities zelf.
 {% endhint %}
 
 
@@ -163,4 +163,6 @@ Een constraint behoort tot de definitie van de tabel, dus deze wordt verwijderd 
 ALTER TABLE Boeken DROP PRIMARY KEY;
 ```
 
-
+{% hint style="warning" %}
+Dit kan alleen als de kolom niet op `AUTO_INCREMENT` staat. Je kan deze eigenschap verwijderen door de kolom via een `ALTER TABLE ... CHANGE` opnieuw te definiëren zonder `AUTO_INCREMENT`.
+{% endhint %}
