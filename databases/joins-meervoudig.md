@@ -1,14 +1,10 @@
 # JOINs via tussenliggende tabel
 
-{% hint style="success" %}
-[Kennisclip](https://youtu.be/3bTAcpAzVKk)
-{% endhint %}
-
-We weten wel hoe we leden aan taken kunnen koppelen door middel van INNER JOIN, maar die aanpak werkt niet wanneer er meer dan twee tabellen nodig zijn om de data terug te combineren, zoals in het geval van releases van games op platformen.
+De aanpak voor een één-op-één-relatie of een één-op-veel-relatie met één `JOIN` werkt niet wanneer er meer dan twee tabellen nodig zijn om data te combineren. Dit is het geval voor releases van games op platformen.
 
 Om entiteiten gekoppeld via een M-op-N-relatie aan elkaar te koppelen, moet je eerst de informatie langs de M-kant koppelen met de tabel die de relatie voorstelt en vervolgens de informatie langs de N-kant koppelen.
 
-Onze tabel met info over releases van games was:
+Veronderstel volgende tabel met informatie over releases:
 
 | Games\_Id | Platformen\_Id |
 | :--- | :--- |
@@ -25,7 +21,7 @@ Onze tabel met info over releases van games was:
 | 4 | 3 |
 | 4 | 4 |
 
-We kunnen deze tonen met informatie over de game als volgt:
+Informatie over de game waarop de release betrekking heeft kan als volgt worden toegevoegd:
 
 ```sql
 SELECT Games_Id, Platformen_Id, Titel
@@ -34,7 +30,18 @@ INNER JOIN Games
 ON Games_Id = Games.Id;
 ```
 
-Dit voegt langs de rechterkant gewoon de details over de uitgebrachte game. Het is dus een meer uitgebreide versie van de tabel Releases. Daarom kunnen we dezelfde techniek herhalen en enkel de interessante info tonen:
+Dit voegt langs de rechterkant gewoon de details over de uitgebrachte game. Het is dus een meer uitgebreide versie van de tabel `Releases`. Omdat het toegelaten is meerdere `JOIN`-operaties te combineren, kan deze stap herhaald worden. Dit staat toe ook informatie over de platformen te tonen:
+
+```sql
+SELECT Games_Id, Platformen_Id, Titel, Naam
+FROM Releases
+INNER JOIN Games
+ON Games_Id = Games.Id
+INNER JOIN Platformen
+ON Platformen_Id = Platformen.Id;
+```
+
+Om enkel de relevante informatie te verkrijgen, moeten alleen de geselecteerde kolommen veranderen:
 
 ```sql
 SELECT Titel, Naam
@@ -44,6 +51,3 @@ ON Games_Id = Games.Id
 INNER JOIN Platformen
 ON Platformen_Id = Platformen.Id;
 ```
-
-
-
