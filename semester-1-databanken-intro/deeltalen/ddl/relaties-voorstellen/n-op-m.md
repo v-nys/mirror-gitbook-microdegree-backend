@@ -41,6 +41,7 @@ Veronderstel dat Anthem ID 1 heeft, Sekiro 2, enzovoort. Veronderstel ook dat PS
 Hier zijn drie tabellen nodig: een voor games, een voor platformen, een voor de koppeling. De tabel `Games` heeft naast de `Id` nog kolommen, bijvoorbeeld `Titel`, die specifiek over de game gaan. Voor `Platformen` is er een gelijkaardige structuur en informatie over het platform (zoals `Naam`) staat in die tabel. De tabel die de koppeling afhandelt kan je een generieke naam geven zoals `Games_Platformen` of een naam met meer semantiek, zoals `Releases`.
 
 Je zou bijvoorbeeld volgende voorstelling kunnen hanteren:
+
 ```sql
 CREATE TABLE Platformen(
   Naam varchar(50) NOT NULL,
@@ -55,6 +56,26 @@ CREATE TABLE Releases(
   Platformen_Id INT NOT NULL,
   CONSTRAINT fk_Releases_Games FOREIGN KEY (Games_Id) REFERENCES Games(Id),
   CONSTRAINT fk_Releases_Platformen FOREIGN KEY (Platformen_Id) REFERENCES Platformen(Id)
+);
+```
+
+Als er maar één `Release` per combinatie mogelijk is, kan je de combinatie van de foreign keys van de andere tabellen gebruiken als primary key van `Releases`. Dit wordt dan:
+
+```sql
+CREATE TABLE Platformen(
+  Naam varchar(50) NOT NULL,
+  Id INT AUTO_INCREMENT PRIMARY KEY
+);
+CREATE TABLE Games(
+  Titel varchar(50) NOT NULL,
+  Id int auto_increment PRIMARY KEY
+);
+CREATE TABLE Releases(
+  Games_Id INT NOT NULL,
+  Platformen_Id INT NOT NULL,
+  CONSTRAINT fk_Releases_Games FOREIGN KEY (Games_Id) REFERENCES Games(Id),
+  CONSTRAINT fk_Releases_Platformen FOREIGN KEY (Platformen_Id) REFERENCES Platformen(Id),
+  PRIMARY KEY (Games_Id, Platformen_Id)
 );
 ```
 
