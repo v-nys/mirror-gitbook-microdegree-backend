@@ -60,7 +60,7 @@ CREATE TABLE Releases(
 
 Dit stemt overeen met een diagram in Workbench dat er zo uitziet:
 
-![Diagram voor een veel-op-veel relatie. Je tekent deze als twee één-op-veel relaties.](<../../../.gitbook/assets/Screenshot from 2020-11-21 10-15-27.png>)
+![Diagram voor een veel-op-veel relatie. Je tekent deze als twee één-op-veel relaties.](<../../../../.gitbook/assets/Screenshot from 2020-11-21 10-15-27.png>)
 
 Je zou dan games kunnen koppelen aan platformen als volgt:
 
@@ -117,7 +117,7 @@ De releasedatum hoort bij **de combinatie van een game en een platform**, d.w.z.
 
 In een ERD stellen we dit als volgt voor:
 
-![](<../../../.gitbook/assets/Screenshot from 2020-11-21 10-18-08.png>)
+![](<../../../../.gitbook/assets/Screenshot from 2020-11-21 10-18-08.png>)
 
 In dit geval is `Releases` niet gewoon een tabel die een **relatie** voorstelt, maar wel een **associative entity**: een relatie tussen `Games` en `Platformen` die eigen kenmerken bezit, zodat je ze eigenlijk ook als een entiteit zou kunnen zien.
 
