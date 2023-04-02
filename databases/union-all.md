@@ -24,3 +24,6 @@ SELECT Kolom1A AS GeschikteNaam1, Kolom2A as GeschikteNaam2 FROM Tabel1
 UNION ALL
 SELECT Kolom1B, Kolom2B FROM Tabel2
 ```
+
+# `UNION`
+Deze werkt hetzelfde, maar verwijdert dubbele resultaten.
