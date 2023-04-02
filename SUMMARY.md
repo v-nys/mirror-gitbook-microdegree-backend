@@ -24,6 +24,7 @@
   * [Stap 17: sneezes posten](friendface/stap-17-sneezes-posten.md)
   * [Stap 18: sneezes tonen](friendface/stap-18-sneezes-tonen.md)
   * [Stap 19: clubs toevoegen](friendface/stap-19-clubs.md)
+  * [Stap 20: vriendschappen toevoegen](friendface/stap-20-vriendschappen.md)
 
 ## Databases
 
@@ -44,6 +45,8 @@
     * [1-op-1 en 1-op-N relaties](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/1-op-n.md)
     * [N-op-M / veel-op-veel relaties](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/n-op-m.md)
     * [Referentiële constraints](semester-1-databanken-intro/deeltalen/ddl/relaties-voorstellen/referential-constraints.md)
+  * [Unieke kolomcombinaties](semester-1-databanken-intro/deeltalen/ddl/unique.md)
+  * [Berekende kolommen](semester-1-databanken-intro/deeltalen/ddl/berekende-kolommen.md)
 * [DML instructies](semester-1-databanken-intro/deeltalen/dml/README.md)
   * [INSERT](semester-1-databanken-intro/deeltalen/dml/insert.md)
   * [DELETE](semester-1-databanken-intro/deeltalen/dml/delete.md)
@@ -63,13 +66,14 @@
   * [Tussenresultaten via sessievariabelen](semester-1-databanken-intro/select/sessievariabelen.md)
   * [Enkelvoudige JOIN](databases/joins-enkelvoudig.md)
   * [Meervoudige JOIN](databases/joins-meervoudig.md)
+  * [UNION ALL](databases/union-all.md)
+  * [Views](semester-2-databanken/views.md)
 * [SQL-injectie](semester-2-databanken/sql-injectie.md)
 * [Stored programs](semester-2-databanken/stored-procedures/README.md)
   * [Stored procedures](semester-2-databanken/stored-procedures/inleiding.md)
     * [Parameters](semester-2-databanken/stored-procedures/parameters.md)
   * [Variabelen](semester-2-databanken/stored-procedures/variabelen.md)
-  * [Views](semester-2-databanken/views.md)
-  * [Stored functions](semester-2-databanken/stored-procedure/stored-functions.md)
+  * [Stored functions](semester-2-databanken/stored-procedure/stored-functies.md)
 
 
 ## Versiebeheer
