@@ -68,6 +68,8 @@
   * [Stored procedures](semester-2-databanken/stored-procedures/inleiding.md)
     * [Parameters](semester-2-databanken/stored-procedures/parameters.md)
   * [Variabelen](semester-2-databanken/stored-procedures/variabelen.md)
+  * [Views](semester-2-databanken/stored-procedures/views.md)
+  * [Stored functions](semester-2-databanken/stored-procedure/stored-functions.md)
 
 
 ## Versiebeheer

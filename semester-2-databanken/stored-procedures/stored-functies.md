@@ -6,7 +6,7 @@ Stored functies zijn, net als stored procedures, stappenplannen om tot een bepaa
 
 Een stored procedure `MijnProcedure` roep je op door middel van `CALL MijnProcedure()`. De procedure kan ook `IN` en `OUT` parameters hebben en beide plaats je tussen de ronde haakjes.
 
-Een functie schrijf je gewoon zonder `CALL` en alle parameters zijn invoer, dus stemmen overeen met `IN` parameters in een stored procedure. De functie wordt dan uitgerekend en het resultaat wordt uiteindelijk gebruikt. Bijvoorbeeld: `CONCAT` is een ingebouwde functie en als je ergens `CONCAT('hello','world')` schrijft is het net alsof je op diezelfde plaats `'helloworld'` hebt geschreven.
+Een functie schrijf je gewoon zonder `CALL` en alle parameters zijn invoer, dus stemmen overeen met `IN` parameters in een stored procedure. De functie wordt dan uitgerekend en het resultaat wordt uiteindelijk gebruikt. Bijvoorbeeld: `CONCAT` is een ingebouwde functie en als je ergens `CONCAT('hello','world')` schrijft is het net alsof je op diezelfde plaats `'helloworld'` hebt geschreven. Een eigen stored functie kan je op net dezelfde manier gebruiken.
 
 ### Determinisme
 
