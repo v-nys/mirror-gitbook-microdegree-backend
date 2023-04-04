@@ -6,7 +6,7 @@ Sommige informatie is impliciet aanwezig in een tabel, terwijl het handig zou zi
 ### Een impliciete berekening
 Het is geen goed idee om de volledige naam van een persoon op te slaan. Deze zal vaak van pas komen, maar zal soms ook in gesplitste vorm nodig zijn. De gesplitste voorstellingen en de samengestelde voorstelling opslaan is dan weer verspilling van ruimte. Bovendien verhoogt dit het risico op inconsistenties in de data.
 
-Deze informatie kan ook voorgesteld worden met een gegenereerde kolom. De syntax hier is vergelijkbaar met die voor een gewone kolom, maar na het type volgt `GENERATED ALWAYS AS ...`
+Deze informatie kan ook voorgesteld worden met een gegenereerde kolom. De syntax hier is vergelijkbaar met die voor een gewone kolom, maar na het type volgt `GENERATED ALWAYS AS (...)`. De expressie moet tussen haakjes staan.
 
 Voor de leeftijd kan dit bijvoorbeeld zijn:
 
@@ -14,7 +14,7 @@ Voor de leeftijd kan dit bijvoorbeeld zijn:
 CREATE TABLE Persons (
   FirstName varchar(100) not null,
   LastName varchar(100) not null,
-  FullName varchar(200) GENERATED ALWAYS AS concat(FirstName, ' ', LastName)
+  FullName varchar(200) GENERATED ALWAYS AS (concat(FirstName, ' ', LastName))
 );
 ```
 
@@ -27,7 +27,7 @@ CREATE TABLE Persons (
   LastName varchar(100) NOT NULL,
   PhoneNumber varchar(20),
   Email varchar(100),
-  ContactInfo varchar(100) NOT NULL GENERATED ALWAYS AS coalesce(PhoneNumber, Email)
+  ContactInfo varchar(100) NOT NULL GENERATED ALWAYS AS (coalesce(PhoneNumber, Email))
 );
 ```
 
