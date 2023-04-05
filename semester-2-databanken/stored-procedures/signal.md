@@ -1,6 +1,6 @@
 # SIGNAL
 
-Met dit statements kan je een error of waarschuwing geven. Meestal gebeurt dit wanneer een stored procedure wordt uitgevoerd, maar het is strikt gesproken ook mogelijk `SIGNAL` te gebruiken buiten een stored procedure.
+Met dit statement kan je een error of waarschuwing geven. Meestal gebeurt dit in een stored program, maar het is strikt gesproken mogelijk `SIGNAL` in om het even welke context te gebruiken.
 
 ## Basisgebruik
 
