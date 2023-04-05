@@ -233,7 +233,7 @@ Deze uitvoering van de stored procedure `AddTimeSlots` geeft volgend resultaat:
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2023-02-23 14-30-50.png" alt=""><figcaption></figcaption></figure>
 
-# REPEAT
+## REPEAT
 
 De `REPEAT` herhalingsstructuur voert code of statements achter elkaar uit tot de conditie waar (`TRUE`) is.
 
@@ -241,7 +241,7 @@ De `REPEAT` herhalingsstructuur voert code of statements achter elkaar uit tot d
 
 ```sql
 REPEAT
-    statement(s)
+  statement(s)
 UNTIL [conditie]
 END REPEAT
 ```
