@@ -36,7 +36,13 @@ trigger_time: { BEFORE | AFTER }
 trigger_event: { INSERT | UPDATE | DELETE }
 ```
 
-De `trigger_body` is normaal één statement, maar je kan er meerdere statements in schrijven door eerst `BEGIN` te schrijven, dan je statements en dan `END`. Zoals bij stored procedures en functies moet je dan voor aanmaak van de trigger de delimiter wijzigen en na aanmaak van de trigger terugzetten. **Omdat er geen trigger editor is, gebeurt dit niet automatisch.** In de definitie van de trigger kan je ruwweg dezelfde instructies schrijven als in een stored procedure. In een trigger kan je ook gebruik maken van `OLD` of `NEW` om te verwijzen naar bepaalde kolomwaarden voor of na de aanpassing. Je kan alleen `OLD` **en** `NEW` gebruiken in een `UPDATE`, omdat dat het enige soort instructie is waarbij er een oude en een nieuwe waarde is voor een kolom. Het gedeelte `FOR EACH ROW` duidt op elke ingevoegde, aangepaste of verwijderde rij, niet op elke rij in de tabel.&#x20;
+De `trigger_body` is normaal één statement, maar je kan er meerdere statements in schrijven door eerst `BEGIN` te schrijven, dan je statements en dan `END`. Zoals bij stored procedures en functies moet je dan voor aanmaak van de trigger de delimiter wijzigen en na aanmaak van de trigger terugzetten.
+
+Om dit automatisch in orde te brengen, ga je in Workbench via deze weg:
+
+![Trigger editor vinden](<../../.gitbook/assets/trigger-editor.png>)
+
+In de definitie van de trigger kan je ruwweg dezelfde instructies schrijven als in een stored procedure. In een trigger kan je ook gebruik maken van `OLD` of `NEW` om te verwijzen naar bepaalde kolomwaarden voor of na de aanpassing. Je kan alleen `OLD` **en** `NEW` gebruiken in een `UPDATE`, omdat dat het enige soort instructie is waarbij er een oude en een nieuwe waarde is voor een kolom. Het gedeelte `FOR EACH ROW` duidt op elke ingevoegde, aangepaste of verwijderde rij, niet op elke rij in de tabel.
 
 Een concreet voorbeeld kan bijvoorbeeld zijn:
 
