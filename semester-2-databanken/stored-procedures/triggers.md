@@ -12,6 +12,7 @@ Typische voorbeelden zijn:
 
 * loggen van aanpassingen (gewoonlijk door een extra `INSERT` te doen in een tabel die de aanpassingen opvolgt)
 * extra error handling (door een fout te signaleren bij waarden die wel het juiste datatype hebben maar toch niet toegelaten zijn)
+* automatiseren van routinetaken
 
 Ze zijn gekoppeld aan een bepaalde tabel, zoals je hier ziet in Workbench:
 
