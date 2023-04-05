@@ -1,61 +1,54 @@
-# IF -THEN-ELSE-ELSEIF
+# Control flow
+Controlflowmechanismen dienen om de uitvoering van een stored program te sturen.
+Je kan ze gebruiken in stored programs, stored functions en triggers om bepaalde
+code al dan niet herhaald uit te voeren afhankelijk van bepaalde factoren.
 
-Drie mogelijkheden:
-
-* [IF-THEN](if-then.md#if-then)
-* [IF-THEN-ELSE](if-then.md#if-then-else)
-* [IF-THEN-ELSEIF-ELSE](if-then.md#if-then-elseif-else)
-
+## IF-THEN-ELSE-ELSEIF
 Op basis van het resultaat van een IF-THEN-... statement kan je één of meerdere SQL statements uitvoeren en een aangepast resultaat op basis van de ingebouwde conditie weergeven.
 
-## IF-THEN
+### IF-THEN
 
-**Syntax:**
+De basissyntax is als volgt:
 
 ```sql
 IF conditie THEN 
-   if-statement(s);
+  statement(s);
 END IF;
 ```
 
-Toegepast op onze voobeelddatabase, meerbepaald op de tabel `Liedjes`.
+Toegepast op de voobeelddatabase voor stored procedures, meerbepaald op de tabel `Liedjes`.
 
 ```sql
-USE `aptunes`;
-DROP procedure IF EXISTS `if_then`;
-
 DELIMITER $$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `if_then`(
-	IN pLiedjesId INT,
-  OUT pResult VARCHAR(30))
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ifThen`(
+  IN pLiedjesId INT,
+  OUT pResult VARCHAR(30)
+)
 BEGIN
-	DECLARE song_length INT DEFAULT 0;
-    
+  DECLARE songLength INT;
   SELECT Lengte 
-  INTO song_length
+  INTO songLength
   FROM Liedjes
   WHERE Id = pLiedjesId;
-    
-  IF song_length > 80 THEN
-		SET pResult = 'Lange duurtijd';
-	END IF;
+  IF songLength > 300 THEN
+    SET pResult = 'Lange duurtijd';
+  END IF;
 END$$
 
 DELIMITER ;
 ```
 
-In bovenstaand voorbeeld creëren we een `IN` en `OUT` parameter voor de stored procedure `if_then`.\
-De `pLiedjesId` wordt gebruikt om het Id van het liedje op te geven, hetgeen dan verder in de stored procedure wordt gebruikt. \
-De output-parameter`pResult` wordt dan weer gebruikt om een waarde weer te geven buiten de stored procedure.
+In bovenstaand voorbeeld creëren we een `IN` en `OUT` parameter voor de stored procedure `ifThen`. Het inputargument `pLiedjesId` wordt gebruikt om het Id van het liedje op te geven. Het outputargument `pResult` wordt dan weer gebruikt om een waarde weer te geven buiten de stored procedure.
 
-Het sql-statement gaat de lengte van het liedje met het `Id` dat bepaald is door de `IN-parameter pLiedjesId` bewaren in de lokale variabele `song_length`.
+Het sql-statement gaat de lengte van het liedje met het `Id` dat bepaald is door de `IN`-parameter `pLiedjesId` bewaren in de lokale variabele `songLength`.
 
-Vervolgens gaan we op basis van een `IF-THEN` constructie nagaan wat de inhoud van de lokale variabele `song_length` is en ingeval deze groter is dan 80 gaan we de `OUT-parameter` de waarde 'Lange duurtijd' geven.
+Vervolgens wordt op basis van een `IF-THEN` constructie nagegaan wat de inhoud van de lokale variabele `songLength` is. In geval deze groter is dan 300, krijgt het output argument de waarde 'Lange duurtijd'.
 
-Om de stored procedure correct op te roepen, hanteren we volgend statement.
+Om de stored procedure op te roepen, hanteren we volgend statement.
 
 ```sql
-CALL if_then(2716, @Resultaat);
+CALL ifThen(2716, @Resultaat);
 SELECT @Resultaat;
 ```
 
@@ -63,70 +56,66 @@ Het resultaat is:
 
 ![](<../../.gitbook/assets/ifelse (1).JPG>)
 
-Als je evenwel een id zou opgeven waarbij de lengte kleiner is dan 80, dan wordt er niets weergegeven.
+Als je evenwel een id zou opgeven waarvoor de duurtijd korter is dan 300, dan wordt er niets weergegeven.
 
 ![](../../.gitbook/assets/ifthennoresult.JPG)
 
-Mocht je wel wensen dat er te allen tijde een resultaat wordt weergegeven, dan moet je minstens met de [`IF-THEN-ELSE`](if-then.md#if-then-else) of de [`IF-THEN-ELSEIF-ELSE`](if-then.md#if-then-elseif-else) werken, zie verder.
+Voor een resultaat van de vorm "Korte duurtijd" of misschien ook "Middelmatige duurtijd" zou je met [`IF-THEN-ELSE`](if-then.md#if-then-else) of met [`IF-THEN-ELSEIF-ELSE`](if-then.md#if-then-elseif-else) werken, zie verder.
 
 ## IF-THEN-ELSE
 
-**Syntax:**
+De syntax is:
 
 ```sql
 IF conditie THEN
-   if-statement(s);
+ statement(s);
 ELSE
-   else-statement(s);
+ statement(s);
 END IF;
 ```
 
-De procedure omschreven in het voorgaande deel [`IF-THEN`](if-then.md#if-then) wordt uitgebreid.
-
-We voorzien nu dat wanneer de duurtijd meer dan 80 seconden bedraagt, er wordt weergegeven dat het een lange duurtijd betreft, in het andere geval wordt normale duurtijd weergeven.
+De procedure omschreven in het voorgaande deel [`IF-THEN`](if-then.md#if-then) wordt uitgebreid: wanneer de duurtijd meer dan 300 seconden bedraagt, wordt weergegeven dat het een lange duurtijd betreft. In het andere geval wordt "Normale duurtijd" weergegeven.
 
 Onderstaand voorbeeld laat zien hoe de IF-THEN-ELSE moet worden voorzien.
 
 ```sql
-USE `aptunes`;
-DROP procedure IF EXISTS `if_then_else`;
-
 DELIMITER $$
-CREATE PROCEDURE `if_then_else` (
-	IN pLiedjesId INT,
-  OUT pResult VARCHAR(30))
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ifThenElse`(
+  IN pLiedjesId INT,
+  OUT pResult VARCHAR(30)
+)
 BEGIN
-	DECLARE song_length INT DEFAULT 0;
-    
+  DECLARE songLength INT;
   SELECT Lengte 
-  INTO song_length
+  INTO songLength
   FROM Liedjes
   WHERE Id = pLiedjesId;
-    
-  IF song_length > 80 THEN
-		SET pResult = 'Lange duurtijd';
-	ELSE
-		SET pResult = 'Normale duurtijd';
-	END IF;
+  IF songLength > 300
+  THEN
+    SET pResult = 'Lange duurtijd';
+  ELSE
+    SET pResult = 'Normale duurtijd';
+  END IF;
 END$$
 
 DELIMITER ;
 ```
 
-Hieronder het resultaat voor een id met een lengte van minder dan 80 sec.&#x20;
+Hieronder het resultaat voor een liedje met een lengte van minder dan 300 sec.
 
 ```sql
-CALL if_then(1, @Resultaat);
+CALL ifThenElse(1, @Resultaat);
 SELECT @Resultaat;
 ```
 
 ![](../../.gitbook/assets/ifelsethen.JPG)
 
-In het geval dat de waarde groter is dan 80 sec., dan bekom je hetzelfde positieve resultaat als bij het onderdeel [`IF-THEN`](if-then.md#if-then) hierboven.
+In het geval dat de waarde groter is dan 300 sec., dan bekom je hetzelfde resultaat als bij het onderdeel [`IF-THEN`](if-then.md#if-then) hierboven.
 
 ## IF-THEN-ELSEIF-ELSE
 
-**Syntax:**
+De syntax is hier:
 
 ```sql
 IF conditie THEN
@@ -138,41 +127,39 @@ ELSE
 END IF;
 ```
 
-De procedure omschreven in het voorgaande deel [`IF-THEN-ELSE`](if-then.md) wordt uitgebreid.
+Merk op dat `ELSEIF` in MySQL aan elkaar wordt geschreven!
 
-We voorzien nu dat wanneer de duurtijd meer dan 80 seconden bedraagt er wordt weergegeven dat het een lange duurtijd betreft, in het geval de duurtijd tussen de 70 en 80 ligt wordt normale duurtijd weergeven en in het geval dit minder dan 70 bedraagt wordt korte duurtijd getoond.
+De procedure omschreven in het voorgaande deel [`IF-THEN-ELSE`](if-then.md) wordt uitgebreid. We voorzien nu dat wanneer de duurtijd meer dan 300 seconden bedraagt, er wordt weergegeven dat het een lange duurtijd betreft. In het geval de duurtijd tussen de 180 en 300 ligt wordt is de duurtijd normaal. In het geval deze minder dan 180 bedraagt, is hij kort.
 
 Onderstaand voorbeeld laat zien hoe de IF-THEN-ELSEIF-ELSE moet worden voorzien.
 
 ```sql
-USE `aptunes`;
-DROP procedure IF EXISTS `if_then_elseif_else`;
-
 DELIMITER $$
-CREATE PROCEDURE `if_then_elseif_else` (
-	IN pLiedjesId INT,
-  OUT pResult VARCHAR(30))
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ifThenElseifElse`(
+  IN pLiedjesId INT,
+  OUT pResult VARCHAR(30)
+)
 BEGIN
-	DECLARE song_length INT DEFAULT 0;
-    
+  DECLARE songLength INT;
   SELECT Lengte 
-  INTO song_length
+  INTO songLength
   FROM Liedjes
   WHERE Id = pLiedjesId;
-    
-  IF song_length > 80 THEN
-		SET pResult = 'Lange duurtijd';
-	ELSEIF song_length > 70 THEN
-		SET pResult = 'Normale duurtijd';
-	ELSE 
-		SET pResult = 'Korte duurtijd';
-	END IF;
+  IF songLength > 300
+  THEN
+    SET pResult = 'Lange duurtijd';
+  ELSEIF songLength >= 180
+    SET pResult = 'Normale duurtijd';
+  ELSE
+    SET pResult = 'Korte duurtijd';
+  END IF;
 END$$
 
 DELIMITER ;
 ```
 
-Hieronder het resultaat voor een id met een lengte van meer dan 70 sec. en minder dan 80 sec.
+Hieronder het resultaat voor een id met een lengte van meer dan 180 sec. en minder dan 300 sec.
 
 ```sql
 CALL if_then_elseif_else(15, @Resultaat);
@@ -181,15 +168,16 @@ SELECT @Resultaat;
 
 ![](../../.gitbook/assets/ifelseelseifthen.JPG)
 
-# WHILE
 
-`WHILE `is ook een herhalingsstructuur die zorgt dat code of statements achter elkaar kunnen uitgevoerd worden zolang de conditie waar (`TRUE`) is.
+## WHILE
 
-**Syntax**
+`WHILE` is ook een herhalingsstructuur die zorgt dat code of statements achter elkaar kunnen uitgevoerd worden zolang de conditie waar (`TRUE`) is.
+
+De syntax is:
 
 ```sql
 WHILE [conditie] DO
-    statement(s)
+  statement(s)
 END WHILE 
 ```
 
@@ -199,65 +187,34 @@ Onderstaand schema illustreert dit principe.
 
 ![](../../.gitbook/assets/sp\_while.JPG)
 
-Om het principe van de `WHILE`-lus te tonen, maken we eerst een nieuwe tabel `KalenderMomenten` aan.
+Om het principe van de `WHILE`-lus te tonen, maken we eerst een nieuwe tabel `TimeSlots` aan. Deze stelt alle tijdstippen op een kalender voor.
 
 ```sql
-CREATE TABLE KalenderMomenten(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    datum DATE UNIQUE,
-    dag TINYINT NOT NULL,
-    maand TINYINT NOT NULL,
-    jaar INT NOT NULL
+CREATE TABLE TimeSlots(
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  SlotDate DATE UNIQUE
 );
 ```
 
-Via onderstaande stored procedure gaan we de mogelijkheid voorzien om de tabel kalender van data te voorzien.
+Vervolgens zorgen we via een nieuwe stored procedure `AddTimeSlots` dat de zojuist gecreëerde tabel wordt gevuld met data beginnende vanaf een datum.
 
 ```sql
-USE `aptunes`;
-DROP procedure IF EXISTS `KalenderToevoegen`;
-
 DELIMITER $$
 USE `aptunes`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `KalenderToevoegen`(dd DATE)
+CREATE DEFINER=`root`@`localhost` PROCEDURE `AddTimeSlots`(
+    startDate DATE,
+    numberOfDays INT
+)
 BEGIN
-INSERT INTO KalenderMomenten(
-        datum,
-        dag,
-        maand,
-        jaar
-    )
-    VALUES(
-        dd, 
-        day(dd),
-        month(dd),
-        year(dd)
-    );
-END$$
-
-DELIMITER ;
-```
-
-Vervolgens zorgen we via een nieuwe stored procedure `KalenderMeerdereToevoegen` dat de zojuist gecreëerde tabel wordt gevuld met data beginnende vanaf een datum.
-
-```sql
-USE `aptunes`;
-DROP procedure IF EXISTS `KalenderMeerdereToevoegen`;
-
-DELIMITER $$
-USE `aptunes`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `KalenderMeerdereToevoegen`(
-	datumStart DATE,
-    aantalDagen INT)
-BEGIN
-	DECLARE teller INT DEFAULT 1;
-    DECLARE dd DATE DEFAULT datumStart;
-
-    WHILE teller <= aantalDagen DO
-        CALL KalenderToevoegen(dd);
-        SET teller = teller + 1;
-        -- dit betekent: voeg één dag toe aan de datum
-        SET dd = DATE_ADD(dd, INTERVAL 1 day);
+    DECLARE counter INT DEFAULT 1;
+    DECLARE currentDate DATE DEFAULT startDate;
+    WHILE counter <= numberOfDays DO
+        INSERT INTO TimeSlots (SlotDate)
+        VALUES
+        (currentDate);
+        SET counter = counter + 1;
+        -- deze functie telt een aantal dagen bij een datum
+        SET currentDate = DATE_ADD(currentDate, INTERVAL 1 day);
     END WHILE;
 END$$
 
@@ -266,19 +223,19 @@ DELIMITER ;
 
 In bovenstaande stored procedure gebruiken we de `WHILE`-lus.
 
-Zolang de teller kleiner of gelijk is aan het opgegeven aantal dagen, dan zullen data worden toegevoegd aan de gecreëerde tabel `KalenderMomenten`. Dit door in de `WHILE`-lus de stored procedure `KalenderToevoegen` met als parameter een datum aan te roepen.
+Zolang de teller kleiner of gelijk is aan het opgegeven aantal dagen, dan zullen data worden toegevoegd aan de gecreëerde tabel `TimeSlots`.
 
 ```sql
-CALL KalenderMeerdereToevoegen('2020-04-19', 90);
+CALL AddTimeSlots('2020-04-19', 90);
 ```
 
-Deze uitvoering van de stored procedure `KalenderMeerdereToevoegen `geeft volgend resultaat.
+Deze uitvoering van de stored procedure `AddTimeSlots` geeft volgend resultaat:
 
-![](../../.gitbook/assets/storedp\_while\_result.JPG)
+<figure><img src="../../.gitbook/assets/Screenshot from 2023-02-23 14-30-50.png" alt=""><figcaption></figcaption></figure>
 
 # REPEAT
 
-De `REPEAT` herhalingsstructuur voert code of statements achter elkaar uit tot de conditie waar \(`TRUE`\) is.
+De `REPEAT` herhalingsstructuur voert code of statements achter elkaar uit tot de conditie waar (`TRUE`) is.
 
 **Syntax**
 
@@ -289,41 +246,38 @@ UNTIL [conditie]
 END REPEAT
 ```
 
-De `REPEAT` herhalingsstructuur controleert of de conditie waar \(`TRUE`\) is na de uitvoering van de statement\(s\). De gedefinieerde statement\(s\) worden dus in alle gevallen steeds minstens één keer uitgevoerd. Dit stemt overeen met het gedrag van een `do ... while` in typische programmeertalen. Let wel op: een `do ... while` blijft herhalen **zo lang** iets waar is, een `repeat ... until` herhaalt **tot** iets waar is. Ze zijn evenwaardig, maar de voorwaarde wordt op een omgekeerde manier aangegeven.
+De `REPEAT` herhalingsstructuur controleert of de conditie waar (`TRUE`) is na de uitvoering van de statement(s). De gedefinieerde statement(s) worden dus in alle gevallen steeds minstens één keer uitgevoerd. Dit stemt overeen met het gedrag van een `do ... while` in typische programmeertalen. Let wel op: een `do ... while` blijft herhalen **zo lang** iets waar is, een `REPEAT ... UNTIL` herhaalt **tot** iets waar is. Ze zijn evenwaardig, maar de voorwaarde wordt op een omgekeerde manier aangegeven.
 
 Het schema hieronder geeft dit duidelijk weer.
 
-![](../../.gitbook/assets/storedp_repeat.JPG)
+![](../../.gitbook/assets/storedp\_repeat.JPG)
 
-Het principe van de REPEAT herhalingsstructuur wordt toegelicht aan de hand van onderstaande stored procedure waarbij nummers van 1 tot 25 worden geconcateneerd \(aan elkaar geplakt\).
+Het principe van de `REPEAT` herhalingsstructuur wordt toegelicht aan de hand van onderstaande stored procedure waarbij nummers van 1 tot 25 worden geconcateneerd (aan elkaar geplakt).
 
 ```sql
 USE `aptunes`;
-DROP procedure IF EXISTS `RepeatHerhalingsstructuur`;
+DROP procedure IF EXISTS `ConcatenateNumbersViaRepeat`;
 
 DELIMITER $$
 USE `aptunes`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `RepeatHerhalingsstructuur`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ConcatenateNumbersViaRepeat`()
 BEGIN
-    DECLARE teller INT DEFAULT 1;
-    DECLARE resultaat VARCHAR(90) DEFAULT '';
+    DECLARE counter INT DEFAULT 1;
+    DECLARE result VARCHAR(90) DEFAULT '';
 
     REPEAT
-        SET resultaat = CONCAT(resultaat,teller,',');
-        SET teller = teller + 1;
-    UNTIL teller >= 25
+        SET result = CONCAT(result,counter,',');
+        SET counter = counter + 1;
+    UNTIL counter >= 25
     END REPEAT;
+    set result = CONCAT(result, counter);
 
     -- toont het resultaat op het scherm
-    SELECT resultaat;
+    SELECT result;
 END$$
 
 DELIMITER ;
 ```
-
-De uitvoering van deze stored procedure geeft volgend resultaat.
-
-![](../../.gitbook/assets/storedp_repeat_result.JPG)
 
 Kort uitgelegd:
 
