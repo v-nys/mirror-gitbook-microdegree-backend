@@ -47,7 +47,7 @@ In de definitie van de trigger kan je ruwweg dezelfde instructies schrijven als 
 
 Een concreet voorbeeld kan bijvoorbeeld zijn:
 
-```
+```sql
 drop trigger if exists log_personen_insert;
 
 delimiter $$
