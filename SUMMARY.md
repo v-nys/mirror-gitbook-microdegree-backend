@@ -74,6 +74,7 @@
     * [Parameters](semester-2-databanken/stored-procedures/parameters.md)
   * [Variabelen](semester-2-databanken/stored-procedures/variabelen.md)
   * [Control flow](semester-2-databanken/stored-procedures/control-flow.md)
+  * [Signal](semester-2-databanken/stored-procedures/signal.md)
   * [Stored functions](semester-2-databanken/stored-procedures/stored-functies.md)
   * [Triggers](semester-2-databanken/stored-procedures/triggers.md)
 
