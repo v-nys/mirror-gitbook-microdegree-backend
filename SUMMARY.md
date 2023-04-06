@@ -58,6 +58,7 @@
   * [LIKE](semester-1-databanken-intro/select/like.md)
   * [Functies](semester-1-databanken-intro/select/functies.md)
     * [Nieuwste ID opvragen](semester-2-databanken/stored-procedures/gerelateerde-data-inserten.md)
+    * [Wegwerken NULL](databases/coalesce.md)
   * [Aggregatiefuncties](semester-1-databanken-intro/select/aggregatiefuncties.md)
   * [DISTINCT](semester-1-databanken-intro/select/distinct.md)
   * [GROUP BY](semester-1-databanken-intro/select/groupby.md)
