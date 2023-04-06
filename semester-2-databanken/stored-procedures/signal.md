@@ -101,6 +101,6 @@ END$$
 DELIMITER ;
 ```
 
-In bovenstaand voorbeeld hebben we gebruik gemaakt van `MESSAGE_TEXT`, maar dit kan ook `MYSQL_ERRORNO`, `CURSOR_NAME`, edm. zijn. Een volledige lijst van de soorten info die je kan meegeven vind je [in de officiële documentatie](https://dev.mysql.com/doc/refman/8.0/en/signal.html). Je hoeft deze niet uit het hoofd te kennen. Je moet vooral weten dat je kan aangeven om wat voor fout het gaat en waar de fout zich heeft voorgedaan (bijvoorbeeld via `TABLE_NAME` en `COLUMN_NAME`).
+In bovenstaand voorbeeld hebben we gebruik gemaakt van `MESSAGE_TEXT`, maar dit kan ook `MYSQL_ERRORNO`, `CURSOR_NAME`,... zijn. Een volledige lijst van de soorten info die je kan meegeven vind je [in de officiële documentatie](https://dev.mysql.com/doc/refman/8.0/en/signal.html). Je hoeft deze niet uit het hoofd te kennen. Je moet wel weten dat je kan aangeven om wat voor fout het gaat en waar de fout zich heeft voorgedaan (bijvoorbeeld via `TABLE_NAME` en `COLUMN_NAME`).
 
 Wanneer we bovenstaande stored procedure aanroepen met een ID voor een album dat niet bestaat of waarvoor geen liedjes gekend zijn, krijgen we een foutmelding in MySQL Workbench.
