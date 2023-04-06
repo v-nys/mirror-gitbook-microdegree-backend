@@ -66,6 +66,7 @@
   * [Tussenresultaten via sessievariabelen](semester-1-databanken-intro/select/sessievariabelen.md)
   * [Enkelvoudige JOIN](databases/joins-enkelvoudig.md)
   * [Meervoudige JOIN](databases/joins-meervoudig.md)
+  * [LEFT / RIGHT JOIN](databases/left-right-join.md)
   * [UNION ALL](databases/union-all.md)
   * [Views](semester-2-databanken/views.md)
 * [SQL-injectie](semester-2-databanken/sql-injectie.md)
