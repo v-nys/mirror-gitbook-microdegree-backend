@@ -96,9 +96,9 @@ UNLOCK TABLES;
 
 Het vertrekpunt van een `LEFT JOIN` is een `INNER JOIN`. Met andere woorden: een koppeling tussen twee tabellen aan de hand van een foreign key.
 
-De `INNER JOIN` produceert een combinatie van kolommen van tabel `A` (de "linkertabel") met kolommen van tabel `B` (de "rechtertabel") wanneer er een match is tussen foreign key en primary key.
+De `INNER JOIN` produceert een combinatie van kolommen van tabel `A` (de "linkertabel") met kolommen van tabel `B` (de "rechtertabel") aan de hand van de voorwaarde in `ON`. Typisch wil dit zeggen: wanneer er een match is tussen foreign key en primary key.
 
-De `LEFT JOIN` doet dit ook, maar als een rij van tabel `A` niet gecombineerd kan worden met een rij van tabel `B`, wordt ze **toch** gebruikt. Ze wordt dan opgevuld met extra `NULL`-waarden.
+De `LEFT JOIN` doet dit ook, maar als een rij van tabel `A` nooit de check van de `ON` doorstaat, wordt ze **toch** gebruikt. Ze wordt dan opgevuld met extra `NULL`-waarden. De `LEFT JOIN` bevat dus **altijd alle** resultaten van de `INNER JOIN`, maar bevat er **meer** wanneer sommige rijen van de linkertabel de `ON`-test niet doorstaan.
 
 ### Syntax
 
