@@ -24,6 +24,8 @@
   * [Stap 18: sneezes tonen](friendface/stap-18-sneezes-tonen.md)
   * [Stap 19: clubs toevoegen](friendface/stap-19-clubs.md)
   * [Stap 20: vriendschappen toevoegen](friendface/stap-20-vriendschappen.md)
+  * [Stap 21: clubs koppelen aan sneezes](friendface/stap-21-clubs-sneezes.md)
+  * [Stap 22: paginatie profielen en clubs](friendface/stap-22-paginatie.md)
 
 ## Databases
 
