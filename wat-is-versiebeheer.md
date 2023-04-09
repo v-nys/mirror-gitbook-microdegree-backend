@@ -42,7 +42,7 @@ Nabil zou makkelijk terug kunnen gaan naar de gewenste code als hij de tijdlijn 
 
 De vorige aanpak dat is erg lastig om up-to-date te houden, zeker omdat je in de praktijk soms meerdere backups per uur zou moeten nemen om niets kwijt te raken. Dus Nabil schrijft een ander programma om bij deze taak te helpen. Dit programma kan eenvoudig backup nemen van de huidige toestand van de versie van de code en er een beschrijving van opslaan.
 
-Dit tweede programma is een heel eenvoudig versiebeheersysteem. Het maakt het veel makkelijker oude code bij te houden en te onthouden wat op welk moment is gebeurd. Een versiebeheersysteem zoals Git biedt in essentie deze zelfde voordelen en meer, maar pakt de zaken nog veel efficiënter aan dan hoe wij het hier hebben geschetst. Voorlopig is het voldoende als je weet dat je met een versiebeheersysteem een tijdlijn van je code kan maken zoals je die hier hebt gezien.
+Nabils tweede programma is een heel eenvoudig versiebeheersysteem. Het maakt het veel makkelijker oude code bij te houden en te onthouden wat op welk moment is gebeurd. Een versiebeheersysteem zoals Git biedt in essentie deze zelfde voordelen en meer, maar pakt de zaken nog veel efficiënter aan dan hoe wij het hier hebben geschetst. Voorlopig is het voldoende als je weet dat je met een versiebeheersysteem een tijdlijn van je code kan maken zoals je die hier hebt gezien.
 
 ## Demonstratie
 
