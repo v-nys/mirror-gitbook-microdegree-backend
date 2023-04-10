@@ -26,6 +26,7 @@
   * [Stap 20: vriendschappen toevoegen](friendface/stap-20-vriendschappen.md)
   * [Stap 21: clubs met sneezes](friendface/stap-21-clubs-sneezes.md)
   * [Stap 22: paginatie](friendface/stap-22-paginatie.md)
+  * [Stap 23: echte login](friendface/stap-23-echte-login.md)
 
 ## Databases
 
