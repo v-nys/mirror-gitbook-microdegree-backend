@@ -1,4 +1,4 @@
-# `git init`
+# git init
 
 ## Wat doet `git init`?
 
@@ -10,7 +10,7 @@ Wanneer we `git init` uitvoeren, verschijnt er een verborgen map `.git` met info
 
 Er zijn een paar plaatsen waar je dit commando niet mag uitvoeren:
 
-* Binnenin een repository. Technisch kan dit, maar het is niet wat je als beginner wil en zal tot vreemde fouten leiden. Je kan hier op controleren door, voor je `git init` uitvoert, een commando uit te voeren dat nooit iets aanpast (zoals [`git status`](git-status.md)). Dat zal je dan vertellen of je in een Git repository staat.
+* Binnenin een repository. Technisch kan dit, maar het is niet wat je als beginner wil en zal tot vreemde fouten leiden. Je kan hier op controleren door, voor je `git init` uitvoert, een commando uit te voeren dat nooit iets aanpast (zoals [`git status`](broken-reference)). Dat zal je dan vertellen of je in een Git repository staat.
 * In een map die automatisch synchroniseert (een OneDrive of Dropbox). Dat zal op het eerste zich werken, maar af en toe leidt het tot corruptie van onze data. Gelukkig is er een andere manier om backups van Git projecten in de cloud te plaatsen, waarover later meer.
 
 ## Demonstratie

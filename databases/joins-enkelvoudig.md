@@ -1,6 +1,6 @@
-# JOINs bij simpele relaties
+# Enkelvoudige JOIN
 
-Integriteit en performantie worden gegarandeerd door de database te "normaliseren". Dit wil in eerste instantie zeggen: "efficiënt uitsplitsen over tabellen". Door normalisering raakt informatie echter verspreid. Uitgebreide voorstellingen worden vervangen door *foreign key* kolommen. De gebruiker heeft daar niet veel aan. Primaire en vreemde sleutels zeggen de gebruiker niets. Anders gesteld, een tabel vol getallen zoals onderaan op [de pagina over primary keys](../semester-1-databanken-intro/deeltalen/ddl/sleutels-voor-identificatie.md) is op zich niet leesbaar. Er is dus een manier nodig om de informatie voor te stellen alsof die uit één tabel komt.
+Integriteit en performantie worden gegarandeerd door de database te "normaliseren". Dit wil in eerste instantie zeggen: "efficiënt uitsplitsen over tabellen". Door normalisering raakt informatie echter verspreid. Uitgebreide voorstellingen worden vervangen door _foreign key_ kolommen. De gebruiker heeft daar niet veel aan. Primaire en vreemde sleutels zeggen de gebruiker niets. Anders gesteld, een tabel vol getallen zoals onderaan op [de pagina over primary keys](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/semester-1-databanken-intro/deeltalen/ddl/sleutels-voor-identificatie.md) is op zich niet leesbaar. Er is dus een manier nodig om de informatie voor te stellen alsof die uit één tabel komt.
 
 ## CROSS JOIN
 

@@ -1,4 +1,4 @@
-# Secure Shell (SSH)
+# secure shell (SSH)
 
 Secure Shell (SSH) is een netwerkprotocol dat veilige communicatie tussen twee computers mogelijk maakt. Het wordt vaak gebruikt om op een veilige manier toegang te krijgen tot een externe computer via internet, bijvoorbeeld om in te loggen op een server en opdrachten uit te voeren, of om bestanden veilig over te zetten tussen computers. SSH maakt gebruik van encryptie om de gegevens die worden verzonden te beschermen, wat het moeilijk maakt voor onbevoegden om de informatie te onderscheppen en te lezen. Het is een belangrijk hulpmiddel voor netwerkbeveiliging.
 
@@ -26,7 +26,7 @@ De publieke sleutel is vergelijkbaar met je brievenbus. Iedereen ziet dat ze van
 
 Om te authenticeren met behulp van SSH-sleutels, moet een gebruiker een SSH-sleutelpaar op zijn lokale computer hebben. Op de **externe** server moet de **openbare** sleutel worden gekopieerd naar een bestand in de thuismap van de gebruiker op `~/.ssh/authorized_keys`. Dit bestand bevat een lijst met openbare sleutels, één per regel, die zijn geautoriseerd om in te loggen op dit account.
 
-Wanneer een client SSH-sleutelauthenticatie wil gebruiken, zal deze de server op de hoogte stellen van zijn intentie en de server vertellen welke public key moet worden gebruikt. De server controleert vervolgens het bestand `authorized_keys` op de public key, genereert een willekeurige reeks en versleutelt deze met behulp van de public key. Dit versleutelde bericht kan alleen worden ontsleuteld met de bijbehorende private key. De server stuurt dit versleutelde bericht naar de klant om te testen of deze daadwerkelijk over de bijbehorende pirvate key beschikt.
+Wanneer een client SSH-sleutelauthenticatie wil gebruiken, zal deze de server op de hoogte stellen van zijn intentie en de server vertellen welke public key moet worden gebruikt. De server controleert vervolgens het bestand `authorized_keys` op de public key, genereert een willekeurige reeks en versleutelt deze met behulp van de public key. Dit versleutelde bericht kan alleen worden ontsleuteld met de bijbehorende private key. De server stuurt dit versleutelde bericht naar de gebruiker om te testen of deze daadwerkelijk over de bijbehorende pirvate key beschikt.
 
 #### Resources
 

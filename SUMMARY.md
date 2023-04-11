@@ -14,7 +14,7 @@
   * [Stap 7: simpele adminpagina](friendface/stap-7-simpele-adminpagina.md)
   * [Stap 8: adminpagina met editing](friendface/stap-8-adminpagina-met-editing.md)
   * [Stap 9: statistieken over gebruikers](friendface/stap-9-adminpagina-met-statistieken.md)
-  * [Stap 10: login zonder wachtwoord](friendface/stap-10-login-zonder-wachtwoord.md) [Stap 11: gecentraliseerde waarden](friendface/stap-11-gecentraliseerde-waarden.md)
+  * [Stap 10: login zonder wachtwoord](friendface/stap-10-login-zonder-wachtwoord.md)
   * [Stap 12: moderne frontend](friendface/stap-12-moderne-frontend.md)
   * [Stap 13: data ophalen op de frontend](friendface/stap-13-data-ophalen-uit-react.md)
   * [Stap 14: link berichten en profielen](friendface/stap-14-link-berichten-profielen.md)
@@ -24,8 +24,6 @@
   * [Stap 18: sneezes tonen](friendface/stap-18-sneezes-tonen.md)
   * [Stap 19: clubs toevoegen](friendface/stap-19-clubs.md)
   * [Stap 20: vriendschappen toevoegen](friendface/stap-20-vriendschappen.md)
-  * [Stap 21: clubs met sneezes](friendface/stap-21-clubs-sneezes.md)
-  * [Stap 22: paginatie](friendface/stap-22-paginatie.md)
 
 ## Databases
 
@@ -146,6 +144,7 @@
 * [wat is een Shell?](operationele-aspecten/wat-is-een-shell.md)
 * [secure shell (SSH)](operationele-aspecten/secure-shell-ssh/README.md)
   * [een SSH-sleutelpaar genereren](operationele-aspecten/secure-shell-ssh/een-ssh-sleutelpaar-genereren.md)
+  * [SSH-sleutelpaar aan een server toevoegen](operationele-aspecten/secure-shell-ssh/ssh-sleutelpaar-aan-een-server-toevoegen.md)
   * [SSH config](operationele-aspecten/secure-shell-ssh/ssh-config.md)
   * [remote login](operationele-aspecten/secure-shell-ssh/remote-login.md)
   * [file transfer](operationele-aspecten/secure-shell-ssh/file-transfer.md)

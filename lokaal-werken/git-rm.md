@@ -10,11 +10,11 @@ Via het commando `git rm` kan je een file verwijderen uit de working directory *
 
 Je kan met de tools die je al kent een file verwijderen uit je working directory en uit versiebeheer als volgt:
 
-![](<../.gitbook/assets/Screenshot from 2021-09-09 09-04-49.png>)
+![](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/.gitbook/assets/Screenshot%20from%202021-09-09%2009-04-49.png)
 
 Bij `git rm` wordt de file ook uit de working directory verwijderd en toont "changes to be committed" (via `git status`) dat de volgende commit de file niet meer zal bevatten (dus vanaf dan wordt hij weer untracked). Dan krijg je het volgende:
 
-![](<../.gitbook/assets/Screenshot from 2021-09-09 09-06-18.png>)
+![](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/.gitbook/assets/Screenshot%20from%202021-09-09%2009-06-18.png)
 
 Je ziet dus dat er een tussenstap minder is tegenover wanneer je verwijdert en dan staget. Het standaardgebruik van `git rm` is dus vooral een snellere manier van werken.
 
@@ -22,7 +22,7 @@ Je kan ook `git rm --cached` gebruiken om het verwijderen van de file te stagen,
 
 Dat kan je het volgende opleveren:
 
-![](<../.gitbook/assets/Screenshot from 2021-09-09 09-07-03.png>)
+![](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/.gitbook/assets/Screenshot%20from%202021-09-09%2009-07-03.png)
 
 Als je een van deze commando's op een map wil toepassen in plaats van op een gewone file, moet je `-r` toevoegen
 

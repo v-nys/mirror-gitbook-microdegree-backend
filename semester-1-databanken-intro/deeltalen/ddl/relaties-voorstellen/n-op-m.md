@@ -1,8 +1,8 @@
-# Veel-op-veel relaties
+# N-op-M / veel-op-veel relaties
 
 Een auteur kan meerdere boeken hebben en een boek kan verschillende auteurs hebben. Een game kan op verschillende platformen uitgebracht zijn en voor elk platform zijn er verschillende games beschikbaar. Een student volgt verschillende vakken en in elk vak zitten verschillende studenten. Dit zijn allemaal voorbeelden waar één rij uit een tabel A gekoppeld kan zijn aan meerdere rijen uit een tabel B en één rij uit dezelfde tabel B gekoppeld kan zijn aan meerdere rijen uit dezelfde tabel A. We zeggen dan ook dat er een veel-op-veel of N-op-M-relatie (of M-op-N-relatie, beide letters stellen gewoon een variabel getal voor) bestaat tussen de entiteiten A en B.
 
-Bij 1-op-1-relaties mag je de vreemde sleutel in tabel A of B zetten. Bij 1-op-max-1 of 1-op-N relaties zet je de vreemde sleutel in de tabel die niet precies één keer gekoppeld is. Dit is om geen overbodige tabellen toe te voegen. In principe is het wel *mogelijk* om een koppeling in een aparte tabel bij te houden:
+Bij 1-op-1-relaties mag je de vreemde sleutel in tabel A of B zetten. Bij 1-op-max-1 of 1-op-N relaties zet je de vreemde sleutel in de tabel die niet precies één keer gekoppeld is. Dit is om geen overbodige tabellen toe te voegen. In principe is het wel _mogelijk_ om een koppeling in een aparte tabel bij te houden:
 
 | Leden\_Id | Taken\_Id |
 | --------- | --------- |
@@ -81,7 +81,7 @@ CREATE TABLE Releases(
 
 Dit stemt overeen met een diagram in Workbench dat er zo uitziet:
 
-![Diagram voor een veel-op-veel relatie. Je tekent deze als twee één-op-veel relaties.](<../../../../.gitbook/assets/Screenshot from 2020-11-21 10-15-27.png>)
+![Diagram voor een veel-op-veel relatie. Je tekent deze als twee één-op-veel relaties.](../../../../.gitbook/assets/screenshot-from-2020-11-21-10-15-27.png)
 
 Je zou dan games kunnen koppelen aan platformen als volgt:
 
@@ -138,7 +138,7 @@ De releasedatum hoort bij **de combinatie van een game en een platform**, d.w.z.
 
 In een ERD stellen we dit als volgt voor:
 
-![](<../../../../.gitbook/assets/Screenshot from 2020-11-21 10-18-08.png>)
+![](../../../../.gitbook/assets/screenshot-from-2020-11-21-10-18-08.png)
 
 In dit geval is `Releases` niet gewoon een tabel die een **relatie** voorstelt, maar wel een **associative entity**: een relatie tussen `Games` en `Platformen` die eigen kenmerken bezit, zodat je ze eigenlijk ook als een entiteit zou kunnen zien.
 
