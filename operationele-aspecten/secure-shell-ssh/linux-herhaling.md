@@ -1,10 +1,12 @@
 # Linux (Herhaling)
 
-Als je op een server werkt, is het belangrijk om Linux-commando's te kennen omdat servers meestal worden aangedreven door het Linux-besturingssysteem en de meeste serverbeheertaken worden uitgevoerd via de command line-interface (CLI) in de terminal. In tegenstelling tot grafische gebruikersinterfaces (GUI's) bieden CLI's meer controle, flexibiliteit en efficiëntie bij het beheren van servers.
+Als je op een server werkt via SSH, ben je verbonden met een command line interface in een Linux-besturingssysteem. Dit betekent dat je de opdrachten van het besturingssysteem rechtstreeks kunt invoeren in de terminal, om taken uit te voeren en om de server te beheren.
 
-Door de belangrijkste Linux-commando's te kennen, kun je taken uitvoeren zoals het maken van mappen, bestanden kopiëren of verplaatsen, bestanden bewerken, beheerdersrechten verkrijgen en beheren van services op de server. Bovendien kun je met de commando's scripts en geautomatiseerde taken schrijven om het beheer van de server te vereenvoudigen.
+Als je niet bekend bent met de Linux-commando's en hun functies, kan het werken via de terminal in het begin een uitdaging zijn en kan het ook fouten veroorzaken. Het kennen van de commando's en hun toepassingen zal je helpen om taken efficiënter en effectiever uit te voeren, en zal je ook in staat stellen om problemen op te lossen en fouten te vinden wanneer deze zich voordoen.
 
-Daarnaast zijn Linux-commando's over het algemeen draagbaar en beschikbaar op verschillende Linux-distributies en servers, wat betekent dat als je eenmaal de commando's kent, je ze op elke Linux-server kunt gebruiken zonder dat je je zorgen hoeft te maken over specifieke verschillen tussen distributies.
+Om effectief te kunnen werken op een server via SSH, is het daarom essentieel om de basisbeginselen van Linux-commando's te begrijpen en te kennen. Dit omvat taken uitvoeren zoals het maken van mappen, bestanden kopiëren of verplaatsen, bestanden bewerken, beheerdersrechten verkrijgen en beheren van services op de server. Bovendien kun je met de commando's scripts en geautomatiseerde taken schrijven om het beheer van de server te vereenvoudigen.
+
+Daarnaast zijn Linux-commando's over het algemeen draagbaar en beschikbaar op verschillende Linux-distributies en servers, wat betekent dat als je eenmaal de commando's kent, je ze op elke Linux-server kunt gebruiken zonder dat je je zorgen hoeft te maken over specifieke verschillen tussen distributies!
 
 | Commando         | Betekenis               | Omschrijving                                                                                                                   |
 | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
