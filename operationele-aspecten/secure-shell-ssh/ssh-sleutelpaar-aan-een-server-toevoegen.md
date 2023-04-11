@@ -50,4 +50,6 @@ Als alles correct is geconfigureerd, zou je nu moeten kunnen inloggen op de serv
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Proficiat! :tada: Nu dat je bent ingelogd kan je beginnen met bestanden en mappen aan je server toe te voegen. Ps. de lector zal een URL voorzien waarmee je de gehele folder structuur van je server in de browser kunt raadplegen.
+Proficiat! :tada: Nu dat je bent ingelogd kan je beginnen met bestanden en mappen aan je server toe te voegen.
+
+Ps. de lector zal een URL voorzien waarmee je de gehele folder structuur van je server in de browser kunt raadplegen evenals html pagina's!
