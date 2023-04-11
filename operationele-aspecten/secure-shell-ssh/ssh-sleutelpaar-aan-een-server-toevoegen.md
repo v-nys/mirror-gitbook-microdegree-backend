@@ -50,4 +50,4 @@ Je sleutelpaar werkt indien je het onderstaande bericht te zien krijgt!
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Proficiat! :tada: In de volgende stap zal je leren hoe je mappen en bestanden aan de server kunt toevoegen.
+Proficiat! :tada: In de volgende stap zal je leren hoe je mappen, bestanden en uiteindelijk een volledige website aan de server kunt toevoegen.
