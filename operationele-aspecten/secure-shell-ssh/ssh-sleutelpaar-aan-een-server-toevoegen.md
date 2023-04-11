@@ -46,8 +46,8 @@ Vervang `username` en `hostname` in het bovenstaande commando met jou persoonlij
 Indien je tijdens het genereren van je sleutelpaar een passphrase hebt ingesteld zal je deze natuurlijk  bij elke nieuwe verbinding moeten invullen.
 {% endhint %}
 
-Je sleutelpaar werkt indien je het onderstaande bericht te zien krijgt!
+Als alles correct is geconfigureerd, zou je nu moeten kunnen inloggen op de server zonder dat je een wachtwoord hoeft in te voeren. Je sleutelpaar werkt indien je het onderstaande bericht te zien krijgt!
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Proficiat! :tada: In de volgende stap zal je leren hoe je mappen, bestanden en uiteindelijk een volledige website aan de server kunt toevoegen.
+Proficiat! :tada: Nu dat je bent ingelogd kan je beginnen met bestanden en mappen aan je server toe te voegen. Ps. de lector zal een URL voorzien waarmee je de gehele folder structuur van je server in de browser kunt raadplegen.
