@@ -74,7 +74,7 @@ Nu we de basis van het SSH-configuratiebestand hebben behandeld, gaan we naar he
 Wanneer je via SSH verbinding maakt met een externe server, geef je doorgaans de externe username, hostnaam en poort op. Als je zich bijvoorbeeld vanaf de terminal wilt aanmelden als een gebruiker met de naam john bij een host met de naam dev.ap.be op poort 2322, typ je:
 
 ```bash
-ssh john@dev.example.com -p 2322h
+ssh john@dev.example.com -p 22
 ```
 
 Om verbinding te maken met de server met behulp van dezelfde opties als in de bovenstaande opdracht, typ je eenvoudigweg `ssh ap` en plaats je de volgende regels in je `~/.ssh/config`-bestand:
@@ -83,7 +83,7 @@ Om verbinding te maken met de server met behulp van dezelfde opties als in de bo
 Host ap
     HostName dev.ap.be
     User john
-    Port 2322
+    Port 22
 ```
 
 Wanneer je nu `ssh ap` typt, zal de ssh-client het configuratiebestand lezen en de verbindingsdetails gebruiken die zijn opgegeven voor de ap-host:

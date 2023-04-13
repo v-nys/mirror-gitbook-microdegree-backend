@@ -4,6 +4,12 @@ Het genereren van een nieuw SSH-sleutelpaar met public en private keys op je lok
 
 Er zijn een aantal cryptografische algoritmen die je kan gebruiken om SSH-sleutels te genereren, waaronder [`RSA`](../wat-is-cryptografie/rsa-encryptie/), `DSA` en `ECDSA`. `RSA`-sleutels hebben over het algemeen de voorkeur en zijn het standaardsleuteltype.
 
+{% hint style="info" %}
+Als je Windows gebruikt, moet je een versie van OpenSSH installeren om vanaf een terminal te kunnen ssh-en. Als je liever in PowerShell werkt, kan je de [documentatie van Microsoft](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh\_install\_firstuse) volgen om OpenSSH aan PowerShell toe te voegen.
+
+Als u een Mac of Linux gebruikt, heeft u de ssh-opdracht al beschikbaar in uw terminal.
+{% endhint %}
+
 Om een [`RSA`](../wat-is-cryptografie/rsa-encryptie/)-sleutelpaar op je lokale computer te genereren, typ je:
 
 ```

@@ -28,6 +28,12 @@ Om te authenticeren met behulp van SSH-sleutels, moet een gebruiker een SSH-sleu
 
 Wanneer een client SSH-sleutelauthenticatie wil gebruiken, zal deze de server op de hoogte stellen van zijn intentie en de server vertellen welke public key moet worden gebruikt. De server controleert vervolgens het bestand `authorized_keys` op de public key, genereert een willekeurige reeks en versleutelt deze met behulp van de public key. Dit versleutelde bericht kan alleen worden ontsleuteld met de bijbehorende private key. De server stuurt dit versleutelde bericht naar de gebruiker om te testen of deze daadwerkelijk over de bijbehorende pirvate key beschikt.
 
+{% hint style="info" %}
+Als je Windows gebruikt, moet je een versie van OpenSSH installeren om vanaf een terminal te kunnen ssh-en. Als je liever in PowerShell werkt, kan je de [documentatie van Microsoft](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh\_install\_firstuse) volgen om OpenSSH aan PowerShell toe te voegen.
+
+Als u een Mac of Linux gebruikt, heeft u de ssh-opdracht al beschikbaar in uw terminal.
+{% endhint %}
+
 #### Resources
 
 * [SSH essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#client-side-configuration-options)
