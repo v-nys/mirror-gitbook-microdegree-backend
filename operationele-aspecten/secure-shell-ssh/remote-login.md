@@ -10,7 +10,7 @@ ssh remote_host
 
 De `remote_host` in dit voorbeeld is het IP-adres of de domeinnaam waarmee je verbinding probeert te maken.
 
-Deze opdracht gaat ervan uit dat je gebruikersnaam op het externe systeem dezelfde is als je gebruikersnaam op uw lokale systeem.
+Deze opdracht gaat ervan uit dat je gebruikersnaam op het externe systeem dezelfde is als je gebruikersnaam op je lokale systeem.
 
 Als je gebruikersnaam op het externe systeem anders is, kan je deze specificeren met behulp van deze syntaxis:
 
