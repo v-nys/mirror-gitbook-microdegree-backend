@@ -4,6 +4,12 @@ Het genereren van een nieuw SSH-sleutelpaar met public en private keys op je lok
 
 Er zijn een aantal cryptografische algoritmen die je kan gebruiken om SSH-sleutels te genereren, waaronder [`RSA`](../wat-is-cryptografie/rsa-encryptie/), `DSA` en `ECDSA`. `RSA`-sleutels hebben over het algemeen de voorkeur en zijn het standaardsleuteltype.
 
+{% hint style="info" %}
+Als je Windows gebruikt, moet je een versie van OpenSSH installeren om vanaf een terminal te kunnen ssh-en. Als je liever in PowerShell werkt, kan je de [documentatie van Microsoft](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh\_install\_firstuse) volgen om OpenSSH aan PowerShell toe te voegen.
+
+Als u een Mac of Linux gebruikt, heeft u de ssh-opdracht al beschikbaar in uw terminal.
+{% endhint %}
+
 Om een [`RSA`](../wat-is-cryptografie/rsa-encryptie/)-sleutelpaar op je lokale computer te genereren, typ je:
 
 ```
@@ -16,13 +22,17 @@ Met deze prompt kan je de locatie kiezen om je `RSA` private key op te slaan. Dr
 
 <figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
-Bij de volgende prompt kan je een wachtwoord van willekeurige lengte invoeren om je private key te beveiligen. Standaard moet je elke keer dat je de private key gebruikt je wachtwoord invoeren als extra beveiligingsmaatregel. Voel je vrij om op ENTER te drukken om dit leeg te laten als je geen wachtwoord wilt. Houd er echter rekening mee dat iedereen die de controle over je private key krijgt, hierdoor kan inloggen op je servers.
+Bij de volgende prompt kan je een wachtwoord van willekeurige lengte invoeren om je private key te beveiligen. Standaard moet je elke keer dat je de private key gebruikt je wachtwoord invoeren als extra beveiligingsmaatregel. Voel je vrij om op ENTER te drukken om dit leeg te laten als je geen wachtwoord wilt. Houd er echter rekening mee dat iedereen die de controle over je private key krijgt, hierdoor kan inloggen op je server(s).
 
 {% hint style="info" %}
 **Let op**: Als je ervoor kiest om een wachtwoord in te voeren, wordt er niets weergegeven terwijl je typt. Dit is een veiligheidsmaatregel.
 {% endhint %}
 
-Deze procedure heeft een `RSA` SSH-sleutelpaar gegenereerd, dat zich bevindt in de verborgen map `.ssh` in de thuismap van je gebruiker.&#x20;
+Deze procedure heeft een `RSA` SSH-sleutelpaar gegenereerd, dat zich bevindt in de verborgen map `.ssh` in je gebruiker thuismap.&#x20;
+
+{% hint style="info" %}
+Voorbeeld gebruiker thuismap: `Users/jan-janssens/.ssh`
+{% endhint %}
 
 Deze bestanden zijn:
 

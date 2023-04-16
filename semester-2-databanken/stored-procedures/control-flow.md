@@ -1,9 +1,9 @@
 # Control flow
-Controlflowmechanismen dienen om de uitvoering van een stored program te sturen.
-Je kan ze gebruiken in stored programs, stored functions en triggers om bepaalde
-code al dan niet herhaald uit te voeren afhankelijk van bepaalde factoren.
+
+Controlflowmechanismen dienen om de uitvoering van een stored program te sturen. Je kan ze gebruiken in stored programs, stored functions en triggers om bepaalde code al dan niet herhaald uit te voeren afhankelijk van bepaalde factoren.
 
 ## IF-THEN-ELSE-ELSEIF
+
 Op basis van het resultaat van een IF-THEN-... statement kan je één of meerdere SQL statements uitvoeren en een aangepast resultaat op basis van de ingebouwde conditie weergeven.
 
 ### IF-THEN
@@ -60,7 +60,7 @@ Als je evenwel een id zou opgeven waarvoor de duurtijd korter is dan 300, dan wo
 
 ![](../../.gitbook/assets/ifthennoresult.JPG)
 
-Voor een resultaat van de vorm "Korte duurtijd" of misschien ook "Middelmatige duurtijd" zou je met [`IF-THEN-ELSE`](if-then.md#if-then-else) of met [`IF-THEN-ELSEIF-ELSE`](if-then.md#if-then-elseif-else) werken, zie verder.
+Voor een resultaat van de vorm "Korte duurtijd" of misschien ook "Middelmatige duurtijd" zou je met [`IF-THEN-ELSE`](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/semester-2-databanken/stored-procedures/if-then.md#if-then-else) of met [`IF-THEN-ELSEIF-ELSE`](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/semester-2-databanken/stored-procedures/if-then.md#if-then-elseif-else) werken, zie verder.
 
 ## IF-THEN-ELSE
 
@@ -74,7 +74,7 @@ ELSE
 END IF;
 ```
 
-De procedure omschreven in het voorgaande deel [`IF-THEN`](if-then.md#if-then) wordt uitgebreid: wanneer de duurtijd meer dan 300 seconden bedraagt, wordt weergegeven dat het een lange duurtijd betreft. In het andere geval wordt "Normale duurtijd" weergegeven.
+De procedure omschreven in het voorgaande deel [`IF-THEN`](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/semester-2-databanken/stored-procedures/if-then.md#if-then) wordt uitgebreid: wanneer de duurtijd meer dan 300 seconden bedraagt, wordt weergegeven dat het een lange duurtijd betreft. In het andere geval wordt "Normale duurtijd" weergegeven.
 
 Onderstaand voorbeeld laat zien hoe de IF-THEN-ELSE moet worden voorzien.
 
@@ -111,7 +111,7 @@ SELECT @Resultaat;
 
 ![](../../.gitbook/assets/ifelsethen.JPG)
 
-In het geval dat de waarde groter is dan 300 sec., dan bekom je hetzelfde resultaat als bij het onderdeel [`IF-THEN`](if-then.md#if-then) hierboven.
+In het geval dat de waarde groter is dan 300 sec., dan bekom je hetzelfde resultaat als bij het onderdeel [`IF-THEN`](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/semester-2-databanken/stored-procedures/if-then.md#if-then) hierboven.
 
 ## IF-THEN-ELSEIF-ELSE
 
@@ -129,7 +129,7 @@ END IF;
 
 Merk op dat `ELSEIF` in MySQL aan elkaar wordt geschreven!
 
-De procedure omschreven in het voorgaande deel [`IF-THEN-ELSE`](if-then.md) wordt uitgebreid. We voorzien nu dat wanneer de duurtijd meer dan 300 seconden bedraagt, er wordt weergegeven dat het een lange duurtijd betreft. In het geval de duurtijd tussen de 180 en 300 ligt wordt is de duurtijd normaal. In het geval deze minder dan 180 bedraagt, is hij kort.
+De procedure omschreven in het voorgaande deel [`IF-THEN-ELSE`](https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/semester-2-databanken/stored-procedures/if-then.md) wordt uitgebreid. We voorzien nu dat wanneer de duurtijd meer dan 300 seconden bedraagt, er wordt weergegeven dat het een lange duurtijd betreft. In het geval de duurtijd tussen de 180 en 300 ligt wordt is de duurtijd normaal. In het geval deze minder dan 180 bedraagt, is hij kort.
 
 Onderstaand voorbeeld laat zien hoe de IF-THEN-ELSEIF-ELSE moet worden voorzien.
 
@@ -167,7 +167,6 @@ SELECT @Resultaat;
 ```
 
 ![](../../.gitbook/assets/ifelseelseifthen.JPG)
-
 
 ## WHILE
 
@@ -231,7 +230,7 @@ CALL AddTimeSlots('2020-04-19', 90);
 
 Deze uitvoering van de stored procedure `AddTimeSlots` geeft volgend resultaat:
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2023-02-23 14-30-50.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/AP-IT-GH/gitbook-microdegree-backend/blob/main/.gitbook/assets/Screenshot%20from%202023-02-23%2014-30-50.png" alt=""><figcaption></figcaption></figure>
 
 ## REPEAT
 

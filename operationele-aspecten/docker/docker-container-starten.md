@@ -1,4 +1,4 @@
-# docker container starten
+# Docker container starten
 
 ## Starten van een docker container
 
@@ -43,7 +43,7 @@ docker run denising/hallo-student
 
 Het commando `docker ps -a` geeft een lijst weer van al je containers.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 Indien je een container wilt verwijderen kan je het commando `docker rm CONTAINER_NAME` of `docker rm CONTAINER_ID` gebruiken.
 

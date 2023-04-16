@@ -105,7 +105,7 @@ Laten we beginnen met het maken van een collectie:
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Stap 3)** Ga terug naar je vorige GET request, `{{url}}/people`. Klik op "**Save**", klik vervolgens op de naam van je nieuwe collectie en nogmaals op de knop "**Save**" in de rechter **** onderhoek van de pop-up.
+**Stap 3)** Ga terug naar je vorige GET request, `{{url}}/people`. Klik op "**Save**", klik vervolgens op de naam van je nieuwe collectie en nogmaals op de knop "**Save**" in de rechter onderhoek van de pop-up.
 
 <figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

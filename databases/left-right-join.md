@@ -1,6 +1,8 @@
-# LEFT JOIN / RIGHT JOIN
+# LEFT en RIGHT JOIN
 
-## Startpunt
+## LEFT JOIN / RIGHT JOIN
+
+### Startpunt
 
 Volgende voorbeelden zijn gebaseerd op dit calibratiescript. Voer het uit in Workbench als je de voorbeelden wil kunnen uitvoeren:
 
@@ -9,7 +11,7 @@ CREATE DATABASE  IF NOT EXISTS `ApDB` /*!40100 DEFAULT CHARACTER SET utf8mb4 COL
 USE `ApDB`;
 -- MySQL dump 10.13  Distrib 8.0.19, for Linux (x86_64)
 --
--- Host: localhost    Database: ApDB
+-- Host: localhost    Database: ModernWays
 -- ------------------------------------------------------
 -- Server version    8.0.17
 
@@ -92,15 +94,15 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 ```
 
-## LEFT JOIN
+### LEFT JOIN
 
 Het vertrekpunt van een `LEFT JOIN` is een `INNER JOIN`. Met andere woorden: een koppeling tussen twee tabellen aan de hand van een foreign key.
 
-De `INNER JOIN` produceert een combinatie van kolommen van tabel `A` (de "linkertabel") met kolommen van tabel `B` (de "rechtertabel") aan de hand van de voorwaarde in `ON`. Typisch wil dit zeggen: wanneer er een match is tussen foreign key en primary key.
+De `INNER JOIN` produceert een combinatie van kolommen van tabel `A` (de "linkertabel") met kolommen van tabel `B` (de "rechtertabel") wanneer er een match is tussen foreign key en primary key.
 
-De `LEFT JOIN` doet dit ook, maar als een rij van tabel `A` nooit de check van de `ON` doorstaat, wordt ze **toch** gebruikt. Ze wordt dan opgevuld met extra `NULL`-waarden. De `LEFT JOIN` bevat dus **altijd alle** resultaten van de `INNER JOIN`, maar bevat er **meer** wanneer sommige rijen van de linkertabel de `ON`-test niet doorstaan.
+De `LEFT JOIN` doet dit ook, maar als een rij van tabel `A` niet gecombineerd kan worden met een rij van tabel `B`, wordt ze **toch** gebruikt. Ze wordt dan opgevuld met extra `NULL`-waarden.
 
-### Syntax
+#### Syntax
 
 ```sql
 SELECT <kolommen uit A en/of uit B>
@@ -112,7 +114,7 @@ ON A.Id = B.A_Id
 
 Dit wordt vaak als volgt genoteerd:
 
-![Venn diagram left join](<../.gitbook/assets/venndiagramleftjoin.png>)
+![Venn diagram left join](../.gitbook/assets/venndiagramleftjoin.png)
 
 De doorsnede geeft aan dat er overlapping is tussen primary en foreign key.
 
@@ -120,7 +122,8 @@ De doorsnede geeft aan dat er overlapping is tussen primary en foreign key.
 Hoewel het Venn diagram een klassieke weergave is voor verzamelingen, zie je dit hier best eerder als een geheugensteuntje.
 {% endhint %}
 
-### Voorbeeld
+#### Voorbeeld
+
 Als je alle personen wilt tonen ongeacht of ze een boek hebben geschreven of niet kan je een `LEFT JOIN` gebruiken. In tegenstelling tot bij `INNER JOIN` maakt het een groot verschil of je `A LEFT JOIN B` schrijft of `B LEFT JOIN A`. Met een `LEFT JOIN` worden alle rijen uit de linkse tabel geselecteerd, of er nu een match is of niet op basis van de sleutelkolommen.
 
 Om de auteurs van alle boeken te zien, maar ook personen die geen boek geschreven hebben:
@@ -132,7 +135,7 @@ LEFT JOIN Boeken ON Boeken.Personen_Id = Personen.Id
 ORDER BY Personen.Familienaam, Personen.Voornaam, Boeken.Titel;
 ```
 
-![Opvullen left join](<../.gitbook/assets/opvullenleftjoin.png>)
+![Opvullen left join](../.gitbook/assets/opvullenleftjoin.png)
 
 De aangeduide `NULL`-waarden staan er omdat `LEFT JOIN` gebruikt is. Bij `INNER JOIN` zouden deze rijen volledig ontbreken. Merk trouwens op dat `Titel` in de tabel `Boeken` niet `NULL` **kan** zijn, omdat de kolom gedefinieerd is als `NOT NULL`. Deze waarden **moeten** dus het resultaat van de bewerking zijn.
 
@@ -140,11 +143,11 @@ De aangeduide `NULL`-waarden staan er omdat `LEFT JOIN` gebruikt is. Bij `INNER 
 De `LEFT JOIN` wordt ook wel `LEFT OUTER JOIN` genoemd. Er is geen verschil.
 {% endhint %}
 
-# RIGHT JOIN
+## RIGHT JOIN
 
 `RIGHT JOIN` is een alternatieve syntax voor `LEFT JOIN`. Deze versie gebruikt sowieso elke rij van tabel `B`, of er nu een rij van tabel `A` aan gekoppeld kan worden of niet.
 
-## Syntax
+### Syntax
 
 ```sql
 SELECT <kolommen uit A of uit B>
@@ -153,7 +156,7 @@ FROM A RIGHT JOIN B
 ON A.B_Id = B.Id
 ```
 
-![Venn diagram right join](<../.gitbook/assets/venndiagramrightjoin.png>)
+![Venn diagram right join](../.gitbook/assets/venndiagramrightjoin.png)
 
 Volgende query toont alle boeken met hun auteur, maar toont ook boeken waarvan de auteur niet gekend is:
 
@@ -174,6 +177,5 @@ ORDER BY Personen.Familienaam, Personen.Voornaam, Boeken.Titel;
 ```
 
 {% hint style="info" %}
-Hier stelt zich de vraag: "Wanneer heb ik "left" nodig en wanneer "right"?"
-Hier is geen objectief antwoord. De situatie zal bepalen welke schrijfwijze het handigst leest.
+Hier stelt zich de vraag: "Wanneer heb ik "left" nodig en wanneer "right"?" Hier is geen objectief antwoord. De situatie zal bepalen welke schrijfwijze het handigst leest.
 {% endhint %}
