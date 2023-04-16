@@ -121,6 +121,7 @@
   * [Environment Variables](express.js/authenticatie-en-autorisatie/environment-variables.md)
   * [body-parser NPM package](express.js/authenticatie-en-autorisatie/body-parser-npm-package.md)
 * [CORS](express.js/cors.md)
+* [nodemailer](express.js/nodemailer.md)
 
 ## Operationele aspecten
 
