@@ -108,6 +108,7 @@
 * [Requests](express.js/requests/README.md)
   * [POST](express.js/requests/POST.md)
 * [Static files](express.js/static-files.md)
+  * [uploaden](express.js/uploaden.md)
 * [MySQL Connector](express.js/mysql-connector/README.md)
   * [Queries uitvoeren](express.js/mysql-connector/queries.md)
   * [Prepared statements](express.js/mysql-connector/prepared-statements.md)
