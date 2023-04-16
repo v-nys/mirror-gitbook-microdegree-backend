@@ -1,5 +1,5 @@
 # SQL injectie
-Surfers zijn gewoonlijk **onrechtstreekse** gebruikers van een SQL-databank. Ze voeren handelingen op een website uit, die dan vertaald worden naar SQL-statements. Dit gebeurt typisch door middel van een SQL connector en maakt allerlei handige features mogelijk.
+Surfers zijn normaal **onrechtstreekse** gebruikers van een SQL-databank. Ze voeren handelingen op een website uit, die dan vertaald worden naar SQL-statements. Dit gebeurt typisch door middel van een SQL connector en maakt allerlei handige features mogelijk.
 
 Het risico bestaat echter dat een gebruiker zich **rechtstreekse** toegang tot de databank toeëigent. Dit kan in het bijzonder wanneer een script geen onderscheid maakt tussen SQL-syntax en gegevens. Eenvoudiger gesteld: als een script of programma gebruikersinvoer in vooraf geschreven SQL-code plakt, kan de gebruiker zelf SQL-code intypen.
 
