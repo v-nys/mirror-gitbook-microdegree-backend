@@ -29,7 +29,7 @@
   * [Stap 22: paginatie](friendface/stap-22-paginatie.md)
   * [Stap 23: echte login](friendface/stap-23-echte-login.md)
   * [Stap 24: profiel updaten](friendface/stap-24-profiel-updaten.md)
-  * [Stap 25: verwittigingen versturen](friendface/stap-24-profiel-updaten.md)
+  * [Stap 25: verwittigingen versturen](friendface/stap-25-verwittigingen-versturen.md)
 
 ## Databases
 
