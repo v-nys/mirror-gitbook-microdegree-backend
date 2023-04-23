@@ -11,7 +11,7 @@ ssh username@hostname
 ```
 
 {% hint style="info" %}
-Vervang `username` en `hostname` met de inloggegevens van jou server.
+Vervang `username` en `hostname` met de inloggegevens van je server.
 {% endhint %}
 
 ### 2) Installeer de Certbot-client op de server:

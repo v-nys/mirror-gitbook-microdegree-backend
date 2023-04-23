@@ -145,7 +145,6 @@
   * [RSA encryptie](operationele-aspecten/wat-is-cryptografie/rsa-encryptie/README.md)
     * [Voorbeeld RSA Encryptie](operationele-aspecten/wat-is-cryptografie/rsa-encryptie/voorbeeld-rsa-encryptie.md)
 * [transport layer security (TLS)](operationele-aspecten/transport-layer-security-tls/README.md)
-  * [Let's Encrypt](operationele-aspecten/transport-layer-security-tls/lets-encrypt.md)
 * [Wat is hashing](operationele-aspecten/wat-is-hashing/README.md)
   * [paswoord hashing](operationele-aspecten/wat-is-hashing/paswoord-hashing.md)
   * [paswoord salting](operationele-aspecten/wat-is-hashing/paswoord-salting.md)
