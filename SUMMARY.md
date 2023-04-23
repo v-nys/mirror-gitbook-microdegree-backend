@@ -156,7 +156,6 @@
   * [SSH-sleutelpaar aan een server toevoegen](operationele-aspecten/secure-shell-ssh/ssh-sleutelpaar-aan-een-server-toevoegen.md)
   * [Linux (Herhaling)](operationele-aspecten/secure-shell-ssh/linux-herhaling.md)
   * [SSH config](operationele-aspecten/secure-shell-ssh/ssh-config.md)
-  * [remote login](operationele-aspecten/secure-shell-ssh/remote-login.md)
   * [file transfer](operationele-aspecten/secure-shell-ssh/file-transfer.md)
 * [Relatieve vs absolute paden](operationele-aspecten/relatieve-vs-absolute-paden.md)
 * [REST API](operationele-aspecten/rest-api.md)
