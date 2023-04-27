@@ -124,19 +124,3 @@ Nu zal je enkel toegang krijgen tot je API als je vanaf een van deze domeinen ee
 ```
 Access-Control-Allow-Origin: http://localhost:3001
 ```
-
-### CORS Proxy
-
-Soms komt het voor dat je een API wil oproepen van een andere website, maar dat je geen controle hebt over de backend. In dat geval kan je een zogenaamde CORS proxy gebruiken. Dit is een server die de request doorstuurt naar de API en de response terugstuurt naar de client. Deze server heb je zelf in de hand, dus je kan zelf bepalen welke headers er worden toegevoegd aan de response.
-
-Je zou zelf een dergelijke CORS proxy kunnen schrijven in express die gewoon de request doorstuurt naar de API en de response terugstuurt naar de client.
-
-```typescript
-app.get("/api", (req, res) => {
-  fetch("https://api.example.com")
-    .then((response) => response.text())
-    .then((text) => res.send(text));
-});
-```
-
-Er bestaan ook al bestaande CORS proxies die je kan gebruiken. Een bekende is [CORS Anywhere](https://github.com/Rob--W/cors-anywhere)
